@@ -9,3 +9,4 @@ git remote add origin https://github.com/yuki-konn/yuki-capstone-project-qd4jy1h
 curl -sS https://webi.sh/gh | sh
 gh auth login
 git push -u origin main
+# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv

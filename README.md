@@ -1,13 +1,11 @@
 // Glitch github setup
 
-echo "# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv" >> README.md
+echo "# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r" >> README.md
 git init
-
-// ADD CHANGES OF THE README
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/yuki-konn/yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv.git
+git remote add origin https://github.com/yuki-konn/yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r.git
 curl -sS https://webi.sh/gh | sh
 gh auth login
 git config user.name "username"
@@ -22,6 +20,4 @@ git commit -m "insert memo"
 
 //PUSHES ALL UPDATES TO MAIN REPO
 git push origin main
-# yuki-konn-yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv
-# yuki-konn-yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv
-# yuki-konn-yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv
+# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r

@@ -25,9 +25,3 @@ git commit -m "insert memo"
 
 //PUSHES ALL UPDATES TO MAIN REPO
 git push origin main
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r

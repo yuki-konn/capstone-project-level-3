@@ -1,5 +1,6 @@
 // Glitch github setup
 
+//
 echo "# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r" >> README.md
 git init
 git add README.md
@@ -20,4 +21,3 @@ git commit -m "insert memo"
 
 //PUSHES ALL UPDATES TO MAIN REPO
 git push origin main
-# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r

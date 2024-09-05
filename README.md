@@ -10,8 +10,8 @@ git branch -M main
 git remote add origin https://github.com/yuki-konn/yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv.git
 curl -sS https://webi.sh/gh | sh
 gh auth login
-git config user.name "ITSUMOTO"
-git config user.email "gakusei.saru@gmail.com"
+git config user.name "username"
+git config user.email "email"
 git push -u origin main
 
 //ADD CHANGES TO ALL FILES
@@ -22,3 +22,4 @@ git commit -m "insert memo"
 
 //PUSHES ALL UPDATES TO MAIN REPO
 git push origin main
+# yuki-konn-yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khetiv

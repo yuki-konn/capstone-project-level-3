@@ -13,7 +13,7 @@ curl -sS https://webi.sh/gh | sh
 
 //LOGIN
 gh auth login
-git config user.name "username"
+git config user.name "yuki-konn"
 git config user.email "email"
 git push -u origin main
 

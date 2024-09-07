@@ -37,3 +37,5 @@ git remote add origin https://github.com/yuki-konn
 
 //HOW TO CHANGE THE ORIGIN
 git remote set-url origin https://github.com/yuki-konn
+
+left off on slide 128 9/5

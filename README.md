@@ -11,7 +11,6 @@ curl -sS https://webi.sh/gh | sh
 gh auth login
 git push --set-upstream origin main
 
-
 <!-- GIT SOURCE CONTROL TERMINAL COMMANDS-->
 
 <!-- GIT COMMANDS FOR SAVING CHANGES -->
@@ -24,7 +23,6 @@ git commit -m "type memo here"
 
 // SYNC TO GITHUB:
 git push
-
 
 // ADD THE CHANGES TO A SINGLE FILE TO THE NEXT SAVE POINT:
 git add README.md
@@ -62,7 +60,7 @@ git config user.email "type email here"
 // GIT MAY NAME THE BRANCH "master" BY DEFAULT:
 git branch -M main
 
-// DECLARES(CREATES) THE ORIGIN VARIABLE, STORES THE URL IN IT, 
+// DECLARES(CREATES) THE ORIGIN VARIABLE, STORES THE URL IN IT,
 // AND ADDS IT TO THE LIST OF REMOTE REPOS:
 git remote add origin https://github.com/yuki-konn
 
@@ -72,7 +70,3 @@ curl -sS https://webi.sh/gh | sh
 // PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH TO THE REPO URL
 // AND SAVES IT AS THE UPSTREAM(DEFAULT ORIGIN AND BRANCH):
 git push -u origin main OR git push --set-upstream origin main
-
-
-
-

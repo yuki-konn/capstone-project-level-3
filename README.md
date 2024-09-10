@@ -28,6 +28,13 @@ git commit -m "type memo here"
 git push
 
 
+//COPY THE FILES FROM GITHUB AND SETS AS DEFAULT PARAMETERS (FOR WHEN USING VSCODE OR OTHER IDE)
+git pull --set-upstream origin main
+
+//COPY THE FILES FROM GITHUB WITH THE DEFAULT PARAMETERS
+git pull
+
+
 
 //ADD CHANGES TO SINGLE FILE:
 git add README.md
@@ -59,10 +66,9 @@ git remote add origin https://github.com/yuki-konn
 //WEBI FOR GLITCH:
 curl -sS https://webi.sh/gh | sh
 
-//CREATES AND SAVES AS DEFAULT BRANCH TO PUSH TO:
-git push -u origin main
+//PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
+git push -u origin main OR git push --set-upstream origin main
 
 
 
-//SYNC FROM GITHUB (FOR WHEN USING VSCODE OR OTHER IDE)
-git pull --set-upstream origin main
+

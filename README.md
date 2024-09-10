@@ -13,29 +13,35 @@ git push -u origin main
 
 
 
-<!-- GIT TERMINAL COMMANDS-->
+<!-- GIT SOURCE CONTROL TERMINAL COMMANDS-->
+
+
+//USE THESE 3 COMMANDS TO SAVE TO GITHUB AFTER MAKING CHANGES.
 
 //ADD CHANGES TO ALL FILES AND FOLDERS:
 git add .
-
-//ADD CHANGES TO SINGLE FILE:
-git add README.md
 
 //CREATE A MEMO AND ADD TO SAVE POINT:
 git commit -m "type memo here"
 
 //SYNC TO GITHUB:
-git push origin main
+git push
 
+
+
+//ADD CHANGES TO SINGLE FILE:
+git add README.md
 
 //VIEW THE VALUE OF ORIGIN:
 git remote -v
 
-//ASSIGNS A URL TO THE ORIGIN VARIABLE:
-git remote add origin https://github.com/yuki-konn
-
-//HOW TO CHANGE THE ORIGIN:
+//HOW TO CHANGE THE ORIGIN URL:
 git remote set-url origin https://github.com/yuki-konn
+
+//CHECKS WHAT VERSION OF GIT YOU ARE ON:
+git --version
+
+
 
 //INITIALIZE OR ACTIVATE GIT SOURCE CONTROL:
 git init
@@ -47,12 +53,16 @@ git config user.email "type email here"
 //RENAMES CURRENT BRANCH TO MAIN:
 git branch -M main
 
-//CHECKS WHAT VERSION OF GIT YOU ARE ON:
-git --version
-
-//
-git push
+//ASSIGNS A URL TO THE ORIGIN VARIABLE:
+git remote add origin https://github.com/yuki-konn
 
 //WEBI FOR GLITCH:
 curl -sS https://webi.sh/gh | sh
 
+//CREATES AND SAVES AS DEFAULT BRANCH TO PUSH TO:
+git push -u origin main
+
+
+
+//SYNC FROM GITHUB (FOR WHEN USING VSCODE OR OTHER IDE)
+git pull --set-upstream origin main

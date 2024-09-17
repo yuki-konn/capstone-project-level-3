@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="utility-functions.js"></script>
   </head>
-  <body class="bg-secondary">
+  <body>
     <header>
       <nav class="nav nav-tabs nav-fill bg-dark">
         <a class="nav-link active bg-success fw-bold" href="index.html">HOME</a>
@@ -19,6 +19,7 @@
         <a class="nav-link fw-bold" href="about.html">ABOUT</a>
         <a class="nav-link fw-bold" href="contact.html">CONTACT</a>
         <img
+          id="banner-img"
           class="border-bottom border-top border-black border-5"
           width="100%"
           src="https://cdn.glitch.global/4422a7bc-d03c-4883-a000-b382559a1cbe/Yuki Tea Shop cropped.png?v=1725974868533"
@@ -27,102 +28,147 @@
       </nav>
     </header>
     <main class="container">
-      <!-- <h1 class="text-center">Yuki's Tea Shop</h1> -->
-      <article class="m-2">
-        <div class="card">
-          <div class="card-body text-center">
-            <h2 id="about">About</h2>
-            <p class="text-left">
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Per porta
-              tellus ultricies taciti ligula torquent ut euismod. Linteger lacus
-              sagittis felis vestibulum euismod lacus.Malesuada lorem, fermentum
-              sollicitudin morbi luctus. Placerat habitasse ridiculus volutpat
-              felis nec. Justo sem libero auctor elit ad auctor. Suspendisse
-              scelerisque ullamcorper, proin nisl maecenas pharetra mus libero.
-              Conubia torquent himenaeos ornare adipiscing.
+      <article id="articleAbout" class="text-center m-2">
+        <!-- <div class="card">
+          <div class="card-body">
+            <h2>About</h2>
+            <p>
+              This is the about card of my imaginary online tea shop website.
+              You can learn more about the different features in the project in
+              the About section. You can get to the about section by clicking on
+              the button below or the About tab at the top of the page.
             </p>
             <a href="about.html"
               ><button class="btn btn-success btn-sm">Learn More</button></a
             >
           </div>
-        </div>
+        </div> -->
       </article>
-      <article>
-        <h2 class="fs" id="locations">Locations</h2>
-        <p>
-          Odio hendrerit hendrerit litora, accumsan finibus conubia leo
-          dictumst.
-          <b>Condimentum</b> magnis venenatis ridiculus; suscipit nec himenaeos
-          erat. Erat sit himenaeos sagittis penatibus feugiat nisl augue.
-          Sollicitudin taciti nisl lobortis curae velit per dapibus nascetur
-          egestas. Egestas morbi consequat magna facilisis egestas gravida
-          elementum. <b>Nunc dapibus accumsan aliquet;</b>
-          <i>maximus praesent semper</i>. Felis fames ligula himenaeos, sit
-          maximus lacus? Apharetra rutrum cursus enim at vestibulum.
-        </p>
-        <p>
-          Elementum accumsan habitasse sociosqu facilisis parturient duis magna
-          euismod condimentum. Nam ad habitant eu lorem primis arcu vitae sem
-          egestas? Ultricies euismod elementum amet semper erat purus ligula.
-          Maecenas volutpat curabitur class eleifend inceptos penatibus vitae.
-          Taciti dictum dolor; volutpat primis natoque justo quisque. Dis
-          iaculis urna magnis; nunc mattis volutpat. Nisi lobortis etiam magna
-          auctor libero primis eget. Sed habitasse nulla nibh etiam euismod
-          nascetur tristique aliquet maximus.
-        </p>
-        <p>
-          Molestie aliquet orci dapibus aenean odio natoque libero. Nisi ut
-          commodo rhoncus fames nunc laoreet. Velit parturient commodo ornare
-          nunc congue senectus finibus. Netus taciti quisque inceptos nibh
-          pellentesque nostra at habitasse. Congue mollis nostra elementum
-          sapien placerat. Integer ut senectus sit convallis condimentum
-          pharetra. Varius cubilia rutrum mi netus metus convallis vitae.
-        </p>
+      <article id="articleLocation" class="text-center m-2">
+        <!-- <div class="card">
+          <div class="card-body">
+            <h2>Locations</h2>
+            <p>
+              Odio hendrerit hendrerit litora, accumsan finibus conubia leo
+              dictumst.
+              <b>Condimentum</b> magnis venenatis ridiculus; suscipit nec
+              himenaeos erat. Erat sit himenaeos sagittis penatibus feugiat nisl
+              augue. Sollicitudin taciti nisl lobortis curae velit per dapibus
+              nascetur egestas. Egestas morbi consequat magna facilisis egestas
+              gravida elementum. <b>Nunc dapibus accumsan aliquet;</b>
+              <i>maximus praesent semper</i>. Felis fames ligula himenaeos, sit
+              maximus lacus? Apharetra rutrum cursus enim at vestibulum.
+            </p>
+            <p>
+              Elementum accumsan habitasse sociosqu facilisis parturient duis
+              magna euismod condimentum. Nam ad habitant eu lorem primis arcu
+              vitae sem egestas? Ultricies euismod elementum amet semper erat
+              purus ligula. Maecenas volutpat curabitur class eleifend inceptos
+              penatibus vitae. Taciti dictum dolor; volutpat primis natoque
+              justo quisque. Dis iaculis urna magnis; nunc mattis volutpat. Nisi
+              lobortis etiam magna auctor libero primis eget. Sed habitasse
+              nulla nibh etiam euismod nascetur tristique aliquet maximus.
+            </p>
+            <p>
+              Molestie aliquet orci dapibus aenean odio natoque libero. Nisi ut
+              commodo rhoncus fames nunc laoreet. Velit parturient commodo
+              ornare nunc congue senectus finibus. Netus taciti quisque inceptos
+              nibh pellentesque nostra at habitasse. Congue mollis nostra
+              elementum sapien placerat. Integer ut senectus sit convallis
+              condimentum pharetra. Varius cubilia rutrum mi netus metus
+              convallis vitae.
+            </p>
+          </div>
+        </div> -->
       </article>
-      <article>
-        <h2 id="history">History</h2>
-        <p>
-          Hendrerit consequat lacus maecenas primis phasellus penatibus conubia.
-          <b>Porttitor habitant</b> litora libero sapien sed donec euismod.
-          Laoreet sed etiam aliquam penatibus habitasse donec morbi commodo
-          ligula. Turpis eleifend porttitor, metus potenti at fermentum
-          <i>justo</i> consequat nullam. Nibh a elementum fermentum turpis
-          quisque. Dolor risus mauris integer porta potenti. Interdum dui fusce
-          ultrices sagittis duis donec class fermentum. Porta viverra ipsum
-          risus mauris, tincidunt feugiat.
-        </p>
-        <p>
-          Senectus facilisis maximus class volutpat elit laoreet imperdiet
-          auctor rhoncus. Elit elementum ad convallis quisque himenaeos
-          habitasse vehicula montes. Fusce neque <b>Tempor Facilisis</b> ac
-          faucibus. Urna ullamcorper laoreet est ornare aliquet enim.
-          <b>Nibh fames facilisi;</b> <i>metus hac congue ante</i>. Et ornare
-          habitant imperdiet amet ultricies cubilia. Mauris nostra massa at ut
-          litora. Fusce augue inceptos curabitur malesuada class. Venenatis
-          mauris per lorem aliquet massa in.
-        </p>
-        <p>
-          Vulputate turpis sit et augue ut penatibus elit. Primis ornare est
-          nascetur, aliquam imperdiet <u>semper maximus</u> rutrum. Hac turpis
-          dignissim congue, pellentesque sociosqu natoque. Cras est consequat a
-          sociosqu quam dolor justo. <b>Fringilla</b> finibus odio vulputate,
-          scelerisque mus et molestie? Class lobortis eu curabitur, arcu nam
-          tincidunt lorem. <i>Molestie</i> erat neque efficitur hendrerit enim,
-          praesent netus sollicitudin.
-        </p>
+      <article id="articleHistory" class="text-center m-2">
+        <!-- <div class="card">
+          <div class="card-body">
+            <h2>History</h2>
+            <p>
+              Odio hendrerit hendrerit litora, accumsan finibus conubia leo
+              dictumst.
+              <b>Condimentum</b> magnis venenatis ridiculus; suscipit nec
+              himenaeos erat. Erat sit himenaeos sagittis penatibus feugiat nisl
+              augue. Sollicitudin taciti nisl lobortis curae velit per dapibus
+              nascetur egestas. Egestas morbi consequat magna facilisis egestas
+              gravida elementum. <b>Nunc dapibus accumsan aliquet;</b>
+              <i>maximus praesent semper</i>. Felis fames ligula himenaeos, sit
+              maximus lacus? Apharetra rutrum cursus enim at vestibulum.
+            </p>
+            <p>
+              Elementum accumsan habitasse sociosqu facilisis parturient duis
+              magna euismod condimentum. Nam ad habitant eu lorem primis arcu
+              vitae sem egestas? Ultricies euismod elementum amet semper erat
+              purus ligula. Maecenas volutpat curabitur class eleifend inceptos
+              penatibus vitae. Taciti dictum dolor; volutpat primis natoque
+              justo quisque. Dis iaculis urna magnis; nunc mattis volutpat. Nisi
+              lobortis etiam magna auctor libero primis eget. Sed habitasse
+              nulla nibh etiam euismod nascetur tristique aliquet maximus.
+            </p>
+            <p>
+              Molestie aliquet orci dapibus aenean odio natoque libero. Nisi ut
+              commodo rhoncus fames nunc laoreet. Velit parturient commodo
+              ornare nunc congue senectus finibus. Netus taciti quisque inceptos
+              nibh pellentesque nostra at habitasse. Congue mollis nostra
+              elementum sapien placerat. Integer ut senectus sit convallis
+              condimentum pharetra. Varius cubilia rutrum mi netus metus
+              convallis vitae.
+            </p>
+          </div>
+        </div> -->
       </article>
+      <br />
     </main>
-    <footer class="bg-dark text-light text-center">
+    <footer>
       <span class="fw-bold p-0 m-0"><u>Sitemap</u></span>
       <ul class="fw-bold no-bullets p-0">
-        <li><a class="no-decor" href="#about">About</a></li>
-        <li><a class="no-decor" href="#locations">Locations</a></li>
-        <li><a class="no-decor" href="#history">History</a></li>
+        <li><a class="no-decor" href="#articleAbout">About</a></li>
+        <li><a class="no-decor" href="#articleLocation">Locations</a></li>
+        <li><a class="no-decor" href="#articleHistory">History</a></li>
       </ul>
       <div class="text-center m-0">
         <span class="fw-bold">Copyright 2024</span><br />
         Website created by <span class="fst-italic">Yuki Konishi</span>
       </div>
     </footer>
+    <script>
+      const card1 = {};
+      card1.title = "About";
+      card1.desc1 =
+        "This is the about card of my imaginary online tea shop website. You can learn more about the different features in the project in the About section. You can get to the about section by clicking on the button below or the About tab at the top of the page.";
+      card1.desc2 = "";
+      card1.desc3 = "";
+      card1.link = "about.html";
+      card1.buttonName = "Learn More";
+
+      const card2 = {};
+      card2.title = "Locations";
+      card2.desc1 =
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor magnis scelerisque quam turpis sem parturient. Urna elit habitasse accumsan torquent consequat consequat. Dictum ad metus phasellus magna eleifend scelerisque sem. Magna euismod aliquam finibus conubia ad. Erat adipiscing molestie; fringilla dolor nisi suscipit pulvinar pretium? Nulla class justo sapien egestas placerat! Penatibus iaculis aliquet molestie, porta pulvinar tristique. Finibus ut nullam urna quisque mi.";
+      card2.desc2 =
+        "Duis odio facilisi ullamcorper suspendisse a vitae nibh. Inceptos aenean egestas aenean ultrices senectus massa. Tempor aliquet eleifend non porta habitasse elementum lobortis. Curae vulputate lorem cras parturient facilisi erat proin leo. Vestibulum integer litora amet quis; torquent dolor malesuada. Maximus purus elementum, cras sodales hac semper vivamus. Augue leo ultricies hendrerit; in bibendum iaculis. Porttitor penatibus at sociosqu porta rhoncus.";
+      card2.desc3 = "";
+      card2.link = "";
+      card2.buttonName = "Learn More";
+
+      const card3 = {};
+      card3.title = "History";
+      card3.desc1 =
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae torquent dictum montes enim libero nec parturient, enim neque. Malesuada nullam scelerisque conubia; porttitor semper rhoncus finibus. Dui natoque volutpat sociosqu curabitur ac nulla viverra. Curae felis ultrices aliquet ante pellentesque mollis porta. Interdum nisi consequat, neque tempus orci nostra lacus litora scelerisque. Ornare viverra dolor volutpat; potenti eleifend cubilia nostra potenti.";
+      card3.desc2 =
+        "Blandit quam fermentum enim justo mi? Per eget sem elit erat convallis in rhoncus. Faucibus duis conubia justo sagittis conubia vulputate! Erat praesent imperdiet praesent tempus gravida, senectus auctor sagittis proin. Consectetur consequat porta fusce amet nisi et commodo. Potenti nibh risus torquent a in torquent. Habitant ultricies curae vehicula ullamcorper curae nostra. Mus nibh risus neque penatibus molestie. Consequat eget magnis vulputate aliquet est arcu.";
+      card3.desc3 =
+        "Volutpat suspendisse sit pharetra at ultrices risus. Nostra aliquam facilisis metus nulla inceptos. Dictum in diam feugiat hac aenean curae. Venenatis fames curae leo magna vivamus aenean aliquet mi elementum. Tellus euismod augue torquent duis hac ex suscipit netus. Condimentum potenti euismod id ornare vestibulum. Felis habitasse turpis conubia arcu maximus.";
+      card3.link = "";
+      card3.buttonName = "Learn More";
+
+      const card1String = convertLinkCard(card1);
+      const card2String = convertLinkCard(card2);
+      const card3String = convertLinkCard(card3);
+      articleAbout.innerHTML += card1String;
+      articleLocation.innerHTML += card2String;
+      articleHistory.innerHTML += card3String;
+    </script>
   </body>
 </html>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="utility-functions.js"></script>
   </head>
-  <body class="bg-secondary">
+  <body>
     <header>
       <nav class="nav nav-tabs nav-fill bg-dark">
         <a class="nav-link fw-bold" href="index.html">HOME</a>
@@ -21,6 +21,7 @@
           >CONTACT</a
         >
         <img
+          id="banner-img"
           class="border-bottom border-top border-black border-5"
           width="100%"
           src="https://cdn.glitch.global/4422a7bc-d03c-4883-a000-b382559a1cbe/Yuki Tea Shop cropped.png?v=1725974868533"
@@ -32,14 +33,30 @@
       <h1>Contact Us</h1>
       <form>
         <label for="contact-email">Email:</label><br />
-        <input id="contact-email" type="text" name="contact-email" /><br />
+        <input
+          id="contact-email"
+          class="width-max"
+          type="text"
+          name="contact-email"
+        /><br />
         <label for="contact-comment">Comment:</label><br />
-        <textarea id="contact-comment"></textarea><br />
-        <button>Submit</button>
+        <textarea id="contact-comment" class="width-max"></textarea><br />
+        <span>Rating (Optional)</span><br />
+        <label for="rating-five">5&#9733;</label>
+        <input id="rating-five" name="ratings" type="radio" /><br />
+        <label for="rating-four">4&#9733;</label>
+        <input id="rating-four" name="ratings" type="radio" /><br />
+        <label for="rating-three">3&#9733;</label>
+        <input id="rating-three" name="ratings" type="radio" /><br />
+        <label for="rating-two">2&#9733;</label>
+        <input id="rating-two" name="ratings" type="radio" /><br />
+        <label for="rating-one">1&#9733;</label>
+        <input id="rating-one" name="ratings" type="radio" /><br />
+        <button class="m-1">Submit</button>
       </form>
+      <br />
     </main>
-    <hr />
-    <footer class="bg-dark text-light text-center">
+    <footer>
       <div class="text-center">
         <span class="fw-bold">Copyright 2024</span><br />
         Website created by <span class="fst-italic">Yuki Konishi</span>

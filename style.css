@@ -1,6 +1,41 @@
+/* ALL PAGES START */
+body {
+  font-family: sans-serif;
+  color: black;
+  background-color: #b3b3b3;
+  margin: 0px;
+  padding: 0px;
+}
+footer {
+  color: white;
+  background-color: #181818;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
 .no-bullets {
   list-style-type: none;
 }
 .no-decor {
   text-decoration: none;
 }
+
+.width-max {
+  width: 100%;
+}
+
+#banner-img {
+  height: 28vw;
+  width: 100%;
+}
+
+/* ALL PAGES END */
+
+/* INDEX START */
+/* INDEX END */
+
+/* CONTACT START */
+/* CONTACT END */
+
+/* ABOUT START */
+/* ABOUT END */

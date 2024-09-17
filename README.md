@@ -1,4 +1,4 @@
-Note to self: pull to glitch then delete unused glitch assets then push back to github.
+Note to self: pull into vscode to start working on project again.
 
 WIP 9/16
 index.html: finishing touches

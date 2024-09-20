@@ -29,13 +29,17 @@ footer {
   width: 100%;
 }
 
+nav a:hover {
+  background-color: gold;
+}
+
 /* ALL PAGES END */
 
-/* INDEX START */
-/* INDEX END */
-
-/* CONTACT START */
-/* CONTACT END */
-
-/* ABOUT START */
-/* ABOUT END */
+/* CUSTOM BOOTSTRAP CSS */
+.border-dashed {
+  border-style: dashed !important;
+}
+.border-dotted {
+  border-style: dotted !important;
+}
+/* CUSTOM BOOTSTRAP CSS */

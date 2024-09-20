@@ -9,17 +9,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #article1,
+      #article2,
+      #article3 {
+        border-style: dashed !important;
+      }
+    </style>
     <script src="utility-functions.js"></script>
   </head>
   <body>
     <header>
       <nav class="nav nav-tabs nav-fill bg-dark">
-        <a class="nav-link fw-bold" href="index.html">HOME</a>
-        <a class="nav-link fw-bold" href="gallery.html">GALLERY</a>
-        <a class="nav-link active bg-success fw-bold" href="about.html"
+        <a class="nav-link fw-bold text-success" href="index.html">HOME</a>
+        <a class="nav-link fw-bold text-success" href="gallery.html">GALLERY</a>
+        <a
+          class="nav-link active bg-success text-warning fw-bold"
+          href="about.html"
           >ABOUT</a
         >
-        <a class="nav-link fw-bold" href="contact.html">CONTACT</a>
+        <a class="nav-link fw-bold text-success" href="contact.html">CONTACT</a>
         <img
           id="banner-img"
           class="border-bottom border-top border-black border-5"
@@ -29,23 +38,26 @@
         />
       </nav>
     </header>
-    <hr />
     <main class="container">
       <div>
-        <h2>ABOUT</h2>
-        <p>This page is to better explain the features of my project.</p>
-        <article>
+        <h2 class="m-2">ABOUT</h2>
+        <p class="m-2">
+          This page is to better explain the features of my project.
+        </p>
+        <article id="article1" class="m-2 p-2">
           <h3>Coding difference between Original And this Project</h3>
-          <p></p>
+          <h4>Compared to the original</h4>
+          <ol>
+            <li>Changes to the theme of the website.</li>
+            <li>More fleshed out navigation bar.</li>
+            <li>Article tags seperating each section.</li>
+            <li>Added an About page.</li>
+          </ol>
         </article>
-        <article>
-          <h3>Boilerplate and Semantic Tags Used</h3>
-          <h4>Boilerplate Used</h4>
-          <img src="" alt="" />
-          <h4>Semantic Tags Used</h4>
-          <img src="" alt="" />
+        <article id="article2" class="m-2 p-2">
+          <h3></h3>
         </article>
-        <article>
+        <article id="article3" class="m-2 p-2">
           <h3>How I used a CSS Selector</h3>
           <p></p>
         </article>

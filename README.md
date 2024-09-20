@@ -1,5 +1,3 @@
-Note to self: pull into vscode to start working on project again.
-
 WIP 9/16
 index.html: finishing touches
 about.html: make cards and add words.

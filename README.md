@@ -1,11 +1,3 @@
-WIP 9/16
-index.html: finishing touches
-about.html: make cards and add words.
-gallery.html: make bootstrap grid with functions
-
-DONE
-contact.html: review after everything is done.
-
 // COMMANDS TO USE AT THE START OF PROJECT:
 echo "# yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r" >> README.md
 git init

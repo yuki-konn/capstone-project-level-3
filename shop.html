@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yuki Tea Shop - Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .col {
+        padding: 0;
+        width: 20vw;
+        height: auto;
+        font-size: small;
+      }
+      .row {
+        align-items: start;
+      }
+      main article .container {
+        margin: auto;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .card-img-top {
+        height: 150px;
+      }
+      .card {
+        height: 350px;
+        margin: 1px;
+      }
+    </style>
+    <script src="utility-functions.js"></script>
+    <script src="shop.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav nav-tabs nav-fill bg-dark">
+        <a class="nav-link fw-bold text-success" href="index.html">HOME</a>
+        <a
+          class="nav-link active bg-success text-warning fw-bold"
+          href="shop.html"
+          >SHOP</a
+        >
+        <a class="nav-link fw-bold text-success" href="about.html">ABOUT</a>
+        <a class="nav-link fw-bold text-success" href="contact.html">CONTACT</a>
+        <img
+          id="banner-img"
+          class="border-bottom border-top border-black border-5"
+          width="100%"
+          src="https://cdn.glitch.global/4422a7bc-d03c-4883-a000-b382559a1cbe/Yuki Tea Shop cropped.png?v=1725974868533"
+          alt="Yuki's Tea Shop Banner Image"
+        />
+      </nav>
+    </header>
+    <main>
+      <h2 class="text-center m-2">Products</h2>
+      <article class="m-1" id="articleTea"></article>
+      <div>
+        <h2 class="text-center m-2">Items in Cart</h2>
+        <ul class="list-group list-group-numbered container">
+          <li id="cart1" class="list-group-item">
+            Black Tea: <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li id="cart2" class="list-group-item">
+            Green Tea: <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li id="cart3" class="list-group-item">
+            White Tea: <button onclick="addToCart(3)">Add to Cart</button>
+          </li>
+          <li id="cart4" class="list-group-item">
+            Oolong Tea: <button onclick="addToCart(4)">Add to Cart</button>
+          </li>
+          <li id="cart5" class="list-group-item">
+            Pu-erh Tea: <button onclick="addToCart(5)">Add to Cart</button>
+          </li>
+          <li id="cart6" class="list-group-item">
+            Purple Tea: <button onclick="addToCart(6)">Add to Cart</button>
+          </li>
+          <li id="cart7" class="list-group-item">
+            Matcha Tea: <button onclick="addToCart(7)">Add to Cart</button>
+          </li>
+          <li id="cart8" class="list-group-item">
+            Mate Tea: <button onclick="addToCart(8)">Add to Cart</button>
+          </li>
+          <li id="cart9" class="list-group-item">
+            Herbal Tea: <button onclick="addToCart(9)">Add to Cart</button>
+          </li>
+          <li id="cart10" class="list-group-item">
+            Rooibos Tea: <button onclick="addToCart(10)">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="text-center">
+        <span class="fw-bold">Copyright 2024</span><br />
+        Website created by <span class="fst-italic">Yuki Konishi</span>
+      </div>
+    </footer>
+    <script>
+      // card objects
+      const teaCard1 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+        title: "Black Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard2 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+        title: "Green Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard3 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+        title: "White Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard4 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+        title: "Oolong Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard5 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+        title: "Pu-erh Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard6 = {
+        src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+        title: "Purple Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard7 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+        title: "Matcha Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard8 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+        title: "Mate Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard9 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+        title: "Herbal Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+      const teaCard10 = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+        title: "Rooibos Tea",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      };
+
+      // card array with objects
+      const teaCards = [
+        teaCard1,
+        teaCard2,
+        teaCard3,
+        teaCard4,
+        teaCard5,
+        teaCard6,
+        teaCard7,
+        teaCard8,
+        teaCard9,
+        teaCard10,
+      ];
+
+      // converts card array positions to cards then adds them to column groups.
+      const groupColumns = [];
+      let position = 0;
+      do {
+        let columns = "";
+        for (count = 0; count < 5; count++) {
+          const content = teaCards[position];
+          const contentCard = convertShopCard(content);
+          columns += createColumn(contentCard);
+          position++;
+        }
+        groupColumns.push(columns);
+      } while (position < teaCards.length);
+
+      const rows = createRows(groupColumns);
+      const container = createContainer(rows);
+      articleTea.innerHTML += container;
+    </script>
+  </body>
+</html>

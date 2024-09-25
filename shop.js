@@ -1,18 +1,3 @@
-// WIP FUNCTIONS START
-function increaseValue() {
-  let value;
-  value++;
-  buyNumber.innerhtml = value;
-}
-
-function decreaseValue() {
-  let value;
-  value--;
-  buyNumber.innerhtml = value;
-}
-
-// WIP FUNCTIONS END
-
 // WORKING FUNCTIONS START
 function convertShopCard(cardObject) {
   let cardString = `<div class="card border border-success border-2">
@@ -159,5 +144,3 @@ function addToCart(itemNum) {
     }
   }
 }
-
-// WORKING FUNCTIONS END

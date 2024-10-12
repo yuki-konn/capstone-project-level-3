@@ -31,5 +31,8 @@ git push
 IF BRANCH IS MASTER
 
 git branch -M main
+- Renames the branch from master to main
+
+git add .
 git commit -m "renamed the branch"
 git push --set-upstream origin main

@@ -24,6 +24,7 @@
       }
     </style>
     <script src="utility-functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
   </head>
   <body>
     <header>
@@ -40,9 +41,14 @@
           id="banner-img"
           class="border-bottom border-top border-black border-5"
           width="100%"
-          src="images/Yuki Tea Shop banner.png"
+          src="images/Yuki Tea Shop banner map.png"
           alt="Yuki's Tea Shop Banner Image"
+          usemap="#banner-image-map"
         />
+        <map name="banner-image-map">
+          <area title="Yuki's GitHub" shape="rect" coords="1840,560, 1995,720" href="https://github.com/yuki-konn" alt="GitHub Icon">
+          <area title="Yuki's LinkedIn" shape="rect" coords="2050,565, 2205,720" href="https://www.linkedin.com/in/yuki-k-745115219/" alt="LinkedIn Icon">
+        </map>
       </nav>
     </header>
     <main class="container">
@@ -111,5 +117,6 @@
       articleLocation.innerHTML += card2String;
       articleHistory.innerHTML += card3String;
     </script>
+    <script>imageMapResize();</script>
   </body>
 </html>

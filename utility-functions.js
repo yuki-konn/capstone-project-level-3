@@ -49,3 +49,9 @@ function createContainer(rowsString) {
   return containerString;
 }
 // BOOTSTRAP GRID SYSTEM FUNCTION END
+
+
+// OUTPUT FUNCTION
+function output(message) {
+  outputTag.innerHTML += message;
+}

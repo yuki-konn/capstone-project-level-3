@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="utility-functions.js"></script>
+    <script src="contact.js"></script>
   </head>
   <body>
     <header>
@@ -33,36 +34,43 @@
     </header>
     <main class="container">
       <h1>Contact Us</h1>
-      <form>
-        <label for="contact-name">Name:</label>
+      <form onsubmit="processContactForm(event)">
+        <label for="contact-name">Name *</label>
         <input
+          required
           id="contact-name"
           class="width-max"
           type="text"
           name="contact-name"
+          placeholder="John Smith"
         />
-        <label for="contact-email">Email:</label><br />
+        <label for="contact-email">Email *</label><br />
         <input
+          required
           id="contact-email"
           class="width-max"
-          type="text"
+          type="email"
           name="contact-email"
+          placeholder="email@email.com"
         /><br />
-        <label for="contact-comment">Comment:</label><br />
+        <label for="contact-comment">Comment (Optional)</label><br />
         <textarea id="contact-comment" class="width-max"></textarea><br />
-        <span>Rating (Optional)</span><br />
-        <label for="rating-five">5&#9733;</label>
-        <input id="rating-five" name="ratings" type="radio" /><br />
-        <label for="rating-four">4&#9733;</label>
-        <input id="rating-four" name="ratings" type="radio" /><br />
-        <label for="rating-three">3&#9733;</label>
-        <input id="rating-three" name="ratings" type="radio" /><br />
-        <label for="rating-two">2&#9733;</label>
-        <input id="rating-two" name="ratings" type="radio" /><br />
-        <label for="rating-one">1&#9733;</label>
-        <input id="rating-one" name="ratings" type="radio" /><br />
-        <button class="m-1">Submit</button>
+        <label for="contact-ratings">Rating (Optional)</label><br />
+        <section id="contact-ratings">
+          <label for="rating-five">5&#9733;</label>
+          <input id="rating-five" name="ratings" type="radio" aria-label="5 Star rating"/><br />
+          <label for="rating-four">4&#9733;</label>
+          <input id="rating-four" name="ratings" type="radio" aria-label="4 Star rating"/><br />
+          <label for="rating-three">3&#9733;</label>
+          <input id="rating-three" name="ratings" type="radio" aria-label="3 Star rating"/><br />
+          <label for="rating-two">2&#9733;</label>
+          <input id="rating-two" name="ratings" type="radio" aria-label="2 Star rating"/><br />
+          <label for="rating-one">1&#9733;</label>
+          <input id="rating-one" name="ratings" type="radio" aria-label="1 Star rating"/><br />
+        </section>
+        <input type="submit">
       </form>
+      <div id="outputTag"></div>
       <br />
     </main>
     <footer>

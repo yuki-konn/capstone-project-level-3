@@ -74,6 +74,32 @@
       <br>
       <div id="outputTag" class="border border-3 border-dark text-center"></div>
       <br />
+      <form>
+        <h2>Schedule a Phone Appointment</h2>
+        <label for="phone-name">Name *</label><br>
+        <input 
+          required 
+          id="phone-name" 
+          type="text" 
+          name="phone-name" 
+          placeholder="John Smith"
+        ><br>
+        <label for="phone-number">Phone Number *</label><br>
+        <input 
+          required 
+          id="phone-number"
+          type="tel" 
+          name="phone-number" 
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="###-###-####"
+        ><br>
+        <label for="phone-date-time">Appointment Time *</label><br>
+        <input required id="phone-date-time" type="datetime-local"><br><br>
+        <input type="submit">
+      </form>
+      <br>
+      <div class="border border-3 border-dark text-center"></div>
+      <br />
     </main>
     <footer>
       <div class="text-center">

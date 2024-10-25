@@ -64,3 +64,24 @@ function processContactForm (event) {
 
     
 }
+
+function processPhoneForm (event) {
+    event.preventDefault();
+    const form = event.target;
+    const nameInput = form[0];
+    const telInput = form[1];
+    debugger;
+    const dateTimeInput = form[2];
+
+    const value = [
+        nameInput.value,
+        telInput.value,
+        dateTimeInput.value
+    ];
+
+    output2("<b><u>FORM<u><b><br>");
+    output2(`Name: ${value[0]}<br>`);
+    output2(`Phone Number: ${value[1]}<br>`);
+    output2(`Appointment Date and Time: ${value[2]}<br>`);
+    output2("<br><i>Form has been submitted.</i><br>");
+}

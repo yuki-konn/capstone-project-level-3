@@ -26,7 +26,7 @@ function processContactForm (event) {
     // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
     if (outputTag.innerHTML === "") {
 
-        output("<br><b><u>FORM<u><b><br>");
+        output("<b><u>FORM<u><b><br>");
         output(`Name: ${value[0]}<br>`);
         output(`Email: ${value[1]}<br>`);
 

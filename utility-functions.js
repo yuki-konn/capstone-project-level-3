@@ -9,7 +9,7 @@ function convertLinkCard(cardObject) {
   <p>${cardObject.desc2}</p>
   <p>${cardObject.desc3}</p>
   <a href="${cardObject.link}">
-    <button class="btn btn-success btn-sm">
+    <button class="cardButton btn btn-success btn-sm">
     ${cardObject.buttonName}
     </button>
   </a>
@@ -49,7 +49,6 @@ function createContainer(rowsString) {
   return containerString;
 }
 // BOOTSTRAP GRID SYSTEM FUNCTION END
-
 
 // OUTPUT FUNCTION
 function output(message) {

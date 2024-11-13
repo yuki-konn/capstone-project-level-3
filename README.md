@@ -10,7 +10,7 @@ Folder Structure
     - fonts
     - images
 
-Languages used are HTML, CSS, JavaScript and SASS.
+Made with HTML, JavaScript, CSS, Bootstrap, and SASS.
 
 # NOTES
 

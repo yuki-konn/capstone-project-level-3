@@ -1,3 +1,21 @@
+# DESCRIPTION
+
+Capstone Level 2 Project
+
+Folder Structure
+
+- Capstone Project Folder
+  - docs
+  - res
+    - fonts
+    - images
+
+Languages used are HTML, CSS, JavaScript and SASS.
+
+# NOTES
+
+In the index.html there is one inline and internal style.
+
 # GIT SOURCE CONTROL TERMINAL COMMANDS
 
 ## GIT COMMANDS FOR SAVING CHANGES

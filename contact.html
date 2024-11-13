@@ -34,7 +34,7 @@
       <h1 class="text-center border-bottom border-3 border-dark">Contact Us</h1>
       <section>
         <h2>Contact Form</h2>
-        <form onsubmit="processContactForm(event)">
+        <form onsubmit="handleSubmitContact(event)">
           <label for="contact-name">Name *</label>
           <input
             required
@@ -103,7 +103,7 @@
         <br />
       </section>
       <section>
-        <form onsubmit="processPhoneForm(event)">
+        <form onsubmit="handleSubmitPhone(event)">
           <h2>Schedule a Phone Appointment</h2>
           <label for="phone-name">Name *</label><br />
           <input

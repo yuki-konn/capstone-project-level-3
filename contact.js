@@ -26,6 +26,7 @@ function handleSubmitContact(event) {
   // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
   if (outputTag.innerHTML === "") {
     debugger;
+
     output("<b style='color: gold'>Processing contact form...<b><br>");
     output("<br><u>Form Info<u><br>");
     output(`Name: ${value[0]}<br>`);
@@ -54,7 +55,7 @@ function handleSubmitContact(event) {
     }
 
     output("--------------<br><br>");
-    makePromise(1);
+    makeRequest("https://myserver.com", 1);
   } else {
   }
 }
@@ -94,23 +95,21 @@ function handleSubmitPhone(event) {
   output2(
     "<b style='color: gold'>Processing phone appointment form...</b><br>"
   );
-  makePromise(2);
-  output();
+  makeRequest("https://myserver.com", 2);
+  jsonFormOutput();
 
-  function output() {
+  function jsonFormOutput() {
     output2(jsonForm);
   }
 }
 
 // PROMISE
-function makePromise(param1) {
+function makeRequest(url, param) {
   debugger;
-  if (param1 === 1) {
-    const promise = new Promise(getServerResponse);
-    promise.then(parseResponse1);
-  } else if (param1 === 2) {
-    const promise = new Promise(getServerResponse);
-    promise.then(parseResponse2);
+  if (param === 1) {
+    return new Promise(getServerResponse).then(parseResponse1);
+  } else if (param === 2) {
+    return new Promise(getServerResponse).then(parseResponse2);
   }
 }
 

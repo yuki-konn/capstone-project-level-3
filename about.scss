@@ -1,7 +1,12 @@
+$gold: gold;
 @mixin textShadow {
   text-shadow: 2px 2px rgba(145, 145, 145, 1);
 }
 
 .textShadow {
   @include textShadow;
+}
+
+li a span:hover {
+  color: $gold;
 }

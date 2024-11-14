@@ -1,3 +1,7 @@
+.textShadow {
+  text-shadow: 2px 2px rgb(94, 94, 94);
+}
+
 .contact-main {
   background-color: #b3b3b3;
 }

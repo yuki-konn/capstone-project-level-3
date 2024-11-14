@@ -1,5 +1,13 @@
 $body-bg: #b3b3b3;
 
+@mixin textShadow {
+  text-shadow: 2px 2px rgb(94, 94, 94);
+}
+
+.textShadow {
+  @include textShadow;
+}
+
 .contact-main {
   background-color: $body-bg;
 }

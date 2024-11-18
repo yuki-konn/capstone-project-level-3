@@ -10,7 +10,8 @@ Folder Structure
     - fonts
     - images
 
-Made with HTML, JavaScript, CSS, Bootstrap, and SASS.
+Made with HTML, JavaScript, CSS, Bootstrap, and SASS.<br>
+API used [OpenTDB](https://opentdb.com/api_config.php)
 
 # NOTES
 

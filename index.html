@@ -16,6 +16,7 @@
       }
     </style>
     <script src="utility-functions.js"></script>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
   </head>
   <body>
@@ -59,6 +60,7 @@
       <article id="articleAbout" class="text-center m-2"></article>
       <article id="articleLocation" class="text-center m-2"></article>
       <article id="articleHistory" class="text-center m-2"></article>
+      <article id="articleTriva" class="text-center m-2"></article>
       <br />
     </main>
     <footer>
@@ -75,6 +77,9 @@
           </li>
           <li class="list-group-item">
             <a class="no-decor" href="#articleHistory"><span>History</span></a>
+          </li>
+          <li class="list-group-item">
+            <a class="no-decor" href="#articleTrivia"><span>Trivia</span></a>
           </li>
         </ul>
       </div>
@@ -120,6 +125,14 @@
       articleAbout.innerHTML += card1String;
       articleLocation.innerHTML += card2String;
       articleHistory.innerHTML += card3String;
+    </script>
+    <script>
+      // Trivia Card
+      const triviaCard = {};
+      triviaCard.title = "Random Trivia";
+      triviaCard.buttonName = "Brew Question";
+      const card4String = convertTriviaCard(triviaCard);
+      articleTriva.innerHTML += card4String;
     </script>
     <script>
       imageMapResize();

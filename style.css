@@ -18,8 +18,8 @@ body header nav a {
 body header nav a:hover {
   background-color: gold;
 }
-body header nav .bannerImage2 {
-  background-image: url("res/images/Yuki Tea Shop banner.png");
+body header .bannerImage2 {
+  background-image: url("res/images/banner2.png");
   background-size: 100% 28vw;
   background-repeat: no-repeat;
 }

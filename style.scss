@@ -8,8 +8,8 @@ $footer-color: rgba(255, 255, 255, 1);
 $sitemap-bg: #404040;
 
 // IMAGES
-// $bannerImage1: url("res/images/Yuki Tea Shop banner map.png");
-$bannerImage2: url("res/images/Yuki Tea Shop banner.png");
+// $bannerImage1: url("res/images/banner1.png");
+$bannerImage2: url("res/images/banner2.png");
 $bg-image: url("res/images/bgImage.png");
 
 // CUSTOM FONTS
@@ -59,11 +59,11 @@ body {
       //   background-size: 100% 28vw;
       //   background-repeat: no-repeat;
       // }
-      .bannerImage2 {
-        background-image: $bannerImage2;
-        background-size: 100% 28vw;
-        background-repeat: no-repeat;
-      }
+    }
+    .bannerImage2 {
+      background-image: $bannerImage2;
+      background-size: 100% 28vw;
+      background-repeat: no-repeat;
     }
     #banner-img {
       height: 28vw;

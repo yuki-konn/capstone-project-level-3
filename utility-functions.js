@@ -2,7 +2,7 @@
 
 // BOOTSTRAP CARD FUNCTION FOR index.html
 function convertLinkCard(cardObject) {
-  let cardString = `<div class="card">
+  let cardString = `<article class="card">
   <div class="card-body">
   <h2 class="card-title">${cardObject.title}</h2>
   <p>${cardObject.desc1}</p>
@@ -14,7 +14,7 @@ function convertLinkCard(cardObject) {
     </button>
   </a>
   </div>
-  </div>`;
+  </article>`;
   return cardString;
 }
 // CARD FUNCTIONS END

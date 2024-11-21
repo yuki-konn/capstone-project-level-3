@@ -1,3 +1,11 @@
+// TEMPLATE OBJECT
+class PhoneObject {
+  name = "";
+  phoneNumber = "";
+  appointment = "";
+}
+
+// CONTACT FORM SUBMIT HANDLER
 function handleSubmitContact(event) {
   event.preventDefault();
   const form = event.target;
@@ -55,17 +63,14 @@ function handleSubmitContact(event) {
     }
 
     output("--------------<br><br>");
-    makeRequest("https://myserver.com", 1);
+    const promise = makeRequest("https://myserver.com");
+    promise.then(parseResponse1);
   } else {
   }
 }
 
+// PHONE APPOINTMENT FORM SUBMIT HANDLER
 function handleSubmitPhone(event) {
-  class PhoneObject {
-    name = value[0];
-    phoneNumber = value[1];
-    appointment = value[2];
-  }
   event.preventDefault();
   const form = event.target;
 
@@ -75,8 +80,13 @@ function handleSubmitPhone(event) {
 
   const value = [nameInput.value, telInput.value, dateTimeInput.value];
 
-  // PARSE USED TO STRINGIFY OBJECT
+  // NEW OBJECT WITH VALUES ASSIGNED
   const phoneObject = new PhoneObject();
+  phoneObject.name = value[0];
+  phoneObject.phoneNumber = value[1];
+  phoneObject.appointment = value[2];
+
+  // PARSE USED TO STRINGIFY OBJECT
   const jsonString = JSON.stringify(phoneObject);
   const jsonP = JSON.parse(jsonString);
   const jsonForm =
@@ -95,7 +105,8 @@ function handleSubmitPhone(event) {
   output2(
     "<b style='color: gold'>Processing phone appointment form...</b><br>"
   );
-  makeRequest("https://myserver.com", 2);
+  const promise = makeRequest("https://myserver.com");
+  promise.then(parseResponse2);
   jsonFormOutput();
 
   function jsonFormOutput() {
@@ -106,11 +117,7 @@ function handleSubmitPhone(event) {
 // PROMISE
 function makeRequest(url, param) {
   debugger;
-  if (param === 1) {
-    return new Promise(getServerResponse).then(parseResponse1);
-  } else if (param === 2) {
-    return new Promise(getServerResponse).then(parseResponse2);
-  }
+  return new Promise(getServerResponse);
 }
 
 // SERVER RESPONSE

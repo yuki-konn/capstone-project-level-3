@@ -40,7 +40,7 @@ function viewResponse(resolveValue) {
 
 // TRIVIA CARD
 function convertTriviaCard(cardObject) {
-  let cardString = `<div class="card">
+  let cardString = `<article class="card">
     <div class="card-body">
     <h2 class="card-title">${cardObject.title}</h2>
     <div id="outputTag" class="p-3"></div>
@@ -48,7 +48,7 @@ function convertTriviaCard(cardObject) {
     ${cardObject.buttonName}
     </button>
     </div>
-    </div>`;
+    </article>`;
   return cardString;
 }
 

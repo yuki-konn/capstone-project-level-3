@@ -30,37 +30,37 @@
         <a class="nav-link fw-bold text-success" href="shop.html">SHOP</a>
         <a class="nav-link fw-bold text-success" href="about.html">ABOUT</a>
         <a class="nav-link fw-bold text-success" href="contact.html">CONTACT</a>
-        <img
-          id="banner-img"
-          class="border-bottom border-top border-black border-5"
-          width="100%"
-          src="res/images/Yuki Tea Shop banner map.png"
-          alt="Yuki's Tea Shop Banner Image"
-          usemap="#banner-image-map"
-        />
-        <map name="banner-image-map">
-          <area
-            title="Yuki's GitHub"
-            shape="circle"
-            coords="1920,640, 75"
-            href="https://github.com/yuki-konn"
-            alt="GitHub Icon"
-          />
-          <area
-            title="Yuki's LinkedIn"
-            shape="rect"
-            coords="2050,565, 2205,720"
-            href="https://www.linkedin.com/in/yuki-k-745115219/"
-            alt="LinkedIn Icon"
-          />
-        </map>
       </nav>
+      <img
+        id="banner-img"
+        class="border-bottom border-top border-black border-5"
+        width="100%"
+        src="res/images/banner1.png"
+        alt="Yuki's Tea Shop Banner Image"
+        usemap="#banner-image-map"
+      />
+      <map name="banner-image-map">
+        <area
+          title="Yuki's GitHub"
+          shape="circle"
+          coords="1920,640, 75"
+          href="https://github.com/yuki-konn"
+          alt="GitHub Icon"
+        />
+        <area
+          title="Yuki's LinkedIn"
+          shape="rect"
+          coords="2050,565, 2205,720"
+          href="https://www.linkedin.com/in/yuki-k-745115219/"
+          alt="LinkedIn Icon"
+        />
+      </map>
     </header>
     <main class="container">
-      <article id="articleAbout" class="text-center m-2"></article>
-      <article id="articleLocation" class="text-center m-2"></article>
-      <article id="articleHistory" class="text-center m-2"></article>
-      <article id="articleTriva" class="text-center m-2"></article>
+      <section id="sectionAbout" class="text-center m-2"></section>
+      <section id="sectionLocation" class="text-center m-2"></section>
+      <section id="sectionHistory" class="text-center m-2"></section>
+      <section id="sectionTriva" class="text-center m-2"></section>
       <br />
     </main>
     <footer>
@@ -68,18 +68,18 @@
         <span class="fw-bold p-0 m-0"><u style="color: green">Sitemap</u></span>
         <ul class="list-group p-1">
           <li class="list-group-item">
-            <a class="no-decor" href="#articleAbout"><span>About</span></a>
+            <a class="no-decor" href="#sectionAbout"><span>About</span></a>
           </li>
           <li class="list-group-item">
-            <a class="no-decor" href="#articleLocation"
+            <a class="no-decor" href="#sectionLocation"
               ><span>Locations</span></a
             >
           </li>
           <li class="list-group-item">
-            <a class="no-decor" href="#articleHistory"><span>History</span></a>
+            <a class="no-decor" href="#sectionHistory"><span>History</span></a>
           </li>
           <li class="list-group-item">
-            <a class="no-decor" href="#articleTrivia"><span>Trivia</span></a>
+            <a class="no-decor" href="#sectionTrivia"><span>Trivia</span></a>
           </li>
         </ul>
       </div>
@@ -122,9 +122,9 @@
       const card1String = convertLinkCard(card1);
       const card2String = convertLinkCard(card2);
       const card3String = convertLinkCard(card3);
-      articleAbout.innerHTML += card1String;
-      articleLocation.innerHTML += card2String;
-      articleHistory.innerHTML += card3String;
+      sectionAbout.innerHTML += card1String;
+      sectionLocation.innerHTML += card2String;
+      sectionHistory.innerHTML += card3String;
     </script>
     <script>
       // Trivia Card
@@ -132,7 +132,7 @@
       triviaCard.title = "Random Trivia";
       triviaCard.buttonName = "Brew Question";
       const card4String = convertTriviaCard(triviaCard);
-      articleTriva.innerHTML += card4String;
+      sectionTriva.innerHTML += card4String;
     </script>
     <script>
       imageMapResize();

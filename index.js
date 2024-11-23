@@ -7,15 +7,15 @@ function handleClick() {
   promise.then(parseResponse);
 }
 
-function parseResponse(resolveValue) {
+function parseResponse(fetchObject) {
   debugger;
-  const promise = resolveValue.text();
+  const promise = fetchObject.text();
   promise.then(viewResponse);
 }
 
-function viewResponse(resolveValue) {
+function viewResponse(fetchObject) {
   debugger;
-  const response = JSON.parse(resolveValue);
+  const response = JSON.parse(fetchObject);
   const results = response.results;
   const item = results[0];
   const question = item.question;
@@ -55,16 +55,24 @@ function convertTriviaCard(cardObject) {
 // WIP Radio button checker for trivia form for submit button
 // (ask how to get onsubmit to work when its in a innerhtml that is called.)
 
-// function handleSubmitTrivia(event) {
-//   debugger;
-//   event.preventDefault();
-//   const form = event.target;
-//   const choiceA = form[0];
-//   const choiceB = form[1];
-//   const choiceC = form[2];
-//   const choiceD = form[3];
-//   value = {}
-//   if (choiceA === checked) {
-//     output2("Wrong answer");
-//   }
-// }
+function handleSubmitTrivia(event) {
+  debugger;
+  event.preventDefault();
+  // const form = event.target;
+  // const choiceA = form[0];
+  // const choiceB = form[1];
+  // const choiceC = form[2];
+  // const choiceD = form[3];
+  // const value = {
+  //   choiceA.value
+  // };
+  // if (choiceA.checked) {
+  //   output2(`<span class="text-danger">Incorrect answer</span>`);
+  // } else if (choiceB.checked) {
+  //   output2(`<span class="text-danger">Incorrect answer</span>`);
+  // } else if (choiceC.checked) {
+  //   output2(`<span class="text-success">Correct answer</span>`);
+  // } else if (choiceD.checked) {
+  //   output2(`<span class="text-danger">Incorrect answer</span>`);
+  // }
+}

@@ -46,6 +46,7 @@
           coords="1920,640, 75"
           href="https://github.com/yuki-konn"
           alt="GitHub Icon"
+          target="_blank"
         />
         <area
           title="Yuki's LinkedIn"
@@ -53,6 +54,7 @@
           coords="2050,565, 2205,720"
           href="https://www.linkedin.com/in/yuki-k-745115219/"
           alt="LinkedIn Icon"
+          target="_blank"
         />
       </map>
     </header>
@@ -119,22 +121,21 @@
       card3.link = "";
       card3.buttonName = "Learn More";
 
-      const card1String = convertLinkCard(card1);
-      const card2String = convertLinkCard(card2);
-      const card3String = convertLinkCard(card3);
-      sectionAbout.innerHTML += card1String;
-      sectionLocation.innerHTML += card2String;
-      sectionHistory.innerHTML += card3String;
-    </script>
-    <script>
       // Trivia Card
       const triviaCard = {};
       triviaCard.title = "Random Trivia";
       triviaCard.buttonName = "Brew Question";
+
+      const card1String = convertLinkCard(card1);
+      const card2String = convertLinkCard(card2);
+      const card3String = convertLinkCard(card3);
       const card4String = convertTriviaCard(triviaCard);
+
+      sectionAbout.innerHTML += card1String;
+      sectionLocation.innerHTML += card2String;
+      sectionHistory.innerHTML += card3String;
       sectionTriva.innerHTML += card4String;
-    </script>
-    <script>
+
       imageMapResize();
     </script>
   </body>

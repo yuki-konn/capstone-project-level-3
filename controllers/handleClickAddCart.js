@@ -1,26 +1,16 @@
-// WORKING FUNCTIONS START
-function convertShopCard(cardObject) {
-  let cardString = `<article class="card border border-success border-2">
-    <img class="card-img-top" src="${cardObject.src}">
-    <div class="card-body">
-    <h3 class="card-title">${cardObject.title}</h3>
-    ${cardObject.description}
-    </div>
-    </article>`;
-  return cardString;
-}
-
 // Displays alert when clicked. WIP on being able to only display alert once.
-function addToCart(itemNum) {
+// shop.html
+window.handleClickAddCart = handleClickAddCart;
+function handleClickAddCart(event = new Event(), itemNum) {
   if (itemNum == 1) {
     debugger;
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart1.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -30,10 +20,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart2.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -43,10 +33,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart3.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -56,10 +46,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart4.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -69,10 +59,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart5.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -82,10 +72,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart6.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -95,10 +85,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart7.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -108,10 +98,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart8.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -121,10 +111,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart9.innerHTML += addAlert;
       buttonClicked = true;
     } else {
@@ -134,10 +124,10 @@ function addToCart(itemNum) {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
-    <div class="spinner-grow text-success"></div>
-    This item has been added to your cart.
-    <button class="btn-close" data-bs-dismiss="alert"></button>
-    </div>`;
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
       cart10.innerHTML += addAlert;
       buttonClicked = true;
     } else {

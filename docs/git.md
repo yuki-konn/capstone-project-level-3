@@ -6,7 +6,7 @@
 
 ---
 
-`git remote add origin https://github.com/yuki-konn/yuki-capstone-project-qd4jy1hdc35uw4f11caqhpnnzktada1hei4khe55r.git`
+`git remote add origin https://github.com/yuki-konn/capstone-project-level-2.git`
 
 1. Open Github
 2. Open the repository
@@ -26,7 +26,7 @@
 
 ---
 
-`git remote set-url origin https://github.com/yuki-konn/capstone-project-level-2.git`
+`git remote set-url origin https://github.com/yuki-konn/capstone-project-level-3.git`
 
 - Changes the value of origin to the URL
 

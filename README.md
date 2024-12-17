@@ -1,6 +1,6 @@
 # DESCRIPTION
 
-Capstone Level 2 Project
+Capstone Level 3 Project
 
 Folder Structure
 

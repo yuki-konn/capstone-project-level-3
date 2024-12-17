@@ -1,8 +1,9 @@
 // WIP Radio button checker for trivia form for submit button
 // (ask how to get onsubmit to work when its in a innerhtml that is called.)
 
+window.handleSubmitTrivia = handleSubmitTrivia;
 // index.html
-function handleSubmitTrivia(event) {
+function handleSubmitTrivia(event = new HTMLFormElement()) {
   debugger;
   event.preventDefault();
   // const form = event.target;

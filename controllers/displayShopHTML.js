@@ -1,7 +1,7 @@
-import { convertShopCard } from "../modules/convertShopCard.js";
-import { createColumn } from "../modules/createColumn.js";
-import { createContainer } from "../modules/createContainer.js";
+import { ShopCard } from "../modules/ShopCard.js";
 import { createRows } from "../modules/createRows.js";
+import { Column } from "../utils/Column.js";
+import { GridSystem } from "../utils/GridSystem.js";
 
 // card objects
 const teaCard1 = {
@@ -76,13 +76,15 @@ do {
   let columns = "";
   for (let count = 0; count < 5; count++) {
     const content = teaCards[position];
-    const contentCard = convertShopCard(content);
-    columns += createColumn(contentCard);
+    const contentCard = new ShopCard(content);
+    columns += new Column(contentCard);
     position++;
   }
   groupColumns.push(columns);
 } while (position < teaCards.length);
 
+debugger;
 const rows = createRows(groupColumns);
-const container = createContainer(rows);
+const container = new GridSystem();
+container.addRow(rows);
 sectionTea.innerHTML += container;

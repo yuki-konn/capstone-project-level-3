@@ -5,7 +5,7 @@ import { output } from "../utils/output.js";
 
 window.handleSubmitPhone = handleSubmitPhone;
 // PHONE APPOINTMENT FORM SUBMIT HANDLER
-function handleSubmitPhone(event = new Event()) {
+function handleSubmitPhone(event = new HTMLFormElement()) {
   event.preventDefault();
   debugger;
   const form = event.target;

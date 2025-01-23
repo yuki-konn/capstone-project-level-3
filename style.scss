@@ -8,9 +8,8 @@ $footer-color: rgba(255, 255, 255, 1);
 $sitemap-bg: #404040;
 
 // IMAGES
-// $bannerImage1: url("res/images/banner1.png");
-$bannerImage2: url("res/images/banner2.png");
-$bg-image: url("res/images/bgImage.png");
+$bannerImage2: url("assets/images/banner2.png");
+$bg-image: url("assets/images/bgImage.png");
 
 // CUSTOM FONTS
 $primaryFont: "edosz";
@@ -18,7 +17,7 @@ $secondaryFont: sans-serif;
 
 @font-face {
   font-family: "edosz";
-  src: url("res/fonts/edosz.ttf");
+  src: url("assets/fonts/edosz.ttf");
 }
 
 @mixin background {
@@ -54,11 +53,6 @@ body {
           background-color: $gold;
         }
       }
-      // .bannerImage1 {
-      //   background-image: $bannerImage1;
-      //   background-size: 100% 28vw;
-      //   background-repeat: no-repeat;
-      // }
     }
     .bannerImage2 {
       background-image: $bannerImage2;
@@ -117,12 +111,6 @@ footer {
   @include article-btn-animation;
 }
 // INDEX END
-
-// CONTACT START
-// .contact-main {
-//   background-color: $body-bg;
-// }
-// CONTACT END
 
 // CUSTOM BOOTSTRAP CSS START
 .border-dashed {

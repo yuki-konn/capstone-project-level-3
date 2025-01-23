@@ -15,11 +15,16 @@
         color: gold;
       }
     </style>
-    <script src="./controllers/displayIndexHTML.js" type="module"></script>
-    <script src="./controllers/handleClickApi.js" type="module"></script>
-    <script src="./controllers/handleSubmitTrivia.js" type="module"></script>
+    <script src="dist/main.js" defer></script>
+    <script src="./src/controllers/displayIndexHTML.js" type="module"></script>
+    <script src="./src/controllers/handleClickApi.js" type="module"></script>
+    <script
+      src="./src/controllers/handleSubmitTrivia.js"
+      type="module"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
   </head>
+  <!-- <body id="bodyTag"> -->
   <body>
     <header>
       <nav class="nav nav-tabs nav-fill bg-dark">
@@ -36,7 +41,7 @@
         id="banner-img"
         class="border-bottom border-top border-black border-5"
         width="100%"
-        src="res/images/banner1.png"
+        src="assets/images/banner1.png"
         alt="Yuki's Tea Shop Banner Image"
         usemap="#banner-image-map"
       />

@@ -20,3 +20,4 @@ In the index.html there is one inline and internal style.
 # TO DO
 
 1. Fix `usemap` for banner that broke after switching to react.
+2. Fix addCartButton on Shop page.

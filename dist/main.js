@@ -2188,6 +2188,248 @@ function Navbar(props = "") {
 
 /***/ }),
 
+/***/ "./src/Views/Shop.js":
+/*!***************************!*\
+  !*** ./src/Views/Shop.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Shop: () => (/* binding */ Shop)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
+/* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
+
+
+
+function Shop() {
+  debugger;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
+    page: "shop"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    id: "banner-img",
+    className: "bannerImage2 border-bottom border-top border-black border-5"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "m-1",
+    id: "sectionTea"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
+  }, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionCart"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
+  }, "Items in Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list-group list-group-numbered container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart1",
+    className: "list-group-item"
+  }, "Black Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(1)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart2",
+    className: "list-group-item"
+  }, "Green Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(2)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart3",
+    className: "list-group-item"
+  }, "White Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(3)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart4",
+    className: "list-group-item"
+  }, "Oolong Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(4)
+  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info"
+  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart5",
+    className: "list-group-item"
+  }, "Pu-erh Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(5)
+  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info"
+  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart6",
+    className: "list-group-item"
+  }, "Purple Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(6)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart7",
+    className: "list-group-item"
+  }, "Matcha Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(7)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart8",
+    className: "list-group-item"
+  }, "Mate Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(8)
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart9",
+    className: "list-group-item"
+  }, "Herbal Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(9)
+  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info"
+  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    id: "cart10",
+    className: "list-group-item"
+  }, "Rooibos Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(10)
+  }, "Add to Cart"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fw-bold"
+  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fst-italic"
+  }, "Yuki Konishi"))));
+}
+
+/***/ }),
+
+/***/ "./src/controllers/handleClickAddCart.js":
+/*!***********************************************!*\
+  !*** ./src/controllers/handleClickAddCart.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleClickAddCart: () => (/* binding */ handleClickAddCart)
+/* harmony export */ });
+// Displays alert when clicked. WIP on being able to only display alert once.
+// shop.html
+
+window.handleClickAddCart = handleClickAddCart;
+function handleClickAddCart(event = new Event(), itemNum) {
+  if (itemNum == 1) {
+    debugger;
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart1.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 2) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart2.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 3) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart3.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 4) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart4.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 5) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart5.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 6) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart6.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 7) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart7.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 8) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart8.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 9) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart9.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+  if (itemNum == 10) {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      cart10.innerHTML += addAlert;
+      buttonClicked = true;
+    } else {}
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs":
 /*!***********************************************************************!*\
   !*** ./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs ***!
@@ -11906,24 +12148,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
+/* harmony import */ var _Views_Shop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/Shop */ "./src/Views/Shop.js");
+
 
 
 
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
   index: true,
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
-  path: "/shop"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
+  path: "/shop",
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Shop__WEBPACK_IMPORTED_MODULE_3__.Shop, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
   path: "/about"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
   path: "/contact"
-}))));
+})))));
 })();
 
 /******/ })()

@@ -1,7 +1,8 @@
 // Displays alert when clicked. WIP on being able to only display alert once.
 // shop.html
+
 window.handleClickAddCart = handleClickAddCart;
-function handleClickAddCart(event = new Event(), itemNum) {
+export function handleClickAddCart(event = new Event(), itemNum) {
   if (itemNum == 1) {
     debugger;
     let buttonClicked = false;

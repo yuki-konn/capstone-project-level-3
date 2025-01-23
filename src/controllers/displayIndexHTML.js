@@ -7,7 +7,7 @@ const card1 = {
     "This is the about card of my imaginary online tea shop website. You can learn more about the different features in the project in the About section. You can get to the about section by clicking on the button below or the About tab at the top of the page.",
   desc2: "",
   desc3: "",
-  link: "about.html",
+  link: "https://yuki-konn.github.io/capstone-project-level-3/about",
   buttonName: "Learn More",
 };
 const card2 = {

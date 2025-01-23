@@ -5,7 +5,7 @@ import { output } from "../utils/output.js";
 window.handleSubmitContact = handleSubmitContact;
 
 // CONTACT FORM SUBMIT HANDLER
-function handleSubmitContact(event = new HTMLFormElement()) {
+export function handleSubmitContact(event = new Event()) {
   event.preventDefault();
   const form = event.target;
   const nameInput = form[0];

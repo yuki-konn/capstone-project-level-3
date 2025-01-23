@@ -2106,6 +2106,150 @@ function About() {
 
 /***/ }),
 
+/***/ "./src/Views/Contact.js":
+/*!******************************!*\
+  !*** ./src/Views/Contact.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Contact: () => (/* binding */ Contact)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
+/* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
+/* harmony import */ var _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleSubmitContact */ "./src/controllers/handleSubmitContact.js");
+
+
+
+
+function Contact() {
+  debugger;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
+    page: "contact"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    id: "banner-img",
+    className: "bannerImage2 border-bottom border-top border-black border-5"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    className: "container contact-main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "text-center border-bottom border-3 border-dark"
+  }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "textShadow"
+  }, "Contact Form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_3__.handleSubmitContact
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "contact-name"
+  }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
+    id: "contact-name",
+    className: "w100",
+    type: "text",
+    name: "contact-name",
+    placeholder: "John Smith"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "contact-email"
+  }, "Email *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
+    id: "contact-email",
+    className: "w100",
+    type: "email",
+    name: "contact-email",
+    placeholder: "email@email.com"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "contact-comment"
+  }, "Comment (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
+    id: "contact-comment",
+    className: "w100"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "contact-ratings"
+  }, "Rating (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "contact-ratings"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "rating-five"
+  }, "5\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "rating-five",
+    name: "ratings",
+    type: "radio",
+    "aria-label": "5 Star rating"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "rating-four"
+  }, "4\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "rating-four",
+    name: "ratings",
+    type: "radio",
+    "aria-label": "4 Star rating"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "rating-three"
+  }, "3\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "rating-three",
+    name: "ratings",
+    type: "radio",
+    "aria-label": "3 Star rating"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "rating-two"
+  }, "2\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "rating-two",
+    name: "ratings",
+    type: "radio",
+    "aria-label": "2 Star rating"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "rating-one"
+  }, "1\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "rating-one",
+    name: "ratings",
+    type: "radio",
+    "aria-label": "1 Star rating"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "submit"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "outputTag",
+    className: "border border-3 border-dark text-center"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_2__.handleSubmitPhone
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "textShadow"
+  }, "Schedule a Phone Appointment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "phone-name"
+  }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
+    id: "phone-name",
+    type: "text",
+    name: "phone-name",
+    placeholder: "John Smith"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "phone-number"
+  }, "Phone Number *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
+    id: "phone-number",
+    type: "tel",
+    name: "phone-number",
+    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
+    placeholder: "###-###-####"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    htmlFor: "phone-date-time"
+  }, "Appointment Time *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
+    id: "phone-date-time",
+    type: "datetime-local"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "submit"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "outputTag2",
+    className: "border border-3 border-dark text-center"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fw-bold"
+  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fst-italic"
+  }, "Yuki Konishi"))));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Home.js":
 /*!***************************!*\
   !*** ./src/Views/Home.js ***!
@@ -2241,7 +2385,7 @@ function Navbar(props = "") {
   }
   if (page === "shop") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-      class: "nav nav-tabs nav-fill bg-dark"
+      className: "nav nav-tabs nav-fill bg-dark"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
       to: "/",
       className: "nav-link fw-bold text-success"
@@ -2258,7 +2402,7 @@ function Navbar(props = "") {
   }
   if (page === "about") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-      class: "nav nav-tabs nav-fill bg-dark"
+      className: "nav nav-tabs nav-fill bg-dark"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
       to: "/",
       className: "nav-link fw-bold text-success"
@@ -2275,7 +2419,7 @@ function Navbar(props = "") {
   }
   if (page === "contact") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-      class: "nav nav-tabs nav-fill bg-dark"
+      className: "nav nav-tabs nav-fill bg-dark"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
       to: "/",
       className: "nav-link fw-bold text-success"
@@ -2535,6 +2679,261 @@ function handleClickAddCart(event = new Event(), itemNum) {
     } else {}
   }
 }
+
+/***/ }),
+
+/***/ "./src/controllers/handleSubmitContact.js":
+/*!************************************************!*\
+  !*** ./src/controllers/handleSubmitContact.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSubmitContact: () => (/* binding */ handleSubmitContact)
+/* harmony export */ });
+/* harmony import */ var _modules_parseResponse1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseResponse1.js */ "./src/modules/parseResponse1.js");
+/* harmony import */ var _utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/makeRequest.js */ "./src/utils/makeRequest.js");
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+
+window.handleSubmitContact = handleSubmitContact;
+
+// CONTACT FORM SUBMIT HANDLER
+function handleSubmitContact(event = new Event()) {
+  event.preventDefault();
+  const form = event.target;
+  const nameInput = form[0];
+  const emailInput = form[1];
+  const commentInput = form[2];
+  const fiveStar = form[3];
+  const fourStar = form[4];
+  const threeStar = form[5];
+  const twoStar = form[6];
+  const oneStar = form[7];
+
+  // ARRAY FOR FORM VALUES
+  const value = [nameInput.value, emailInput.value, commentInput.value, fiveStar.ariaLabel, fourStar.ariaLabel, threeStar.ariaLabel, twoStar.ariaLabel, oneStar.ariaLabel];
+
+  // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
+  if (outputTag.innerHTML === "") {
+    debugger;
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<b style='color: gold'>Processing contact form...<b><br>");
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<br><u>Form Info<u><br>");
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Name: ${value[0]}<br>`);
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Email: ${value[1]}<br>`);
+
+    // CHECKS TO SEE IF TEXTAREA IS EMPTY
+    if (value[2] === "") {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("");
+    } else {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Comment: ${value[2]}<br>`);
+    }
+
+    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+    if (fiveStar.checked) {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[3]}<br>`);
+    } else if (fourStar.checked) {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[4]}<br>`);
+    } else if (threeStar.checked) {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[5]}<br>`);
+    } else if (twoStar.checked) {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[6]}<br>`);
+    } else if (oneStar.checked) {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[7]}<br>`);
+    } else {
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("");
+    }
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("--------------<br><br>");
+    const promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__.makeRequest)("https://myserver.com");
+    promise.then(_modules_parseResponse1_js__WEBPACK_IMPORTED_MODULE_0__.parseResponse1);
+  } else {}
+}
+
+/***/ }),
+
+/***/ "./src/controllers/handleSubmitPhone.js":
+/*!**********************************************!*\
+  !*** ./src/controllers/handleSubmitPhone.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSubmitPhone: () => (/* binding */ handleSubmitPhone)
+/* harmony export */ });
+/* harmony import */ var _modules_parseResponse2_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseResponse2.js */ "./src/modules/parseResponse2.js");
+/* harmony import */ var _modules_PhoneObject_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/PhoneObject.js */ "./src/modules/PhoneObject.js");
+/* harmony import */ var _utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/makeRequest.js */ "./src/utils/makeRequest.js");
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+
+
+window.handleSubmitPhone = handleSubmitPhone;
+// PHONE APPOINTMENT FORM SUBMIT HANDLER
+function handleSubmitPhone(event = new Event()) {
+  event.preventDefault();
+  debugger;
+  const form = event.target;
+  const nameInput = form[0];
+  const telInput = form[1];
+  const dateTimeInput = form[2];
+  const value = [nameInput.value, telInput.value, dateTimeInput.value];
+
+  // NEW OBJECT WITH VALUES ASSIGNED
+  const phoneObject = new _modules_PhoneObject_js__WEBPACK_IMPORTED_MODULE_1__.PhoneObject();
+  phoneObject.name = value[0];
+  phoneObject.phoneNumber = value[1];
+  phoneObject.appointment = value[2];
+
+  // PARSE USED TO STRINGIFY OBJECT
+  const jsonString = JSON.stringify(phoneObject);
+  const jsonP = JSON.parse(jsonString);
+  const jsonForm = "<br><u>Form Info</u><br>" + "Name: " + jsonP.name + "<br>" + "Phone Number: " + jsonP.phoneNumber + "<br>" + "Appointment: " + jsonP.appointment + "<br>--------------<br><br>";
+  debugger;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)("<b style='color: gold'>Processing phone appointment form...</b><br>", "outputTag2");
+  const promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_2__.makeRequest)("https://myserver.com");
+  promise.then(_modules_parseResponse2_js__WEBPACK_IMPORTED_MODULE_0__.parseResponse2);
+  jsonFormOutput();
+  function jsonFormOutput() {
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)(jsonForm, "outputTag2");
+  }
+}
+
+/***/ }),
+
+/***/ "./src/modules/PhoneObject.js":
+/*!************************************!*\
+  !*** ./src/modules/PhoneObject.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PhoneObject: () => (/* binding */ PhoneObject)
+/* harmony export */ });
+// TEMPLATE OBJECT
+class PhoneObject {
+  name = "";
+  phoneNumber = "";
+  appointment = "";
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse1.js":
+/*!***************************************!*\
+  !*** ./src/modules/parseResponse1.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse1: () => (/* binding */ parseResponse1)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+// PARSE RESPONSE FOR CONTACT FORM contact.html
+function parseResponse1(resolveValue) {
+  debugger;
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse2.js":
+/*!***************************************!*\
+  !*** ./src/modules/parseResponse2.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse2: () => (/* binding */ parseResponse2)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+// PARSE RESPONSE FOR PHONE APPOINTMENT FORM contact.html
+function parseResponse2(resolveValue) {
+  debugger;
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "outputTag2");
+}
+
+/***/ }),
+
+/***/ "./src/utils/getServerResponse.js":
+/*!****************************************!*\
+  !*** ./src/utils/getServerResponse.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getServerResponse: () => (/* binding */ getServerResponse)
+/* harmony export */ });
+// SERVER RESPONSE contact.html
+function getServerResponse(resolve) {
+  debugger;
+  setTimeout(activateResolve, 5000);
+  function activateResolve() {
+    const response = {
+      message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>"
+    };
+    // Server stringifies a object and replies with a string.
+    const resolveValue = JSON.stringify(response);
+    resolve(resolveValue);
+  }
+}
+
+/***/ }),
+
+/***/ "./src/utils/makeRequest.js":
+/*!**********************************!*\
+  !*** ./src/utils/makeRequest.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   makeRequest: () => (/* binding */ makeRequest)
+/* harmony export */ });
+/* harmony import */ var _getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getServerResponse.js */ "./src/utils/getServerResponse.js");
+
+
+// PROMISE contact.html
+function makeRequest(url, param) {
+  debugger;
+  return new Promise(_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
+}
+
+/***/ }),
+
+/***/ "./src/utils/output.js":
+/*!*****************************!*\
+  !*** ./src/utils/output.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   output: () => (/* binding */ output)
+/* harmony export */ });
+// OUTPUT FUNCTION
+function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
+}
+
+// function output(message) {
+//   outputTag.innerHTML += message;
+// }
 
 /***/ }),
 
@@ -12256,10 +12655,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
 /* harmony import */ var _Views_Shop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/Shop */ "./src/Views/Shop.js");
 /* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
+/* harmony import */ var _Views_Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Views/Contact */ "./src/Views/Contact.js");
+
 
 
 
@@ -12267,18 +12668,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.Route, {
   index: true,
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.Route, {
   path: "/shop",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Shop__WEBPACK_IMPORTED_MODULE_3__.Shop, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.Route, {
   path: "/about",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_4__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Route, {
-  path: "/contact"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  path: "/contact",
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_5__.Contact, null)
 })))));
 })();
 

@@ -24,7 +24,7 @@ export function Navbar(props = "") {
   }
   if (page === "shop") {
     return (
-      <nav class="nav nav-tabs nav-fill bg-dark">
+      <nav className="nav nav-tabs nav-fill bg-dark">
         <Link to="/" className="nav-link fw-bold text-success">
           HOME
         </Link>
@@ -42,7 +42,7 @@ export function Navbar(props = "") {
   }
   if (page === "about") {
     return (
-      <nav class="nav nav-tabs nav-fill bg-dark">
+      <nav className="nav nav-tabs nav-fill bg-dark">
         <Link to="/" className="nav-link fw-bold text-success">
           HOME
         </Link>
@@ -60,7 +60,7 @@ export function Navbar(props = "") {
   }
   if (page === "contact") {
     return (
-      <nav class="nav nav-tabs nav-fill bg-dark">
+      <nav className="nav nav-tabs nav-fill bg-dark">
         <Link to="/" className="nav-link fw-bold text-success">
           HOME
         </Link>

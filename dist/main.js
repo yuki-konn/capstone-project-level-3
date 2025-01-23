@@ -1998,6 +1998,196 @@ module.exports.splitCookiesString = splitCookiesString;
 
 /***/ }),
 
+/***/ "./src/Views/Home.js":
+/*!***************************!*\
+  !*** ./src/Views/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Home: () => (/* binding */ Home)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
+
+
+function Home() {
+  debugger;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
+    page: "home"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    id: "banner-img",
+    className: "border-bottom border-top border-black border-5",
+    width: "100%",
+    src: "../assets/images/banner1.png",
+    alt: "Yuki's Tea Shop Banner Image",
+    useMap: "#banner-image-map"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
+    name: "banner-image-map"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
+    title: "Yuki's GitHub",
+    shape: "circle",
+    coords: "1920,640, 75",
+    href: "https://github.com/yuki-konn",
+    alt: "GitHub Icon",
+    target: "_blank"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
+    title: "Yuki's LinkedIn",
+    shape: "rect",
+    coords: "2050,565, 2205,720",
+    href: "https://www.linkedin.com/in/yuki-k-745115219/",
+    alt: "LinkedIn Icon",
+    target: "_blank"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionAbout",
+    className: "text-center m-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionLocation",
+    className: "text-center m-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionHistory",
+    className: "text-center m-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionTriva",
+    className: "text-center m-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "siteMapGroup",
+    className: "m-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fw-bold p-0 m-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", {
+    style: {
+      color: "green"
+    }
+  }, "Sitemap")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list-group p-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-group-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "no-decor",
+    href: "#sectionAbout"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "About"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-group-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "no-decor",
+    href: "#sectionLocation"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Locations"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-group-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "no-decor",
+    href: "#sectionHistory"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "History"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-group-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "no-decor",
+    href: "#sectionTrivia"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Trivia"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "text-center m-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fw-bold"
+  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fst-italic"
+  }, "Yuki Konishi"))));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Navbar.js":
+/*!*****************************!*\
+  !*** ./src/Views/Navbar.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Navbar: () => (/* binding */ Navbar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+
+
+function Navbar(props = "") {
+  const page = props.page;
+  debugger;
+  if (page === "home") {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+      className: "nav nav-tabs nav-fill bg-dark"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/",
+      className: "nav-link active fw-bold text-success"
+    }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/shop",
+      className: "nav-link fw-bold text-success"
+    }, "SHOP"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/about",
+      className: "nav-link fw-bold text-success"
+    }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/contact",
+      className: "nav-link fw-bold text-success"
+    }, "CONTACT"));
+  }
+  if (page === "shop") {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+      class: "nav nav-tabs nav-fill bg-dark"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/",
+      className: "nav-link fw-bold text-success"
+    }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/shop",
+      className: "nav-link active fw-bold text-success"
+    }, "SHOP"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/about",
+      className: "nav-link fw-bold text-success"
+    }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/contact",
+      className: "nav-link fw-bold text-success"
+    }, "CONTACT"));
+  }
+  if (page === "about") {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+      class: "nav nav-tabs nav-fill bg-dark"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/",
+      className: "nav-link fw-bold text-success"
+    }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/shop",
+      className: "nav-link fw-bold text-success"
+    }, "SHOP"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/about",
+      className: "nav-link active fw-bold text-success"
+    }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/contact",
+      className: "nav-link fw-bold text-success"
+    }, "CONTACT"));
+  }
+  if (page === "contact") {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+      class: "nav nav-tabs nav-fill bg-dark"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/",
+      className: "nav-link fw-bold text-success"
+    }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/shop",
+      className: "nav-link fw-bold text-success"
+    }, "SHOP"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/about",
+      className: "nav-link fw-bold text-success"
+    }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      to: "/contact",
+      className: "nav-link active fw-bold text-success"
+    }, "CONTACT"));
+  } else {
+    console.log("There is no page parameter. The parameter options are home, shop, about and contact.");
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs":
 /*!***********************************************************************!*\
   !*** ./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs ***!
@@ -11716,24 +11906,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
+
 
 
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
   index: true,
   path: "/",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Placeholder, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
-  path: "/shop",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Placeholder, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
-  path: "/about",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Placeholder, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
-  path: "/contact",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Placeholder, null)
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  path: "/shop"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  path: "/about"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  path: "/contact"
 }))));
 })();
 

@@ -6,7 +6,7 @@ export function Navbar(props = "") {
   debugger;
   if (page === "home") {
     return (
-      <nav class="nav nav-tabs nav-fill bg-dark">
+      <nav className="nav nav-tabs nav-fill bg-dark">
         <Link to="/" className="nav-link active fw-bold text-success">
           HOME
         </Link>
@@ -74,6 +74,10 @@ export function Navbar(props = "") {
           CONTACT
         </Link>
       </nav>
+    );
+  } else {
+    console.log(
+      "There is no page parameter. The parameter options are home, shop, about and contact."
     );
   }
 }

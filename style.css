@@ -18,6 +18,12 @@ body header nav a {
 body header nav a:hover {
   background-color: gold;
 }
+body header nav Link {
+  font-family: "edosz";
+}
+body header nav Link:hover {
+  background-color: gold;
+}
 body header .bannerImage2 {
   background-image: url("assets/images/banner2.png");
   background-size: 100% 28vw;

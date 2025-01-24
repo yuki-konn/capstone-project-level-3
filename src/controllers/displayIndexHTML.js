@@ -38,7 +38,16 @@ const triviaCard = {
   buttonName: "Brew Question",
 };
 
+const sectionAbout = document.getElementById("sectionAbout");
+const sectionLocation = document.getElementById("sectionLocation");
+const sectionHistory = document.getElementById("sectionHistory");
+const sectionTrivia = document.getElementById("sectionTrivia");
+
 sectionAbout.innerHTML = new LinkCard(card1);
 sectionLocation.innerHTML = new LinkCard(card2);
 sectionHistory.innerHTML = new LinkCard(card3);
-sectionTriva.innerHTML = new TriviaCard(triviaCard);
+sectionTrivia.innerHTML = new TriviaCard(triviaCard);
+
+// TRIED DIDN'T WORK
+// window.sectionAbout.innerHTML = new LinkCard(card1);
+// window["sectionAbout"].innerHTML = new LinkCard(card1);

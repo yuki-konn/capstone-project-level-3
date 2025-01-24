@@ -11,9 +11,13 @@ root.render(
   <>
     <BrowserRouter>
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route path="/capstone-project-level-3" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/capstone-project-level-3/shop" element={<Shop />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/capstone-project-level-3/about" element={<About />} />
         <Route path="/about" element={<About />} />
+        <Route path="/capstone-project-level-3/contact" element={<Contact />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

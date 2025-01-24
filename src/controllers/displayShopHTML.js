@@ -87,4 +87,12 @@ debugger;
 const rows = createRows(groupColumns);
 const container = new GridSystem();
 container.addRow(rows);
+
+const sectionTea = document.getElementById("sectionTea");
 sectionTea.innerHTML += container;
+
+// TRIED DIDN'T WORK
+// window.sectionTea.innerHTML += container;
+// window["sectionTea"].innerHTML += container;
+
+// Null bug fix: put make sure this loads after Shop.js is loaded. Have to try this once componentDidMount is incorperated.

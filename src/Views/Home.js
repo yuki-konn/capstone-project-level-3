@@ -38,7 +38,7 @@ export function Home() {
         <section id="sectionAbout" className="text-center m-2"></section>
         <section id="sectionLocation" className="text-center m-2"></section>
         <section id="sectionHistory" className="text-center m-2"></section>
-        <section id="sectionTriva" className="text-center m-2"></section>
+        <section id="sectionTrivia" className="text-center m-2"></section>
         <br />
       </main>
       <footer>

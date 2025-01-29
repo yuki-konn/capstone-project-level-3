@@ -6,7 +6,12 @@ import { Shop } from "./Views/Shop";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 
-const root = createRoot(window.bodyTag);
+const bodyTag = document.getElementById("bodyTag");
+const root = createRoot(bodyTag);
+
+const domain = window.location.hostname;
+console.log(`Domain: ${domain}`);
+
 root.render(
   <>
     <BrowserRouter>

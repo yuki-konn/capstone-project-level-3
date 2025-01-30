@@ -5,6 +5,7 @@ import { Home } from "./Views/Home";
 import { Shop } from "./Views/Shop";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
+import "./index.scss";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);

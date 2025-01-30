@@ -2672,17 +2672,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
 /* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
+/* harmony import */ var _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/ShopCard.js */ "./src/modules/ShopCard.js");
+/* harmony import */ var _modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/createRows.js */ "./src/modules/createRows.js");
+/* harmony import */ var _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/Column.js */ "./src/utils/Column.js");
+/* harmony import */ var _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/GridSystem.js */ "./src/utils/GridSystem.js");
+/* harmony import */ var _shop_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shop.scss */ "./src/Views/shop.scss");
+
+
+
+
+
 
 
 
 function Shop() {
   debugger;
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
     page: "shop"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     id: "banner-img",
     className: "bannerImage2 border-bottom border-top border-black border-5"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    id: "shopMain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "m-1",
     id: "sectionTea"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -2756,6 +2770,86 @@ function Shop() {
   }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fst-italic"
   }, "Yuki Konishi"))));
+}
+function componentDidMount() {
+  debugger;
+  document.title = "Yuki Tea Shop | SHOP";
+
+  // card objects
+  const teaCard1 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+    title: "Black Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard2 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+    title: "Green Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard3 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+    title: "White Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard4 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+    title: "Oolong Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard5 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+    title: "Pu-erh Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard6 = {
+    src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+    title: "Purple Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard7 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+    title: "Matcha Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard8 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+    title: "Mate Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard9 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+    title: "Herbal Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+  const teaCard10 = {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+    title: "Rooibos Tea",
+    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+  };
+
+  // card array with objects
+  const teaCards = [teaCard1, teaCard2, teaCard3, teaCard4, teaCard5, teaCard6, teaCard7, teaCard8, teaCard9, teaCard10];
+
+  // converts card array positions to cards then adds them to column groups.
+  const groupColumns = [];
+  let position = 0;
+  do {
+    let columns = "";
+    for (let count = 0; count < 5; count++) {
+      const content = teaCards[position];
+      const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__.ShopCard(content);
+      columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__.Column(contentCard);
+      position++;
+    }
+    groupColumns.push(columns);
+  } while (position < teaCards.length);
+  debugger;
+  const rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__.createRows)(groupColumns);
+  const container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__.GridSystem();
+  container.addRow(rows);
+  const sectionTea = document.getElementById("sectionTea");
+  sectionTea.innerHTML += container;
+  console.log("The component mounted.");
 }
 
 /***/ }),
@@ -3075,6 +3169,34 @@ class PhoneObject {
 
 /***/ }),
 
+/***/ "./src/modules/ShopCard.js":
+/*!*********************************!*\
+  !*** ./src/modules/ShopCard.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ShopCard: () => (/* binding */ ShopCard)
+/* harmony export */ });
+class ShopCard {
+  openingTag = `<article class="card border border-success border-2">`;
+  closingTag = `</div></article>`;
+  innerHTML = "";
+  debugger;
+  constructor(cardProperty) {
+    this.innerHTML = `<img class="card-img-top" src="${cardProperty.src}">
+        <div class="card-body">
+        <h3 class="card-title">${cardProperty.title}</h3>
+        ${cardProperty.description}`;
+  }
+  toString() {
+    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  }
+}
+
+/***/ }),
+
 /***/ "./src/modules/TriviaCard.js":
 /*!***********************************!*\
   !*** ./src/modules/TriviaCard.js ***!
@@ -3101,6 +3223,50 @@ class TriviaCard {
   toString() {
     return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
   }
+}
+
+/***/ }),
+
+/***/ "./src/modules/createRow.js":
+/*!**********************************!*\
+  !*** ./src/modules/createRow.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createRow: () => (/* binding */ createRow)
+/* harmony export */ });
+// CREATE BOOTSTRAP ROW FUNCTION shop.html
+function createRow(columnsString) {
+  const rowString = `<div class="row">${columnsString}</div>`;
+  return rowString;
+}
+
+/***/ }),
+
+/***/ "./src/modules/createRows.js":
+/*!***********************************!*\
+  !*** ./src/modules/createRows.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createRows: () => (/* binding */ createRows)
+/* harmony export */ });
+/* harmony import */ var _createRow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createRow.js */ "./src/modules/createRow.js");
+
+
+// CREATE ROWS FOR AN ARRAY OF COLUMNS shop.html
+function createRows(columnsArray) {
+  debugger;
+  let rows = "";
+  for (let position = 0; position < columnsArray.length; position++) {
+    const columns = columnsArray[position];
+    rows += (0,_createRow_js__WEBPACK_IMPORTED_MODULE_0__.createRow)(columns);
+  }
+  return rows;
 }
 
 /***/ }),
@@ -3147,6 +3313,84 @@ function parseResponse2(resolveValue) {
   const response = JSON.parse(resolveValue);
   const message = response.message;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "outputTag2");
+}
+
+/***/ }),
+
+/***/ "./src/utils/Column.js":
+/*!*****************************!*\
+  !*** ./src/utils/Column.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Column: () => (/* binding */ Column)
+/* harmony export */ });
+class Column {
+  openingTag = "<div class='col'>";
+  closingTag = "</div>";
+  innerHTML = "";
+  constructor(content = "") {
+    this.innerHTML = content;
+  }
+  toString() {
+    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/utils/GridSystem.js":
+/*!*********************************!*\
+  !*** ./src/utils/GridSystem.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GridSystem: () => (/* binding */ GridSystem)
+/* harmony export */ });
+/* harmony import */ var _Row_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Row.js */ "./src/utils/Row.js");
+
+
+// CREATE BOOTSTRAP CONTAINER FUNCTION shop.html
+class GridSystem {
+  openingTag = "<div class='container'>";
+  closingTag = "</div>";
+  innerHTML = "";
+  addRow(row = new _Row_js__WEBPACK_IMPORTED_MODULE_0__.Row()) {
+    this.innerHTML += row;
+  }
+  toString() {
+    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/utils/Row.js":
+/*!**************************!*\
+  !*** ./src/utils/Row.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Row: () => (/* binding */ Row)
+/* harmony export */ });
+/* harmony import */ var _Column_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Column.js */ "./src/utils/Column.js");
+
+class Row {
+  openingTag = "<div class='row'>";
+  closingTag = "</div>";
+  innerHTML = "";
+  addColumn(column = new _Column_js__WEBPACK_IMPORTED_MODULE_0__.Column()) {
+    this.innerHTML += column;
+  }
+  toString() {
+    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  }
 }
 
 /***/ }),
@@ -3216,6 +3460,56 @@ function output(message = "", outputTag = "outputTag", shouldAppend = true) {
 // function output(message) {
 //   outputTag.innerHTML += message;
 // }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/shop.scss":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/shop.scss ***!
+  \**********************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `#shopMain #sectionTea .col {
+  padding: 0;
+  width: 20vw;
+  height: auto;
+  font-size: small;
+}
+#shopMain #sectionTea .row {
+  align-items: start;
+}
+#shopMain #sectionTea article {
+  margin: auto;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
+#shopMain #sectionTea .card-img-top {
+  height: 150px;
+}
+#shopMain #sectionTea .card {
+  height: 350px;
+  margin: 1px;
+}
+#shopMain #sectionCart button {
+  box-shadow: 2px 2px grey;
+}`, "",{"version":3,"sources":["webpack://./src/Views/shop.scss"],"names":[],"mappings":"AAMI;EACE,UAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;AALN;AAOI;EACE,kBAAA;AALN;AAOI;EACE,YAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AALN;AAOI;EACE,aAAA;AALN;AAQI;EACE,aAAA;EACA,WAAA;AANN;AAWI;EA/BF,wBAAA;AAuBF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .col {\r\n      padding: 0;\r\n      width: 20vw;\r\n      height: auto;\r\n      font-size: small;\r\n    }\r\n    .row {\r\n      align-items: start;\r\n    }\r\n    article {\r\n      margin: auto;\r\n      padding: 0px;\r\n      align-items: center;\r\n      justify-content: center;\r\n    }\r\n    .card-img-top {\r\n      height: 150px;\r\n    }\r\n\r\n    .card {\r\n      height: 350px;\r\n      margin: 1px;\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -3338,6 +3632,58 @@ footer {
 }`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAiBA;EACE,oBAAA;EACA,4CAAA;AAhBF;AAmCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAhCF;AAoCM;EACE,oBApCM;AAEd;AAmCQ;EACE,sBAnDH;AAkBP;AAoCM;EACE,oBA1CM;AAQd;AAmCQ;EACE,sBAzDH;AAwBP;AAqCI;EACE,yDArDS;EAsDT,0BAAA;EACA,4BAAA;AAnCN;AAqCI;EACE,YAAA;EACA,WAAA;AAnCN;AAuCE;;;EAGE,oBA9DU;AAyBd;;AAyCA;EACE,yBA3Ea;EA4Eb,yBA7EU;EA8EV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAtCF;;AAyCA;EACE,qBAAA;AAtCF;;AAwCA;EACE,qBAAA;AArCF;;AAwCA;EACE,WAAA;AArCF;;AA4CE;EACE,UAAA;EACA,yBArGS;AA4Db;AA2CE;EACE,iBAAA;EACA,mBAAA;AAzCJ;;AA4CA;EAxFE,mBAAA;EACA,wBAAA;AAgDF;AA9CE;EACE,qBAAA;EACA,wBAAA;AAgDJ;;AAyCA;EACE,+BAAA;AAtCF;;AAwCA;EACE,+BAAA;AArCF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    nav {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n      Link {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./src/Views/shop.scss":
+/*!*****************************!*\
+  !*** ./src/Views/shop.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_shop_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./shop.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/shop.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_shop_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_shop_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_shop_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_shop_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

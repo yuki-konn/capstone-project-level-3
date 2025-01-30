@@ -8,8 +8,8 @@ $footer-color: rgba(255, 255, 255, 1);
 $sitemap-bg: #404040;
 
 // IMAGES
-$bannerImage2: url("assets/images/banner2.png");
-$bg-image: url("assets/images/bgImage.png");
+$bannerImage2: url("../assets/images/banner2.png");
+$bg-image: url("../assets/images/bgImage.png");
 
 // CUSTOM FONTS
 $primaryFont: "edosz";
@@ -17,7 +17,7 @@ $secondaryFont: sans-serif;
 
 @font-face {
   font-family: "edosz";
-  src: url("assets/fonts/edosz.ttf");
+  src: url("../assets/fonts/edosz.ttf");
 }
 
 @mixin background {

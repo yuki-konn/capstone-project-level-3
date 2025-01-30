@@ -8,7 +8,7 @@ export function Home() {
   debugger;
   // const [didMount, setDidMount] = useState(false);
 
-  useEffect(componentDidMount); // MOUNT HOOK
+  useEffect(componentDidMount, []); // MOUNT HOOK
 
   return (
     <>
@@ -89,6 +89,8 @@ export function Home() {
   function componentDidMount() {
     debugger;
 
+    document.title = "Yuki Tea Shop";
+
     const card1 = {
       title: "About",
       desc1:
@@ -136,7 +138,7 @@ export function Home() {
     sectionHistory.innerHTML = new LinkCard(card3);
     sectionTrivia.innerHTML = new TriviaCard(triviaCard);
 
-    setDidMount(true);
+    // setDidMount(true);
     console.log("The component mounted.");
   }
 

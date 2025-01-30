@@ -2420,6 +2420,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/TriviaCard */ "./src/modules/TriviaCard.js");
 /* harmony import */ var _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/LinkCard */ "./src/modules/LinkCard.js");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+/* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
+
 
 
 
@@ -2437,7 +2439,7 @@ function Home() {
     id: "banner-img",
     className: "border-bottom border-top border-black border-5",
     width: "100%",
-    src: "../assets/images/banner1.png",
+    src: _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_5__,
     alt: "Yuki's Tea Shop Banner Image",
     useMap: "#banner-image-map"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
@@ -4014,6 +4016,16 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "0be6a7a25374d83f251f.ttf";
+
+/***/ }),
+
+/***/ "./assets/images/banner1.png":
+/*!***********************************!*\
+  !*** ./assets/images/banner1.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "40476c0db5cccb8bd723.png";
 
 /***/ }),
 

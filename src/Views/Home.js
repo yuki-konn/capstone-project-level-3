@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import { TriviaCard } from "../modules/TriviaCard";
 import { LinkCard } from "../modules/LinkCard";
 import "../index.scss";
+import banner1 from "../../assets/images/banner1.png";
 
 export function Home() {
   debugger;
@@ -18,7 +19,7 @@ export function Home() {
           id="banner-img"
           className="border-bottom border-top border-black border-5"
           width="100%"
-          src="../assets/images/banner1.png"
+          src={banner1}
           alt="Yuki's Tea Shop Banner Image"
           useMap="#banner-image-map"
         />

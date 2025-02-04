@@ -2521,6 +2521,7 @@ function Home() {
       desc2: "",
       desc3: "",
       link: "https://yuki-konn.github.io/capstone-project-level-3/about",
+      // update link
       buttonName: "Learn More"
     };
     const card2 = {

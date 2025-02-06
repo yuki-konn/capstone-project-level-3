@@ -2170,7 +2170,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function About() {
-  debugger;
   const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK

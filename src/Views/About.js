@@ -3,7 +3,6 @@ import { Navbar } from "./Navbar";
 import "./about.scss";
 
 export function About() {
-  debugger;
   const [didMount, setDidMount] = useState(false);
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK

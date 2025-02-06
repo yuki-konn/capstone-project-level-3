@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export function Navbar(props = "") {
   const page = props.page;
-  debugger;
+  // debugger;
   if (page === "home") {
     return (
       <nav className="nav nav-tabs nav-fill bg-dark">

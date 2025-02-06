@@ -6,10 +6,10 @@ import "../index.scss";
 import banner1 from "../../assets/images/banner1.png";
 
 export function Home() {
-  debugger;
-  // const [didMount, setDidMount] = useState(false);
-
+  const [didMount, setDidMount] = useState(false);
   useEffect(componentDidMount, []); // MOUNT HOOK
+  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
     <>
@@ -88,8 +88,6 @@ export function Home() {
 
   // MOUNT PHASE
   function componentDidMount() {
-    debugger;
-
     document.title = "Yuki Tea Shop";
 
     const card1 = {
@@ -139,14 +137,22 @@ export function Home() {
     sectionHistory.innerHTML = new LinkCard(card3);
     sectionTrivia.innerHTML = new TriviaCard(triviaCard);
 
-    // setDidMount(true);
-    console.log("The component mounted.");
+    setDidMount(true);
+    console.log("The Home component has mounted.");
   }
 
   // UPDATE PHASE
-  // function componentDidUpdate() {
-  //   if (didMount) {
-  //     console.log("The component updated.");
-  //   }
-  // }
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The Home component updated.");
+    }
+  }
+
+  // UNMOUNT PHASE
+  function componentDidUnmount() {
+    return unmountMessage;
+  }
+  function unmountMessage() {
+    console.log("The Home component has unmounted.");
+  }
 }

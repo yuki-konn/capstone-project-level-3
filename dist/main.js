@@ -2428,10 +2428,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
-  debugger;
-  // const [didMount, setDidMount] = useState(false);
-
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
     page: "home"
@@ -2513,7 +2513,6 @@ function Home() {
 
   // MOUNT PHASE
   function componentDidMount() {
-    debugger;
     document.title = "Yuki Tea Shop";
     const card1 = {
       title: "About",
@@ -2554,17 +2553,24 @@ function Home() {
     sectionLocation.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__.LinkCard(card2);
     sectionHistory.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__.LinkCard(card3);
     sectionTrivia.innerHTML = new _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_2__.TriviaCard(triviaCard);
-
-    // setDidMount(true);
-    console.log("The component mounted.");
+    setDidMount(true);
+    console.log("The Home component has mounted.");
   }
 
   // UPDATE PHASE
-  // function componentDidUpdate() {
-  //   if (didMount) {
-  //     console.log("The component updated.");
-  //   }
-  // }
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The Home component updated.");
+    }
+  }
+
+  // UNMOUNT PHASE
+  function componentDidUnmount() {
+    return unmountMessage;
+  }
+  function unmountMessage() {
+    console.log("The Home component has unmounted.");
+  }
 }
 
 /***/ }),
@@ -2586,7 +2592,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Navbar(props = "") {
   const page = props.page;
-  debugger;
+  // debugger;
   if (page === "home") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
       className: "nav nav-tabs nav-fill bg-dark"

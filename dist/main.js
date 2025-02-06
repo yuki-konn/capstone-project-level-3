@@ -2563,14 +2563,14 @@ function Home() {
       console.log("The Home component updated.");
     }
   }
+}
 
-  // UNMOUNT PHASE
-  function componentDidUnmount() {
-    return unmountMessage;
-  }
-  function unmountMessage() {
-    console.log("The Home component has unmounted.");
-  }
+// UNMOUNT PHASE
+function componentDidUnmount() {
+  return unmountMessage;
+}
+function unmountMessage() {
+  console.log("The Home component has unmounted.");
 }
 
 /***/ }),

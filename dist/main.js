@@ -2695,8 +2695,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Shop() {
-  debugger;
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
     page: "shop"
@@ -2720,58 +2722,68 @@ function Shop() {
     id: "cart1",
     className: "list-group-item"
   }, "Black Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(1)
+    id: "addCartButton1",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart2",
     className: "list-group-item"
   }, "Green Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(2)
+    id: "addCartButton2",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart3",
     className: "list-group-item"
   }, "White Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(3)
+    id: "addCartButton3",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart4",
     className: "list-group-item"
   }, "Oolong Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(4)
+    id: "addCartButton4",
+    onClick: handleClick
   }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "badge bg-info"
   }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart5",
     className: "list-group-item"
   }, "Pu-erh Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(5)
+    id: "addCartButton5",
+    onClick: handleClick
   }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "badge bg-info"
   }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart6",
     className: "list-group-item"
   }, "Purple Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(6)
+    id: "addCartButton6",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart7",
     className: "list-group-item"
   }, "Matcha Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(7)
+    id: "addCartButton7",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart8",
     className: "list-group-item"
   }, "Mate Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(8)
+    id: "addCartButton8",
+    onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart9",
     className: "list-group-item"
   }, "Herbal Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(9)
+    id: "addCartButton9",
+    onClick: handleClick
   }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "badge bg-info"
   }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     id: "cart10",
     className: "list-group-item"
   }, "Rooibos Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(10)
+    id: "addCartButton10",
+    onClick: handleClick
   }, "Add to Cart"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2779,86 +2791,109 @@ function Shop() {
   }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fst-italic"
   }, "Yuki Konishi"))));
-}
-function componentDidMount() {
-  debugger;
-  document.title = "Yuki Tea Shop | SHOP";
 
-  // card objects
-  const teaCard1 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
-    title: "Black Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard2 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
-    title: "Green Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard3 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
-    title: "White Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard4 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
-    title: "Oolong Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard5 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
-    title: "Pu-erh Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard6 = {
-    src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
-    title: "Purple Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard7 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
-    title: "Matcha Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard8 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
-    title: "Mate Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard9 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
-    title: "Herbal Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
-  const teaCard10 = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
-    title: "Rooibos Tea",
-    description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-  };
+  // MOUNT PHASE
+  function componentDidMount() {
+    document.title = "Yuki Tea Shop | SHOP";
 
-  // card array with objects
-  const teaCards = [teaCard1, teaCard2, teaCard3, teaCard4, teaCard5, teaCard6, teaCard7, teaCard8, teaCard9, teaCard10];
+    // card objects
+    const teaCard1 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+      title: "Black Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard2 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+      title: "Green Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard3 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+      title: "White Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard4 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+      title: "Oolong Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard5 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+      title: "Pu-erh Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard6 = {
+      src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+      title: "Purple Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard7 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+      title: "Matcha Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard8 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+      title: "Mate Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard9 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+      title: "Herbal Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
+    const teaCard10 = {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+      title: "Rooibos Tea",
+      description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
+    };
 
-  // converts card array positions to cards then adds them to column groups.
-  const groupColumns = [];
-  let position = 0;
-  do {
-    let columns = "";
-    for (let count = 0; count < 5; count++) {
-      const content = teaCards[position];
-      const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__.ShopCard(content);
-      columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__.Column(contentCard);
-      position++;
+    // card array with objects
+    const teaCards = [teaCard1, teaCard2, teaCard3, teaCard4, teaCard5, teaCard6, teaCard7, teaCard8, teaCard9, teaCard10];
+
+    // converts card array positions to cards then adds them to column groups.
+    const groupColumns = [];
+    let position = 0;
+    do {
+      let columns = "";
+      for (let count = 0; count < 5; count++) {
+        const content = teaCards[position];
+        const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__.ShopCard(content);
+        columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__.Column(contentCard);
+        position++;
+      }
+      groupColumns.push(columns);
+    } while (position < teaCards.length);
+    debugger;
+    const rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__.createRows)(groupColumns);
+    const container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__.GridSystem();
+    container.addRow(rows);
+    const sectionTea = document.getElementById("sectionTea");
+    sectionTea.innerHTML += container;
+    setDidMount(true);
+    console.log("The Shop component has mounted.");
+  }
+
+  // UPDATE PHASE
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The Shop component has updated.");
     }
-    groupColumns.push(columns);
-  } while (position < teaCards.length);
-  debugger;
-  const rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__.createRows)(groupColumns);
-  const container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__.GridSystem();
-  container.addRow(rows);
-  const sectionTea = document.getElementById("sectionTea");
-  sectionTea.innerHTML += container;
-  console.log("The component mounted.");
+  }
+}
+
+// UNMOUNT PHASE
+function componentDidUnmount() {
+  return unmountMessage;
+}
+function unmountMessage() {
+  console.log("The Shop component has unmounted.");
+}
+
+// PASSES PARAMETER TO A MORE SPECIFIC HANDLER
+function handleClick(event) {
+  let buttonId = event.target.id; // GETS THE ID OF BUTTON THATS CLICKED. USED THIS INSTEAD OF getElementById BECAUSE I WANTED EACH BUTTON TO GIVE ME A DIFFERENT ID.
+  (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(event, buttonId);
 }
 
 /***/ }),
@@ -2873,13 +2908,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleClickAddCart: () => (/* binding */ handleClickAddCart)
 /* harmony export */ });
-// Displays alert when clicked. WIP on being able to only display alert once.
-// shop.html
+function handleClickAddCart(event = new Event(), buttonId) {
+  // BLACK TEA
+  if (buttonId === "addCartButton1") {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      const cart = document.getElementById("cart1");
+      cart.innerHTML += addAlert;
+      buttonClicked = true;
+    } else console.log("Something is broken if you get this message.");
+  }
 
-window.handleClickAddCart = handleClickAddCart;
-function handleClickAddCart(event = new Event(), itemNum) {
-  if (itemNum == 1) {
-    debugger;
+  // GREEN TEA
+  if (buttonId === "addCartButton2") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2887,11 +2933,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart1.innerHTML += addAlert;
+      const cart = document.getElementById("cart2");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 2) {
+
+  // WHITE TEA
+  if (buttonId === "addCartButton3") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2899,11 +2948,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart2.innerHTML += addAlert;
+      const cart = document.getElementById("cart3");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 3) {
+
+  // OOLONG TEA
+  if (buttonId === "addCartButton4") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2911,11 +2963,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart3.innerHTML += addAlert;
+      const cart = document.getElementById("cart4");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 4) {
+
+  // PU-ERH TEA
+  if (buttonId === "addCartButton5") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2923,11 +2978,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart4.innerHTML += addAlert;
+      const cart = document.getElementById("cart5");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 5) {
+
+  // PURPLE TEA
+  if (buttonId === "addCartButton6") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2935,11 +2993,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart5.innerHTML += addAlert;
+      const cart = document.getElementById("cart6");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 6) {
+
+  // MATCHA TEA
+  if (buttonId === "addCartButton7") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2947,11 +3008,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart6.innerHTML += addAlert;
+      const cart = document.getElementById("cart7");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 7) {
+
+  // MATE TEA
+  if (buttonId === "addCartButton8") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2959,11 +3023,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart7.innerHTML += addAlert;
+      const cart = document.getElementById("cart8");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 8) {
+
+  // HERBAL TEA
+  if (buttonId === "addCartButton9") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2971,11 +3038,14 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart8.innerHTML += addAlert;
+      const cart = document.getElementById("cart9");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 9) {
+
+  // ROOIBOS TEA
+  if (buttonId === "addCartButton10") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -2983,21 +3053,10 @@ function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart9.innerHTML += addAlert;
+      const cart = document.getElementById("cart10");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {}
-  }
-  if (itemNum == 10) {
-    let buttonClicked = false;
-    if (!buttonClicked) {
-      let addAlert = `<div class="alert alert-success alert-dismissible">
-      <div class="spinner-grow text-success"></div>
-      This item has been added to your cart.
-      <button class="btn-close" data-bs-dismiss="alert"></button>
-      </div>`;
-      cart10.innerHTML += addAlert;
-      buttonClicked = true;
-    } else {}
+    } else console.log("Something is broken if you get this message.");
   }
 }
 

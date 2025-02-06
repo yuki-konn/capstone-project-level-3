@@ -1,10 +1,21 @@
-// Displays alert when clicked. WIP on being able to only display alert once.
-// shop.html
+export function handleClickAddCart(event = new Event(), buttonId) {
+  // BLACK TEA
+  if (buttonId === "addCartButton1") {
+    let buttonClicked = false;
+    if (!buttonClicked) {
+      let addAlert = `<div class="alert alert-success alert-dismissible">
+      <div class="spinner-grow text-success"></div>
+      This item has been added to your cart.
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>`;
+      const cart = document.getElementById("cart1");
+      cart.innerHTML += addAlert;
+      buttonClicked = true;
+    } else console.log("Something is broken if you get this message.");
+  }
 
-window.handleClickAddCart = handleClickAddCart;
-export function handleClickAddCart(event = new Event(), itemNum) {
-  if (itemNum == 1) {
-    debugger;
+  // GREEN TEA
+  if (buttonId === "addCartButton2") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -12,12 +23,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart1.innerHTML += addAlert;
+      const cart = document.getElementById("cart2");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 2) {
+
+  // WHITE TEA
+  if (buttonId === "addCartButton3") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -25,12 +38,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart2.innerHTML += addAlert;
+      const cart = document.getElementById("cart3");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 3) {
+
+  // OOLONG TEA
+  if (buttonId === "addCartButton4") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -38,12 +53,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart3.innerHTML += addAlert;
+      const cart = document.getElementById("cart4");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 4) {
+
+  // PU-ERH TEA
+  if (buttonId === "addCartButton5") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -51,12 +68,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart4.innerHTML += addAlert;
+      const cart = document.getElementById("cart5");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 5) {
+
+  // PURPLE TEA
+  if (buttonId === "addCartButton6") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -64,12 +83,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart5.innerHTML += addAlert;
+      const cart = document.getElementById("cart6");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 6) {
+
+  // MATCHA TEA
+  if (buttonId === "addCartButton7") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -77,12 +98,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart6.innerHTML += addAlert;
+      const cart = document.getElementById("cart7");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 7) {
+
+  // MATE TEA
+  if (buttonId === "addCartButton8") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -90,12 +113,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart7.innerHTML += addAlert;
+      const cart = document.getElementById("cart8");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 8) {
+
+  // HERBAL TEA
+  if (buttonId === "addCartButton9") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -103,12 +128,14 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart8.innerHTML += addAlert;
+      const cart = document.getElementById("cart9");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
-  if (itemNum == 9) {
+
+  // ROOIBOS TEA
+  if (buttonId === "addCartButton10") {
     let buttonClicked = false;
     if (!buttonClicked) {
       let addAlert = `<div class="alert alert-success alert-dismissible">
@@ -116,22 +143,9 @@ export function handleClickAddCart(event = new Event(), itemNum) {
       This item has been added to your cart.
       <button class="btn-close" data-bs-dismiss="alert"></button>
       </div>`;
-      cart9.innerHTML += addAlert;
+      const cart = document.getElementById("cart10");
+      cart.innerHTML += addAlert;
       buttonClicked = true;
-    } else {
-    }
-  }
-  if (itemNum == 10) {
-    let buttonClicked = false;
-    if (!buttonClicked) {
-      let addAlert = `<div class="alert alert-success alert-dismissible">
-      <div class="spinner-grow text-success"></div>
-      This item has been added to your cart.
-      <button class="btn-close" data-bs-dismiss="alert"></button>
-      </div>`;
-      cart10.innerHTML += addAlert;
-      buttonClicked = true;
-    } else {
-    }
+    } else console.log("Something is broken if you get this message.");
   }
 }

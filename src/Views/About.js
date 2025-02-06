@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
+import "./about.scss";
 
 export function About() {
   debugger;
+  const [didMount, setDidMount] = useState(false);
+  useEffect(componentDidMount, []); // MOUNT HOOK
+  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
     <>
@@ -112,4 +117,26 @@ export function About() {
       </footer>
     </>
   );
+
+  // MOUNT PHASE
+  function componentDidMount() {
+    document.title = "Yuki Tea Shop | ABOUT";
+    setDidMount(true);
+    console.log("The About component has updated.");
+  }
+
+  // UPDATE PHASE
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The About component has updated.");
+    }
+  }
+}
+
+// UNMOUNT PHASE
+function componentDidUnmount() {
+  return unmountMessage;
+}
+function unmountMessage() {
+  console.log("The About component has unmounted.");
 }

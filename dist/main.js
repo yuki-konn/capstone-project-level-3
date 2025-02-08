@@ -2175,10 +2175,7 @@ function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    id: "banner-img",
-    className: "bannerImage2 border-bottom border-top border-black border-5"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "m-2 text-center border border-3 border-success bg-warning"
@@ -2207,7 +2204,7 @@ function About() {
     className: "list-group-item"
   }, "Added Site map to ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "about.html"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
-  }, "Created form process for both forms in ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.html"), " ", "and", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.js"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Created form process for both forms in ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.html"), " and", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.js"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Created server simulation for both forms in", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.html"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "contact.js"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
@@ -2232,7 +2229,7 @@ function About() {
     className: "list-group-item"
   }, "Form submission processes with server simulation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
-  }, "Created random trivia card on Home page.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Created random trivia card on Home page."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "siteMapGroup",
     className: "m-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2253,13 +2250,7 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "no-decor",
     href: "#article2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "New Features"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fw-bold"
-  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fst-italic"
-  }, "Yuki Konishi"))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "New Features"))))));
 
   // MOUNT PHASE
   function componentDidMount() {
@@ -2313,10 +2304,7 @@ function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    id: "banner-img",
-    className: "bannerImage2 border-bottom border-top border-black border-5"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     className: "container contact-main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "text-center border-bottom border-3 border-dark"
@@ -2423,13 +2411,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "phoneOutputTag",
     className: "border border-3 border-dark text-center"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fw-bold"
-  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fst-italic"
-  }, "Yuki Konishi"))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)));
 
   // MOUNT PHASE
   function componentDidMount() {
@@ -2456,40 +2438,54 @@ function unmountMessage() {
 
 /***/ }),
 
-/***/ "./src/Views/Home.js":
-/*!***************************!*\
-  !*** ./src/Views/Home.js ***!
-  \***************************/
+/***/ "./src/Views/Footer.js":
+/*!*****************************!*\
+  !*** ./src/Views/Footer.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Home: () => (/* binding */ Home)
+/* harmony export */   Footer: () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Footer() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fw-bold"
+  }, "Copyright 2025"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "fst-italic"
+  }, "Yuki")));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Header.js":
+/*!*****************************!*\
+  !*** ./src/Views/Header.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Header: () => (/* binding */ Header)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/TriviaCard */ "./src/modules/TriviaCard.js");
-/* harmony import */ var _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/LinkCard */ "./src/modules/LinkCard.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
-/* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
+/* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
 
 
 
-
-
-
-function Home() {
-  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+function Header() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     id: "banner-img",
     className: "border-bottom border-top border-black border-5",
     width: "100%",
-    src: _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_5__,
+    src: _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_2__,
     alt: "Yuki's Tea Shop Banner Image",
     useMap: "#banner-image-map"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
@@ -2508,7 +2504,37 @@ function Home() {
     href: "https://www.linkedin.com/in/yuki-k-745115219/",
     alt: "LinkedIn Icon",
     target: "_blank"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+  })));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Home.js":
+/*!***************************!*\
+  !*** ./src/Views/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Home: () => (/* binding */ Home)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/TriviaCard */ "./src/modules/TriviaCard.js");
+/* harmony import */ var _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/LinkCard */ "./src/modules/LinkCard.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+
+
+
+
+function Home() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionAbout",
@@ -2522,7 +2548,7 @@ function Home() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionTrivia",
     className: "text-center m-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "siteMapGroup",
     className: "m-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2553,13 +2579,7 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "no-decor",
     href: "#sectionTrivia"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Trivia"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center m-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fw-bold"
-  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fst-italic"
-  }, "Yuki Konishi"))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Trivia"))))));
 
   // MOUNT PHASE
   function componentDidMount() {
@@ -2599,10 +2619,10 @@ function Home() {
     const sectionLocation = document.getElementById("sectionLocation");
     const sectionHistory = document.getElementById("sectionHistory");
     const sectionTrivia = document.getElementById("sectionTrivia");
-    sectionAbout.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__.LinkCard(card1);
-    sectionLocation.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__.LinkCard(card2);
-    sectionHistory.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_3__.LinkCard(card3);
-    sectionTrivia.innerHTML = new _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_2__.TriviaCard(triviaCard);
+    sectionAbout.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card1);
+    sectionLocation.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card2);
+    sectionHistory.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card3);
+    sectionTrivia.innerHTML = new _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_1__.TriviaCard(triviaCard);
     setDidMount(true);
     console.log("The Home component has mounted.");
   }
@@ -2693,10 +2713,7 @@ function Shop() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    id: "banner-img",
-    className: "bannerImage2 border-bottom border-top border-black border-5"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "shopMain"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "m-1",
@@ -2775,13 +2792,7 @@ function Shop() {
   }, "Rooibos Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton10",
     onClick: handleClick
-  }, "Add to Cart"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fw-bold"
-  }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "fst-italic"
-  }, "Yuki Konishi"))));
+  }, "Add to Cart")))));
 
   // MOUNT PHASE
   function componentDidMount() {
@@ -3709,6 +3720,11 @@ footer {
   width: 100%;
 }
 
+#siteMapGroup {
+  background-color: #181818;
+  text-align: center;
+  opacity: 0.9;
+}
 #siteMapGroup .list-group-item {
   width: 30%;
   background-color: #404040;
@@ -3733,7 +3749,7 @@ footer {
 
 .border-dotted {
   border-style: dotted !important;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAiBA;EACE,oBAAA;EACA,4CAAA;AAhBF;AAmCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAhCF;AAoCM;EACE,oBApCM;AAEd;AAmCQ;EACE,sBAnDH;AAkBP;AAoCM;EACE,oBA1CM;AAQd;AAmCQ;EACE,sBAzDH;AAwBP;AAqCI;EACE,yDArDS;EAsDT,0BAAA;EACA,4BAAA;AAnCN;AAqCI;EACE,YAAA;EACA,WAAA;AAnCN;AAuCE;;;EAGE,oBA9DU;AAyBd;;AAyCA;EACE,yBA3Ea;EA4Eb,yBA7EU;EA8EV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAtCF;;AAyCA;EACE,qBAAA;AAtCF;;AAwCA;EACE,qBAAA;AArCF;;AAwCA;EACE,WAAA;AArCF;;AA4CE;EACE,UAAA;EACA,yBArGS;AA4Db;AA2CE;EACE,iBAAA;EACA,mBAAA;AAzCJ;;AA4CA;EAxFE,mBAAA;EACA,wBAAA;AAgDF;AA9CE;EACE,qBAAA;EACA,wBAAA;AAgDJ;;AAyCA;EACE,+BAAA;AAtCF;;AAwCA;EACE,+BAAA;AArCF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    nav {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n      Link {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAiBA;EACE,oBAAA;EACA,4CAAA;AAhBF;AAmCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAhCF;AAoCM;EACE,oBApCM;AAEd;AAmCQ;EACE,sBAnDH;AAkBP;AAoCM;EACE,oBA1CM;AAQd;AAmCQ;EACE,sBAzDH;AAwBP;AAqCI;EACE,yDArDS;EAsDT,0BAAA;EACA,4BAAA;AAnCN;AAqCI;EACE,YAAA;EACA,WAAA;AAnCN;AAuCE;;;EAGE,oBA9DU;AAyBd;;AAyCA;EACE,yBA3Ea;EA4Eb,yBA7EU;EA8EV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAtCF;;AAyCA;EACE,qBAAA;AAtCF;;AAwCA;EACE,qBAAA;AArCF;;AAwCA;EACE,WAAA;AArCF;;AA2CA;EACE,yBArGU;EAsGV,kBAAA;EACA,YAAA;AAxCF;AAyCE;EACE,UAAA;EACA,yBAxGS;AAiEb;AAyCE;EACE,iBAAA;EACA,mBAAA;AAvCJ;;AA0CA;EA3FE,mBAAA;EACA,wBAAA;AAqDF;AAnDE;EACE,qBAAA;EACA,wBAAA;AAqDJ;;AAuCA;EACE,+BAAA;AApCF;;AAsCA;EACE,+BAAA;AAnCF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    nav {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n      Link {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14732,12 +14748,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
 /* harmony import */ var _Views_Shop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/Shop */ "./src/Views/Shop.js");
 /* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
 /* harmony import */ var _Views_Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Views/Contact */ "./src/Views/Contact.js");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
+/* harmony import */ var _Views_Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Views/Header */ "./src/Views/Header.js");
+/* harmony import */ var _Views_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Views/Footer */ "./src/Views/Footer.js");
+
+
 
 
 
@@ -14750,31 +14770,31 @@ const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
 const domain = window.location.hostname;
 console.log(`Domain: ${domain}`);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_7__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/capstone-project-level-3",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/capstone-project-level-3/shop",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Shop__WEBPACK_IMPORTED_MODULE_3__.Shop, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/shop",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Shop__WEBPACK_IMPORTED_MODULE_3__.Shop, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/capstone-project-level-3/about",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_4__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/about",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_4__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/capstone-project-level-3/contact",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_5__.Contact, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: "/contact",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_5__.Contact, null)
-})))));
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Footer__WEBPACK_IMPORTED_MODULE_8__.Footer, null))));
 })();
 
 /******/ })()

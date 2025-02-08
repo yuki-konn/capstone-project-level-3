@@ -6,6 +6,8 @@ import { Shop } from "./Views/Shop";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 import "./index.scss";
+import { Header } from "./Views/Header";
+import { Footer } from "./Views/Footer";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -16,6 +18,7 @@ console.log(`Domain: ${domain}`);
 root.render(
   <>
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/capstone-project-level-3" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -26,6 +29,7 @@ root.render(
         <Route path="/capstone-project-level-3/contact" element={<Contact />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </>
 );

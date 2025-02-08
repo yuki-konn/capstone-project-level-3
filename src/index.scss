@@ -104,6 +104,9 @@ footer {
 
 // INDEX START
 #siteMapGroup {
+  background-color: $footer-bg;
+  text-align: center;
+  opacity: 0.9;
   .list-group-item {
     width: 30%;
     background-color: $sitemap-bg;

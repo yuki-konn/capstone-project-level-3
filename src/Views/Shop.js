@@ -16,7 +16,7 @@ export function Shop() {
   return (
     <>
       <header>
-        <Navbar page="shop"></Navbar>
+        <Navbar />
         <img
           id="banner-img"
           className="bannerImage2 border-bottom border-top border-black border-5"

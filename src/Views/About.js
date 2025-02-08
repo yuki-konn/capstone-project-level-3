@@ -11,7 +11,7 @@ export function About() {
   return (
     <>
       <header>
-        <Navbar page="about"></Navbar>
+        <Navbar />
         <img
           id="banner-img"
           className="bannerImage2 border-bottom border-top border-black border-5"

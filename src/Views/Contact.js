@@ -13,7 +13,7 @@ export function Contact() {
   return (
     <>
       <header>
-        <Navbar page="contact"></Navbar>
+        <Navbar />
         <img
           id="banner-img"
           className="bannerImage2 border-bottom border-top border-black border-5"

@@ -14,7 +14,7 @@ export function Home() {
   return (
     <>
       <header>
-        <Navbar page="home"></Navbar>
+        <Navbar />
         <img
           id="banner-img"
           className="border-bottom border-top border-black border-5"

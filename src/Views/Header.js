@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import banner1 from "../../assets/images/banner1.png";
 
 export function Header() {
+  useEffect(componentDidMount, []);
   return (
     <header>
       <Navbar />
@@ -34,4 +35,8 @@ export function Header() {
       </map>
     </header>
   );
+
+  function componentDidMount() {
+    imageMapResize();
+  }
 }

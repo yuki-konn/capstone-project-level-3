@@ -2,24 +2,26 @@
 
 Capstone Level 3 Project
 
-Folder Structure
+Folders with folders inside.
 
-- Capstone Project Folder
-  - docs
-  - res
-    - fonts
-    - images
+- assets
+  - fonts
+  - images
+- src
+  - controllers
+  - modules
+  - utils
+  - Views
 
 Made with HTML, React JS, Bootstrap, and SASS.<br>
 API used [OpenTDB](https://opentdb.com/api_config.php)
 
 # NOTES
 
-In the index.html there is one inline and internal style.
+In the index.html there is one internal style.
+In the Home.js there is one inline style.
 
 # TO DO
 
-1. Fix `usemap` for banner that broke after switching to react.
-2. Fix alert not dismissing in `handleClickAddCart.js`
-3. Make 404 error page load when url is incorrect.
-4. Create global header and footer.
+1. Fix alert not dismissing in `handleClickAddCart.js`
+2. Make 404 error page load when url is incorrect.

@@ -1,8 +1,6 @@
-import { parseResponse1 } from "../modules/parseResponse1.js";
+import { parseContactResponse } from "../modules/parseContactResponse.js";
 import { makeRequest } from "../utils/makeRequest.js";
 import { output } from "../utils/output.js";
-
-window.handleSubmitContact = handleSubmitContact;
 
 // CONTACT FORM SUBMIT HANDLER
 export function handleSubmitContact(event = new Event()) {
@@ -32,8 +30,6 @@ export function handleSubmitContact(event = new Event()) {
 
   // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
   if (outputTag.innerHTML === "") {
-    debugger;
-
     output("<b style='color: gold'>Processing contact form...<b><br>");
     output("<br><u>Form Info<u><br>");
     output(`Name: ${value[0]}<br>`);
@@ -47,23 +43,17 @@ export function handleSubmitContact(event = new Event()) {
     }
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    if (fiveStar.checked) {
-      output(`Rating: ${value[3]}<br>`);
-    } else if (fourStar.checked) {
-      output(`Rating: ${value[4]}<br>`);
-    } else if (threeStar.checked) {
-      output(`Rating: ${value[5]}<br>`);
-    } else if (twoStar.checked) {
-      output(`Rating: ${value[6]}<br>`);
-    } else if (oneStar.checked) {
-      output(`Rating: ${value[7]}<br>`);
-    } else {
-      output("");
+    for (let position = 3; position <= 7; position++) {
+      debugger;
+      if (form[position].checked) {
+        output(`Rating: ${value[position]}<br>`);
+        console.log(`${value[position]} rating is selected.`);
+      } else;
     }
 
     output("--------------<br><br>");
     const promise = makeRequest("https://myserver.com");
-    promise.then(parseResponse1);
+    promise.then(parseContactResponse);
   } else {
   }
 }

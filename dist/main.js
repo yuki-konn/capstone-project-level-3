@@ -2303,11 +2303,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
 /* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
 /* harmony import */ var _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleSubmitContact */ "./src/controllers/handleSubmitContact.js");
+/* harmony import */ var _contact_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact.scss */ "./src/Views/contact.scss");
+
 
 
 
 
 function Contact() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
   debugger;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
     page: "contact"
@@ -2419,7 +2425,7 @@ function Contact() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "outputTag2",
+    id: "phoneOutputTag",
     className: "border border-3 border-dark text-center"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "text-center"
@@ -2428,6 +2434,28 @@ function Contact() {
   }, "Copyright 2024"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Website created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fst-italic"
   }, "Yuki Konishi"))));
+
+  // MOUNT PHASE
+  function componentDidMount() {
+    document.title = "Yuki Tea Shop | CONTACT";
+    setDidMount(true);
+    console.log("The Contact component has updated.");
+  }
+
+  // UPDATE PHASE
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The Contact component has updated.");
+    }
+  }
+}
+
+// UNMOUNT PHASE
+function componentDidUnmount() {
+  return unmountMessage;
+}
+function unmountMessage() {
+  console.log("The Contact component has unmounted.");
 }
 
 /***/ }),
@@ -3100,13 +3128,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleSubmitContact: () => (/* binding */ handleSubmitContact)
 /* harmony export */ });
-/* harmony import */ var _modules_parseResponse1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseResponse1.js */ "./src/modules/parseResponse1.js");
+/* harmony import */ var _modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseContactResponse.js */ "./src/modules/parseContactResponse.js");
 /* harmony import */ var _utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/makeRequest.js */ "./src/utils/makeRequest.js");
 /* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
 
 
 
-window.handleSubmitContact = handleSubmitContact;
 
 // CONTACT FORM SUBMIT HANDLER
 function handleSubmitContact(event = new Event()) {
@@ -3126,7 +3153,6 @@ function handleSubmitContact(event = new Event()) {
 
   // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
   if (outputTag.innerHTML === "") {
-    debugger;
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<b style='color: gold'>Processing contact form...<b><br>");
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<br><u>Form Info<u><br>");
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Name: ${value[0]}<br>`);
@@ -3140,22 +3166,16 @@ function handleSubmitContact(event = new Event()) {
     }
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    if (fiveStar.checked) {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[3]}<br>`);
-    } else if (fourStar.checked) {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[4]}<br>`);
-    } else if (threeStar.checked) {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[5]}<br>`);
-    } else if (twoStar.checked) {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[6]}<br>`);
-    } else if (oneStar.checked) {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[7]}<br>`);
-    } else {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("");
+    for (let position = 3; position <= 7; position++) {
+      debugger;
+      if (form[position].checked) {
+        (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[position]}<br>`);
+        console.log(`${value[position]} rating is selected.`);
+      } else ;
     }
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("--------------<br><br>");
     const promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__.makeRequest)("https://myserver.com");
-    promise.then(_modules_parseResponse1_js__WEBPACK_IMPORTED_MODULE_0__.parseResponse1);
+    promise.then(_modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__.parseContactResponse);
   } else {}
 }
 
@@ -3171,7 +3191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleSubmitPhone: () => (/* binding */ handleSubmitPhone)
 /* harmony export */ });
-/* harmony import */ var _modules_parseResponse2_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseResponse2.js */ "./src/modules/parseResponse2.js");
+/* harmony import */ var _modules_parsePhoneResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parsePhoneResponse.js */ "./src/modules/parsePhoneResponse.js");
 /* harmony import */ var _modules_PhoneObject_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/PhoneObject.js */ "./src/modules/PhoneObject.js");
 /* harmony import */ var _utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/makeRequest.js */ "./src/utils/makeRequest.js");
 /* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
@@ -3200,14 +3220,10 @@ function handleSubmitPhone(event = new Event()) {
   const jsonString = JSON.stringify(phoneObject);
   const jsonP = JSON.parse(jsonString);
   const jsonForm = "<br><u>Form Info</u><br>" + "Name: " + jsonP.name + "<br>" + "Phone Number: " + jsonP.phoneNumber + "<br>" + "Appointment: " + jsonP.appointment + "<br>--------------<br><br>";
-  debugger;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)("<b style='color: gold'>Processing phone appointment form...</b><br>", "outputTag2");
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)("<b style='color: gold'>Processing phone appointment form...</b><br>", "phoneOutputTag");
   const promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_2__.makeRequest)("https://myserver.com");
-  promise.then(_modules_parseResponse2_js__WEBPACK_IMPORTED_MODULE_0__.parseResponse2);
-  jsonFormOutput();
-  function jsonFormOutput() {
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)(jsonForm, "outputTag2");
-  }
+  promise.then(_modules_parsePhoneResponse_js__WEBPACK_IMPORTED_MODULE_0__.parsePhoneResponse);
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)(jsonForm, "phoneOutputTag");
 }
 
 /***/ }),
@@ -3367,21 +3383,21 @@ function createRows(columnsArray) {
 
 /***/ }),
 
-/***/ "./src/modules/parseResponse1.js":
-/*!***************************************!*\
-  !*** ./src/modules/parseResponse1.js ***!
-  \***************************************/
+/***/ "./src/modules/parseContactResponse.js":
+/*!*********************************************!*\
+  !*** ./src/modules/parseContactResponse.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   parseResponse1: () => (/* binding */ parseResponse1)
+/* harmony export */   parseContactResponse: () => (/* binding */ parseContactResponse)
 /* harmony export */ });
 /* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
 
 
 // PARSE RESPONSE FOR CONTACT FORM contact.html
-function parseResponse1(resolveValue) {
+function parseContactResponse(resolveValue) {
   debugger;
   const response = JSON.parse(resolveValue);
   const message = response.message;
@@ -3390,25 +3406,25 @@ function parseResponse1(resolveValue) {
 
 /***/ }),
 
-/***/ "./src/modules/parseResponse2.js":
-/*!***************************************!*\
-  !*** ./src/modules/parseResponse2.js ***!
-  \***************************************/
+/***/ "./src/modules/parsePhoneResponse.js":
+/*!*******************************************!*\
+  !*** ./src/modules/parsePhoneResponse.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   parseResponse2: () => (/* binding */ parseResponse2)
+/* harmony export */   parsePhoneResponse: () => (/* binding */ parsePhoneResponse)
 /* harmony export */ });
 /* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
 
 
 // PARSE RESPONSE FOR PHONE APPOINTMENT FORM contact.html
-function parseResponse2(resolveValue) {
+function parsePhoneResponse(resolveValue) {
   debugger;
   const response = JSON.parse(resolveValue);
   const message = response.message;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "outputTag2");
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "phoneOutputTag");
 }
 
 /***/ }),
@@ -3550,12 +3566,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // OUTPUT FUNCTION
 function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
+  const tagID = document.getElementById(outputTag);
+  if (shouldAppend) tagID.innerHTML += message;else tagID.innerHTML = message;
 }
-
-// function output(message) {
-//   outputTag.innerHTML += message;
-// }
 
 /***/ }),
 
@@ -3585,6 +3598,38 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
 li a span:hover {
   color: gold;
 }`, "",{"version":3,"sources":["webpack://./src/Views/about.scss"],"names":[],"mappings":"AAKA;EAHE,uCAAA;AAAF;;AAOA;EACE,WAVK;AAMP","sourcesContent":["$gold: gold;\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgba(145, 145, 145, 1);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\nli a span:hover {\r\n  color: $gold;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/contact.scss":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/contact.scss ***!
+  \*************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
+  text-shadow: 2px 2px rgb(94, 94, 94);
+}
+
+.contact-main {
+  background-color: #b3b3b3;
+}`, "",{"version":3,"sources":["webpack://./src/Views/contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n.contact-main {\r\n  background-color: $body-bg;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3812,6 +3857,58 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_about_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_about_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_about_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/Views/contact.scss":
+/*!********************************!*\
+  !*** ./src/Views/contact.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contact_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./contact.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Views/contact.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contact_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contact_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contact_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contact_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

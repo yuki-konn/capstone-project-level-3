@@ -4,10 +4,7 @@ export function output(
   outputTag = "outputTag",
   shouldAppend = true
 ) {
-  if (shouldAppend) window[outputTag].innerHTML += message;
-  else window[outputTag].innerHTML = message;
+  const tagID = document.getElementById(outputTag);
+  if (shouldAppend) tagID.innerHTML += message;
+  else tagID.innerHTML = message;
 }
-
-// function output(message) {
-//   outputTag.innerHTML += message;
-// }

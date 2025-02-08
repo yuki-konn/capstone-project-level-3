@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { handleSubmitPhone } from "../controllers/handleSubmitPhone";
 import { handleSubmitContact } from "../controllers/handleSubmitContact";
+import "./contact.scss";
 
 export function Contact() {
+  const [didMount, setDidMount] = useState(false);
+  useEffect(componentDidMount, []); // MOUNT HOOK
+  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUnmount, []); // UNMOUNT HOOK
   debugger;
 
   return (
@@ -132,7 +137,7 @@ export function Contact() {
           </form>
           <br />
           <div
-            id="outputTag2"
+            id="phoneOutputTag"
             className="border border-3 border-dark text-center"
           ></div>
           <br />
@@ -147,4 +152,26 @@ export function Contact() {
       </footer>
     </>
   );
+
+  // MOUNT PHASE
+  function componentDidMount() {
+    document.title = "Yuki Tea Shop | CONTACT";
+    setDidMount(true);
+    console.log("The Contact component has updated.");
+  }
+
+  // UPDATE PHASE
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("The Contact component has updated.");
+    }
+  }
+}
+
+// UNMOUNT PHASE
+function componentDidUnmount() {
+  return unmountMessage;
+}
+function unmountMessage() {
+  console.log("The Contact component has unmounted.");
 }

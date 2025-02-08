@@ -1,4 +1,4 @@
-import { parseResponse2 } from "../modules/parseResponse2.js";
+import { parsePhoneResponse } from "../modules/parsePhoneResponse.js";
 import { PhoneObject } from "../modules/PhoneObject.js";
 import { makeRequest } from "../utils/makeRequest.js";
 import { output } from "../utils/output.js";
@@ -37,16 +37,11 @@ export function handleSubmitPhone(event = new Event()) {
     jsonP.appointment +
     "<br>--------------<br><br>";
 
-  debugger;
   output(
     "<b style='color: gold'>Processing phone appointment form...</b><br>",
-    "outputTag2"
+    "phoneOutputTag"
   );
   const promise = makeRequest("https://myserver.com");
-  promise.then(parseResponse2);
-  jsonFormOutput();
-
-  function jsonFormOutput() {
-    output(jsonForm, "outputTag2");
-  }
+  promise.then(parsePhoneResponse);
+  output(jsonForm, "phoneOutputTag");
 }

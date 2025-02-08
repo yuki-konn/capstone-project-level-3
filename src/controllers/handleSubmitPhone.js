@@ -7,7 +7,6 @@ window.handleSubmitPhone = handleSubmitPhone;
 // PHONE APPOINTMENT FORM SUBMIT HANDLER
 export function handleSubmitPhone(event = new Event()) {
   event.preventDefault();
-  debugger;
   const form = event.target;
 
   const nameInput = form[0];

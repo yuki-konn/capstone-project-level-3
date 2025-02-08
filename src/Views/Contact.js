@@ -9,7 +9,6 @@ export function Contact() {
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
-  debugger;
 
   return (
     <>

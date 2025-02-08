@@ -2314,7 +2314,7 @@ function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
-  debugger;
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, {
     page: "contact"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -3167,7 +3167,6 @@ function handleSubmitContact(event = new Event()) {
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
     for (let position = 3; position <= 7; position++) {
-      debugger;
       if (form[position].checked) {
         (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[position]}<br>`);
         console.log(`${value[position]} rating is selected.`);
@@ -3203,7 +3202,6 @@ window.handleSubmitPhone = handleSubmitPhone;
 // PHONE APPOINTMENT FORM SUBMIT HANDLER
 function handleSubmitPhone(event = new Event()) {
   event.preventDefault();
-  debugger;
   const form = event.target;
   const nameInput = form[0];
   const telInput = form[1];
@@ -3398,7 +3396,6 @@ __webpack_require__.r(__webpack_exports__);
 
 // PARSE RESPONSE FOR CONTACT FORM contact.html
 function parseContactResponse(resolveValue) {
-  debugger;
   const response = JSON.parse(resolveValue);
   const message = response.message;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
@@ -3421,7 +3418,6 @@ __webpack_require__.r(__webpack_exports__);
 
 // PARSE RESPONSE FOR PHONE APPOINTMENT FORM contact.html
 function parsePhoneResponse(resolveValue) {
-  debugger;
   const response = JSON.parse(resolveValue);
   const message = response.message;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "phoneOutputTag");

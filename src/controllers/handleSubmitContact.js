@@ -44,7 +44,6 @@ export function handleSubmitContact(event = new Event()) {
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
     for (let position = 3; position <= 7; position++) {
-      debugger;
       if (form[position].checked) {
         output(`Rating: ${value[position]}<br>`);
         console.log(`${value[position]} rating is selected.`);

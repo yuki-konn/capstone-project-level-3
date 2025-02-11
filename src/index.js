@@ -14,20 +14,18 @@ const root = createRoot(bodyTag);
 
 const domain = window.location.hostname;
 console.log(`Domain: ${domain}`);
+let rootpath = "";
+if (domain === "yuki-kon.github.io") rootpath = "/capstone-project-level-3";
 
 root.render(
   <>
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/capstone-project-level-3" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/capstone-project-level-3/shop" element={<Shop />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/capstone-project-level-3/about" element={<About />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/capstone-project-level-3/contact" element={<Contact />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path={`${rootpath}/`} element={<Home />} />
+        <Route path={`${rootpath}/shop`} element={<Shop />} />
+        <Route path={`${rootpath}/about`} element={<About />} />
+        <Route path={`${rootpath}/contact`} element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

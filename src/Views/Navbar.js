@@ -2,18 +2,30 @@ import React from "react";
 import { NavLink } from "react-router";
 
 export function Navbar() {
+  const domain = window.location.hostname;
+  let rootpath = "";
+  if (domain === "yuki-kon.github.io") rootpath = "/capstone-project-level-3";
   return (
     <nav className="nav nav-tabs nav-fill bg-dark">
-      <NavLink to="/" className="nav-link fw-bold text-success">
+      <NavLink to={`${rootpath}/`} className="nav-link fw-bold text-success">
         HOME
       </NavLink>
-      <NavLink to="/shop" className="nav-link fw-bold text-success">
+      <NavLink
+        to={`${rootpath}/shop`}
+        className="nav-link fw-bold text-success"
+      >
         SHOP
       </NavLink>
-      <NavLink to="/about" className="nav-link fw-bold text-success">
+      <NavLink
+        to={`${rootpath}/about`}
+        className="nav-link fw-bold text-success"
+      >
         ABOUT
       </NavLink>
-      <NavLink to="/contact" className="nav-link fw-bold text-success">
+      <NavLink
+        to={`${rootpath}/contact`}
+        className="nav-link fw-bold text-success"
+      >
         CONTACT
       </NavLink>
     </nav>

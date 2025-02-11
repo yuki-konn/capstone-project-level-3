@@ -4,6 +4,5 @@
 window.handleSubmitTrivia = handleSubmitTrivia;
 // index.html
 function handleSubmitTrivia(event = new HTMLFormElement()) {
-  debugger;
   event.preventDefault();
 }

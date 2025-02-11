@@ -4,7 +4,6 @@ export class LinkCard {
   closingTag = `</div></article>`;
   innerHTML = "";
 
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
           <p>${cardProperty.desc1}</p>

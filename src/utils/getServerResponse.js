@@ -1,6 +1,5 @@
 // SERVER RESPONSE contact.html
 export function getServerResponse(resolve) {
-  debugger;
   setTimeout(activateResolve, 5000);
   function activateResolve() {
     const response = {

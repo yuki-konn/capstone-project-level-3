@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Navbar } from "./Navbar";
 import { handleSubmitPhone } from "../controllers/handleSubmitPhone";
 import { handleSubmitContact } from "../controllers/handleSubmitContact";
 import "./contact.scss";

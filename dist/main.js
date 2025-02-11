@@ -2164,9 +2164,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _about_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.scss */ "./src/Views/about.scss");
-
+/* harmony import */ var _about_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.scss */ "./src/Views/about.scss");
 
 
 function About() {
@@ -2289,11 +2287,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
-/* harmony import */ var _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleSubmitContact */ "./src/controllers/handleSubmitContact.js");
-/* harmony import */ var _contact_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact.scss */ "./src/Views/contact.scss");
-
+/* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
+/* harmony import */ var _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmitContact */ "./src/controllers/handleSubmitContact.js");
+/* harmony import */ var _contact_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.scss */ "./src/Views/contact.scss");
 
 
 
@@ -2311,7 +2307,7 @@ function Contact() {
   }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, "Contact Form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_3__.handleSubmitContact
+    onSubmit: _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_2__.handleSubmitContact
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "contact-name"
   }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2380,7 +2376,7 @@ function Contact() {
     id: "outputTag",
     className: "border border-3 border-dark text-center"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_2__.handleSubmitPhone
+    onSubmit: _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__.handleSubmitPhone
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, "Schedule a Phone Appointment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
@@ -2696,14 +2692,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
-/* harmony import */ var _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/ShopCard.js */ "./src/modules/ShopCard.js");
-/* harmony import */ var _modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/createRows.js */ "./src/modules/createRows.js");
-/* harmony import */ var _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/Column.js */ "./src/utils/Column.js");
-/* harmony import */ var _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/GridSystem.js */ "./src/utils/GridSystem.js");
-/* harmony import */ var _shop_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shop.scss */ "./src/Views/shop.scss");
-
+/* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
+/* harmony import */ var _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/ShopCard.js */ "./src/modules/ShopCard.js");
+/* harmony import */ var _modules_createRows_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/createRows.js */ "./src/modules/createRows.js");
+/* harmony import */ var _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/Column.js */ "./src/utils/Column.js");
+/* harmony import */ var _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/GridSystem.js */ "./src/utils/GridSystem.js");
+/* harmony import */ var _shop_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shop.scss */ "./src/Views/shop.scss");
 
 
 
@@ -2864,15 +2858,14 @@ function Shop() {
       let columns = "";
       for (let count = 0; count < 5; count++) {
         const content = teaCards[position];
-        const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_3__.ShopCard(content);
-        columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_5__.Column(contentCard);
+        const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_2__.ShopCard(content);
+        columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__.Column(contentCard);
         position++;
       }
       groupColumns.push(columns);
     } while (position < teaCards.length);
-    debugger;
-    const rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_4__.createRows)(groupColumns);
-    const container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_6__.GridSystem();
+    const rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_3__.createRows)(groupColumns);
+    const container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_5__.GridSystem();
     container.addRow(rows);
     const sectionTea = document.getElementById("sectionTea");
     sectionTea.innerHTML += container;
@@ -2899,7 +2892,7 @@ function unmountMessage() {
 // PASSES PARAMETER TO A MORE SPECIFIC HANDLER
 function handleClick(event) {
   let buttonId = event.target.id; // GETS THE ID OF BUTTON THATS CLICKED. USED THIS INSTEAD OF getElementById BECAUSE I WANTED EACH BUTTON TO GIVE ME A DIFFERENT ID.
-  (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_2__.handleClickAddCart)(event, buttonId);
+  (0,_controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_1__.handleClickAddCart)(event, buttonId);
 }
 
 /***/ }),
@@ -3191,7 +3184,6 @@ class LinkCard {
       <div class="card-body">`;
   closingTag = `</div></article>`;
   innerHTML = "";
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
           <p>${cardProperty.desc1}</p>
@@ -3243,7 +3235,6 @@ class ShopCard {
   openingTag = `<article class="card border border-success border-2">`;
   closingTag = `</div></article>`;
   innerHTML = "";
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<img class="card-img-top" src="${cardProperty.src}">
         <div class="card-body">
@@ -3272,7 +3263,6 @@ class TriviaCard {
        <div class="card-body">`;
   closingTag = `</div></article>`;
   innerHTML = "";
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
         <div id="outputTag" class="p-3"></div>
@@ -3320,7 +3310,6 @@ __webpack_require__.r(__webpack_exports__);
 
 // CREATE ROWS FOR AN ARRAY OF COLUMNS shop.html
 function createRows(columnsArray) {
-  debugger;
   let rows = "";
   for (let position = 0; position < columnsArray.length; position++) {
     const columns = columnsArray[position];
@@ -3465,7 +3454,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // SERVER RESPONSE contact.html
 function getServerResponse(resolve) {
-  debugger;
   setTimeout(activateResolve, 5000);
   function activateResolve() {
     const response = {
@@ -3494,7 +3482,6 @@ __webpack_require__.r(__webpack_exports__);
 
 // PROMISE contact.html
 function makeRequest(url, param) {
-  debugger;
   return new Promise(_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
 }
 

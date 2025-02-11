@@ -2,7 +2,6 @@ import { output } from "../utils/output.js";
 
 // index.html
 export function viewResponse(fetchObject) {
-  debugger;
   const response = JSON.parse(fetchObject);
   const results = response.results;
   const item = results[0];

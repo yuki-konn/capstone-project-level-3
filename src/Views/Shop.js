@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Navbar } from "./Navbar";
 import { handleClickAddCart } from "../controllers/handleClickAddCart";
 import { ShopCard } from "../modules/ShopCard.js";
 import { createRows } from "../modules/createRows.js";
@@ -177,7 +176,6 @@ export function Shop() {
       groupColumns.push(columns);
     } while (position < teaCards.length);
 
-    debugger;
     const rows = createRows(groupColumns);
     const container = new GridSystem();
     container.addRow(rows);

@@ -4,7 +4,6 @@ export class TriviaCard {
   closingTag = `</div></article>`;
   innerHTML = "";
 
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
         <div id="outputTag" class="p-3"></div>

@@ -3,7 +3,6 @@ export class ShopCard {
   closingTag = `</div></article>`;
   innerHTML = "";
 
-  debugger;
   constructor(cardProperty) {
     this.innerHTML = `<img class="card-img-top" src="${cardProperty.src}">
         <div class="card-body">

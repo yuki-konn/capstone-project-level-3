@@ -2663,7 +2663,7 @@ __webpack_require__.r(__webpack_exports__);
 function Navbar() {
   const domain = window.location.hostname;
   let rootpath = "";
-  if (domain === "yuki-kon.github.io") rootpath = "/capstone-project-level-3";
+  if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav nav-tabs nav-fill bg-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
@@ -14759,7 +14759,7 @@ const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTa
 const domain = window.location.hostname;
 console.log(`Domain: ${domain}`);
 let rootpath = "";
-if (domain === "yuki-kon.github.io") rootpath = "/capstone-project-level-3";
+if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_7__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
   path: `${rootpath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)

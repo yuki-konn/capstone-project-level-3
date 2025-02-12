@@ -22,6 +22,3 @@ In the index.html there is one internal style.
 In the Home.js there is one inline style.
 
 # TO DO
-
-1. Fix alert not dismissing in `handleClickAddCart.js`
-2. Make 404 error page load when url is incorrect.

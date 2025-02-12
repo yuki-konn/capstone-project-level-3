@@ -7,7 +7,11 @@ export function Navbar() {
   if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
   return (
     <nav className="nav nav-tabs nav-fill bg-dark">
-      <NavLink to={`${rootpath}/`} className="nav-link fw-bold text-success">
+      <NavLink
+        to={`${rootpath}/`}
+        end
+        className="nav-link fw-bold text-success"
+      >
         HOME
       </NavLink>
       <NavLink

@@ -2668,6 +2668,7 @@ function Navbar() {
     className: "nav nav-tabs nav-fill bg-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootpath}/`,
+    end: true,
     className: "nav-link fw-bold text-success"
   }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootpath}/shop`,

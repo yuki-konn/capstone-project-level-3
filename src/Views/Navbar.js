@@ -6,7 +6,7 @@ export function Navbar() {
   let rootpath = "";
   if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
   return (
-    <nav className="nav nav-tabs nav-fill bg-dark">
+    <nav id="regularNavbar" className="nav nav-tabs nav-fill bg-dark">
       <NavLink
         to={`${rootpath}/`}
         end

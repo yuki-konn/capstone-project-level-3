@@ -1,5 +1,7 @@
 // CUSTOM COLORS
 $gold: gold;
+$navText: #00b300;
+$navTextHover: #b4f298;
 
 $body-bg: #b3b3b3;
 $body-color: black;
@@ -46,7 +48,7 @@ body {
   justify-content: center;
 
   header {
-    nav {
+    #regularNavbar {
       a {
         font-family: $primaryFont;
         &:hover {
@@ -62,6 +64,31 @@ body {
     #banner-img {
       height: 28vw;
       width: 100%;
+    }
+
+    // COLLAPSIBLENAVBAR.JS
+    #collapsibleNavbar {
+      font-family: $primaryFont;
+      a {
+        padding: 0px;
+        margin-left: 1vw;
+        text-decoration: none;
+        color: $navText;
+        font-size: 2.2vw;
+
+        &:hover {
+          color: $navTextHover;
+          font-size: 2.3vw;
+        }
+      }
+      ul {
+        margin-left: 1vw;
+      }
+      #homeNavDiv {
+        a {
+          font-size: 3vw;
+        }
+      }
     }
   }
 

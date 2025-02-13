@@ -2275,6 +2275,69 @@ function unmountMessage() {
 
 /***/ }),
 
+/***/ "./src/Views/CollapsibleNavbar.js":
+/*!****************************************!*\
+  !*** ./src/Views/CollapsibleNavbar.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CollapsibleNavbar: () => (/* binding */ CollapsibleNavbar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+
+
+
+function CollapsibleNavbar() {
+  const domain = window.location.hostname;
+  let rootpath = "";
+  if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    id: "collapsibleNavbar",
+    class: "navbar navbar-expand-lg bg-dark"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "container-fluid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "homeNavDiv",
+    class: "nav-item m-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
+    class: "navbar-brand",
+    to: `${rootpath}/`,
+    end: true,
+    "aria-current": "page"
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    class: "navbar-toggler bg-light",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#navbarNav",
+    "aria-controls": "navbarNav",
+    "aria-expanded": "false",
+    "aria-label": "Toggle navigation"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    class: "navbar-toggler-icon"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "collapse navbar-collapse",
+    id: "navbarNav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    class: "navbar-nav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
+    class: "nav-item nav-link",
+    to: `${rootpath}/shop`
+  }, "Shop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
+    class: "nav-item nav-link",
+    to: `${rootpath}/about`
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
+    class: "nav-item nav-link",
+    to: `${rootpath}/contact`
+  }, "Contact")))));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Contact.js":
 /*!******************************!*\
   !*** ./src/Views/Contact.js ***!
@@ -2473,12 +2536,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
 /* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
+/* harmony import */ var _CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CollapsibleNavbar */ "./src/Views/CollapsibleNavbar.js");
+
 
 
 
 function Header() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_3__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     id: "banner-img",
     className: "border-bottom border-top border-black border-5",
     width: "100%",
@@ -2665,6 +2730,7 @@ function Navbar() {
   let rootpath = "";
   if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    id: "regularNavbar",
     className: "nav nav-tabs nav-fill bg-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootpath}/`,
@@ -3665,10 +3731,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-body header nav a {
+body header #regularNavbar a {
   font-family: "edosz";
 }
-body header nav a:hover {
+body header #regularNavbar a:hover {
   background-color: gold;
 }
 body header .bannerImage2 {
@@ -3679,6 +3745,26 @@ body header .bannerImage2 {
 body header #banner-img {
   height: 28vw;
   width: 100%;
+}
+body header #collapsibleNavbar {
+  font-family: "edosz";
+}
+body header #collapsibleNavbar a {
+  padding: 0px;
+  margin-left: 1vw;
+  text-decoration: none;
+  color: #00b300;
+  font-size: 2.2vw;
+}
+body header #collapsibleNavbar a:hover {
+  color: #b4f298;
+  font-size: 2.3vw;
+}
+body header #collapsibleNavbar ul {
+  margin-left: 1vw;
+}
+body header #collapsibleNavbar #homeNavDiv a {
+  font-size: 3vw;
 }
 body h1,
 body h2,
@@ -3738,7 +3824,7 @@ footer {
 
 .border-dotted {
   border-style: dotted !important;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAiBA;EACE,oBAAA;EACA,4CAAA;AAhBF;AAmCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAhCF;AAoCM;EACE,oBApCM;AAEd;AAmCQ;EACE,sBAnDH;AAkBP;AAqCI;EACE,yDA/CS;EAgDT,0BAAA;EACA,4BAAA;AAnCN;AAqCI;EACE,YAAA;EACA,WAAA;AAnCN;AAuCE;;;EAGE,oBAxDU;AAmBd;;AAyCA;EACE,yBArEa;EAsEb,yBAvEU;EAwEV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAtCF;;AAyCA;EACE,qBAAA;AAtCF;;AAwCA;EACE,qBAAA;AArCF;;AAwCA;EACE,WAAA;AArCF;;AA2CA;EACE,yBA/FU;EAgGV,kBAAA;EACA,YAAA;AAxCF;AAyCE;EACE,UAAA;EACA,yBAlGS;AA2Db;AAyCE;EACE,iBAAA;EACA,mBAAA;AAvCJ;;AA0CA;EArFE,mBAAA;EACA,wBAAA;AA+CF;AA7CE;EACE,qBAAA;EACA,wBAAA;AA+CJ;;AAuCA;EACE,+BAAA;AApCF;;AAsCA;EACE,+BAAA;AAnCF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    nav {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAmBA;EACE,oBAAA;EACA,4CAAA;AAlBF;AAqCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAlCF;AAsCM;EACE,oBApCM;AAAd;AAqCQ;EACE,sBArDH;AAkBP;AAuCI;EACE,yDA/CS;EAgDT,0BAAA;EACA,4BAAA;AArCN;AAuCI;EACE,YAAA;EACA,WAAA;AArCN;AAyCI;EACE,oBAtDQ;AAed;AAwCM;EACE,YAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAzEE;EA0EF,gBAAA;AAtCR;AAwCQ;EACE,cA5EK;EA6EL,gBAAA;AAtCV;AAyCM;EACE,gBAAA;AAvCR;AA0CQ;EACE,cAAA;AAxCV;AA8CE;;;EAGE,oBAjFU;AAqCd;;AAgDA;EACE,yBA9Fa;EA+Fb,yBAhGU;EAiGV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AA7CF;;AAgDA;EACE,qBAAA;AA7CF;;AA+CA;EACE,qBAAA;AA5CF;;AA+CA;EACE,WAAA;AA5CF;;AAkDA;EACE,yBAxHU;EAyHV,kBAAA;EACA,YAAA;AA/CF;AAgDE;EACE,UAAA;EACA,yBA3HS;AA6Eb;AAgDE;EACE,iBAAA;EACA,mBAAA;AA9CJ;;AAiDA;EA9GE,mBAAA;EACA,wBAAA;AAiEF;AA/DE;EACE,qBAAA;EACA,wBAAA;AAiEJ;;AA8CA;EACE,+BAAA;AA3CF;;AA6CA;EACE,+BAAA;AA1CF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n$navText: #00b300;\r\n$navTextHover: #b4f298;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    #regularNavbar {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n\r\n    // COLLAPSIBLENAVBAR.JS\r\n    #collapsibleNavbar {\r\n      font-family: $primaryFont;\r\n      a {\r\n        padding: 0px;\r\n        margin-left: 1vw;\r\n        text-decoration: none;\r\n        color: $navText;\r\n        font-size: 2.2vw;\r\n\r\n        &:hover {\r\n          color: $navTextHover;\r\n          font-size: 2.3vw;\r\n        }\r\n      }\r\n      ul {\r\n        margin-left: 1vw;\r\n      }\r\n      #homeNavDiv {\r\n        a {\r\n          font-size: 3vw;\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

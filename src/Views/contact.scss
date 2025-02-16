@@ -10,4 +10,11 @@ $body-bg: #b3b3b3;
 
 .contact-main {
   background-color: $body-bg;
+  section {
+    form {
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
 }

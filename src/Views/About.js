@@ -8,7 +8,7 @@ export function About() {
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
-    <main className="container">
+    <main id="aboutMain" className="container-lg">
       <h2 className="m-2 text-center border border-3 border-success bg-warning">
         ABOUT
       </h2>

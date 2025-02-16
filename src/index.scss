@@ -56,14 +56,14 @@ body {
         }
       }
     }
-    .bannerImage2 {
-      background-image: $bannerImage2;
-      background-size: 100% 28vw;
-      background-repeat: no-repeat;
-    }
+    // .bannerImage2 {
+    //   background-image: $bannerImage2;
+    //   background-size: 100% 28vw;
+    //   background-repeat: no-repeat;
+    // }
     #banner-img {
-      height: 28vw;
-      width: 100%;
+      height: auto;
+      max-width: 100%;
     }
 
     // COLLAPSIBLENAVBAR.JS
@@ -150,3 +150,5 @@ footer {
   border-style: dotted !important;
 }
 // CUSTOM BOOTSTRAP CSS END
+
+//

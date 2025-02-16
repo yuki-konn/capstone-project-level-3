@@ -10,82 +10,89 @@ export function Contact() {
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
-    <main className="container contact-main">
+    <main id="contactMain" className="container-lg contact-main">
       <h1 className="text-center border-bottom border-3 border-dark">
         Contact Us
       </h1>
       <section>
         <h2 className="textShadow">Contact Form</h2>
         <form onSubmit={handleSubmitContact}>
-          <label htmlFor="contact-name">Name *</label>
-          <input
-            required
-            id="contact-name"
-            className="w100"
-            type="text"
-            name="contact-name"
-            placeholder="John Smith"
-          />
-          <label htmlFor="contact-email">Email *</label>
-          <br />
-          <input
-            required
-            id="contact-email"
-            className="w100"
-            type="email"
-            name="contact-email"
-            placeholder="email@email.com"
-          />
-          <br />
-          <label htmlFor="contact-comment">Comment (Optional)</label>
-          <br />
-          <textarea id="contact-comment" className="w100"></textarea>
-          <br />
-          <label htmlFor="contact-ratings">Rating (Optional)</label>
-          <br />
-          <section id="contact-ratings">
-            <label htmlFor="rating-five">5&#9733;</label>
+          <div className="row">
+            <label className="col-1" htmlFor="contact-name">
+              Name *
+            </label>
             <input
-              id="rating-five"
-              name="ratings"
-              type="radio"
-              aria-label="5 Star rating"
+              required
+              id="contact-name"
+              className="col-11"
+              type="text"
+              name="contact-name"
+              placeholder="John Smith"
             />
-            <br />
-            <label htmlFor="rating-four">4&#9733;</label>
+          </div>
+          <div className="row">
+            <label className="col-1" htmlFor="contact-email">
+              Email *
+            </label>
             <input
-              id="rating-four"
-              name="ratings"
-              type="radio"
-              aria-label="4 Star rating"
+              required
+              id="contact-email"
+              className="col-11"
+              type="email"
+              name="contact-email"
+              placeholder="email@email.com"
             />
-            <br />
-            <label htmlFor="rating-three">3&#9733;</label>
-            <input
-              id="rating-three"
-              name="ratings"
-              type="radio"
-              aria-label="3 Star rating"
-            />
-            <br />
-            <label htmlFor="rating-two">2&#9733;</label>
-            <input
-              id="rating-two"
-              name="ratings"
-              type="radio"
-              aria-label="2 Star rating"
-            />
-            <br />
-            <label htmlFor="rating-one">1&#9733;</label>
-            <input
-              id="rating-one"
-              name="ratings"
-              type="radio"
-              aria-label="1 Star rating"
-            />
-            <br />
-          </section>
-          <input type="submit" />
+          </div>
+          <div className="row">
+            <label htmlFor="contact-comment">Comment (Optional)</label>
+            <textarea id="contact-comment" className="w100"></textarea>
+          </div>
+          <div className="row">
+            <label htmlFor="contact-ratings">Rating (Optional)</label>
+            <section id="contact-ratings">
+              <label htmlFor="rating-five">5&#9733;</label>
+              <input
+                id="rating-five"
+                name="ratings"
+                type="radio"
+                aria-label="5 Star rating"
+              />
+              <br />
+              <label htmlFor="rating-four">4&#9733;</label>
+              <input
+                id="rating-four"
+                name="ratings"
+                type="radio"
+                aria-label="4 Star rating"
+              />
+              <br />
+              <label htmlFor="rating-three">3&#9733;</label>
+              <input
+                id="rating-three"
+                name="ratings"
+                type="radio"
+                aria-label="3 Star rating"
+              />
+              <br />
+              <label htmlFor="rating-two">2&#9733;</label>
+              <input
+                id="rating-two"
+                name="ratings"
+                type="radio"
+                aria-label="2 Star rating"
+              />
+              <br />
+              <label htmlFor="rating-one">1&#9733;</label>
+              <input
+                id="rating-one"
+                name="ratings"
+                type="radio"
+                aria-label="1 Star rating"
+              />
+              <br />
+            </section>
+          </div>
+          <input className="w100" type="submit" />
         </form>
         <br />
         <div
@@ -95,35 +102,47 @@ export function Contact() {
         <br />
       </section>
       <section>
+        <h2 className="textShadow">Schedule a Phone Appointment</h2>
         <form onSubmit={handleSubmitPhone}>
-          <h2 className="textShadow">Schedule a Phone Appointment</h2>
-          <label htmlFor="phone-name">Name *</label>
-          <br />
-          <input
-            required
-            id="phone-name"
-            type="text"
-            name="phone-name"
-            placeholder="John Smith"
-          />
-          <br />
-          <label htmlFor="phone-number">Phone Number *</label>
-          <br />
-          <input
-            required
-            id="phone-number"
-            type="tel"
-            name="phone-number"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="###-###-####"
-          />
-          <br />
-          <label htmlFor="phone-date-time">Appointment Time *</label>
-          <br />
-          <input required id="phone-date-time" type="datetime-local" />
-          <br />
-          <br />
-          <input type="submit" />
+          <div className="row">
+            <label className="col-1" htmlFor="phone-name">
+              Name *
+            </label>
+            <input
+              required
+              id="phone-name"
+              className="col-11"
+              type="text"
+              name="phone-name"
+              placeholder="John Smith"
+            />
+          </div>
+          <div className="row">
+            <label className="col-2" htmlFor="phone-number">
+              Phone Number *
+            </label>
+            <input
+              required
+              id="phone-number"
+              className="col-10"
+              type="tel"
+              name="phone-number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="###-###-####"
+            />
+          </div>
+          <div className="row">
+            <label className="col-3" htmlFor="phone-date-time">
+              Appointment Time *
+            </label>
+            <input
+              id="phone-date-time"
+              className="col-9"
+              type="datetime-local"
+              required
+            />
+          </div>
+          <input className="w100" type="submit" />
         </form>
         <br />
         <div

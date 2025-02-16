@@ -10,7 +10,7 @@ export function Home() {
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
-    <main className="container">
+    <main id="homeMain" className="container-lg">
       <section id="sectionAbout" className="text-center m-2"></section>
       <section id="sectionLocation" className="text-center m-2"></section>
       <section id="sectionHistory" className="text-center m-2"></section>

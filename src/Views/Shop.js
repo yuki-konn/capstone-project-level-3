@@ -13,17 +13,125 @@ export function Shop() {
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
-    <main id="shopMain">
+    <main id="shopMain" className="container-lg">
       <section className="m-1" id="sectionTea">
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Products
         </h2>
       </section>
-      <section id="sectionCart">
+      <section id="sectionCart" className="container-fluid">
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Items in Cart
         </h2>
-        <ul className="list-group list-group-numbered container">
+        <div className="row">
+          <div id="cart1" className="col-12">
+            <h4>Black Tea</h4>
+            <button
+              id="addCartButton1"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart2" className="col-12">
+            <h4>Green Tea</h4>
+            <button
+              id="addCartButton2"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart3" className="col-12">
+            <h4>White Tea</h4>
+            <button
+              id="addCartButton3"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart4" className="col-12">
+            <h4>Oolong Tea</h4>
+            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+            <button
+              id="addCartButton4"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart5" className="col-12">
+            <h4>Pu-erh Tea</h4>
+            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+            <button
+              id="addCartButton5"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div className="row">
+          <div id="cart6" className="col-12">
+            <h4>Purple Tea</h4>
+            <button
+              id="addCartButton6"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart7" className="col-12">
+            <h4>Matcha Tea</h4>
+            <button
+              id="addCartButton7"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart8" className="col-12">
+            <h4>Mate Tea</h4>
+            <button
+              id="addCartButton8"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart9" className="col-12">
+            <h4>Herbal Tea</h4>
+            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+            <button
+              id="addCartButton9"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div id="cart10" className="col-12">
+            <h4>Rooibos Tea</h4>
+            <button
+              id="addCartButton10"
+              className="col-12"
+              onClick={handleClick}
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        {/* <ul className="list-group list-group-numbered">
           <li id="cart1" className="list-group-item">
             Black Tea:
             <button id="addCartButton1" onClick={handleClick}>
@@ -87,7 +195,7 @@ export function Shop() {
               Add to Cart
             </button>
           </li>
-        </ul>
+        </ul> */}
       </section>
     </main>
   );
@@ -167,7 +275,7 @@ export function Shop() {
     let position = 0;
     do {
       let columns = "";
-      for (let count = 0; count < 5; count++) {
+      for (let count = 0; count < teaCards.length; count++) {
         const content = teaCards[position];
         const contentCard = new ShopCard(content);
         columns += new Column(contentCard);

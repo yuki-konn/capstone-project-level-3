@@ -4,34 +4,66 @@
 
 #shopMain {
   #sectionTea {
-    .col {
-      padding: 0;
-      width: 20vw;
-      height: auto;
-      font-size: small;
-    }
     .row {
-      align-items: start;
-    }
-    article {
-      margin: auto;
-      padding: 0px;
-      align-items: center;
-      justify-content: center;
-    }
-    .card-img-top {
-      height: 150px;
-    }
-
-    .card {
-      height: 350px;
-      margin: 1px;
+      .col {
+        font-size: small;
+        article {
+          margin: 1px;
+          width: 100%;
+          height: 400px;
+          align-items: center;
+          img {
+            max-width: 100%;
+            height: 70%;
+          }
+          .card-body {
+            height: 30%;
+          }
+        }
+      }
     }
   }
 
   #sectionCart {
+    .row {
+      div {
+        background-color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+
     button {
       @include boxShadow;
     }
   }
+
+  // #sectionTea {
+  //   .col {
+  //     padding: 0;
+  //     width: 20vw;
+  //     height: auto;
+  //     font-size: small;
+  //   }
+  //   .row {
+  //     align-items: start;
+  //   }
+  //   article {
+  //     margin: auto;
+  //     padding: 0px;
+  //     align-items: center;
+  //     justify-content: center;
+  //   }
+  //   .card-img-top {
+  //     height: 150px;
+  //   }
+
+  //   .card {
+  //     height: 350px;
+  //     margin: 1px;
+  //   }
+  // }
 }

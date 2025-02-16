@@ -2174,7 +2174,8 @@ function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-    className: "container"
+    id: "aboutMain",
+    className: "container-lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "m-2 text-center border border-3 border-success bg-warning"
   }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2364,39 +2365,50 @@ function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-    className: "container contact-main"
+    id: "contactMain",
+    className: "container-lg contact-main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "text-center border-bottom border-3 border-dark"
   }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, "Contact Form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_2__.handleSubmitContact
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "col-1",
     htmlFor: "contact-name"
   }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "contact-name",
-    className: "w100",
+    className: "col-11",
     type: "text",
     name: "contact-name",
     placeholder: "John Smith"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "col-1",
     htmlFor: "contact-email"
-  }, "Email *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "Email *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "contact-email",
-    className: "w100",
+    className: "col-11",
     type: "email",
     name: "contact-email",
     placeholder: "email@email.com"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "contact-comment"
-  }, "Comment (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
+  }, "Comment (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
     id: "contact-comment",
     className: "w100"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "contact-ratings"
-  }, "Rating (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, "Rating (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "contact-ratings"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-five"
@@ -2433,39 +2445,53 @@ function Contact() {
     name: "ratings",
     type: "radio",
     "aria-label": "1 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: "w100",
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "outputTag",
     className: "border border-3 border-dark text-center"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__.handleSubmitPhone
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
-  }, "Schedule a Phone Appointment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }, "Schedule a Phone Appointment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__.handleSubmitPhone
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "col-1",
     htmlFor: "phone-name"
-  }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "phone-name",
+    className: "col-11",
     type: "text",
     name: "phone-name",
     placeholder: "John Smith"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "col-2",
     htmlFor: "phone-number"
-  }, "Phone Number *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "Phone Number *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "phone-number",
+    className: "col-10",
     type: "tel",
     name: "phone-number",
     pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
     placeholder: "###-###-####"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "col-3",
     htmlFor: "phone-date-time"
-  }, "Appointment Time *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    required: true,
+  }, "Appointment Time *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "phone-date-time",
-    type: "datetime-local"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: "col-9",
+    type: "datetime-local",
+    required: true
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: "w100",
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "phoneOutputTag",
@@ -2600,7 +2626,8 @@ function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-    className: "container"
+    id: "homeMain",
+    className: "container-lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionAbout",
     className: "text-center m-2"
@@ -2782,83 +2809,97 @@ function Shop() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-    id: "shopMain"
+    id: "shopMain",
+    className: "container-lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "m-1",
     id: "sectionTea"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
   }, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "sectionCart"
+    id: "sectionCart",
+    className: "container-fluid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
-  }, "Items in Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group list-group-numbered container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Items in Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart1",
-    className: "list-group-item"
-  }, "Black Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Black Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton1",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart2",
-    className: "list-group-item"
-  }, "Green Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Green Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton2",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart3",
-    className: "list-group-item"
-  }, "White Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "White Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton3",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart4",
-    className: "list-group-item"
-  }, "Oolong Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Oolong Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info col-12"
+  }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton4",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "badge bg-info"
-  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart5",
-    className: "list-group-item"
-  }, "Pu-erh Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Pu-erh Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info col-12"
+  }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton5",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "badge bg-info"
-  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart6",
-    className: "list-group-item"
-  }, "Purple Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Purple Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton6",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart7",
-    className: "list-group-item"
-  }, "Matcha Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Matcha Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton7",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart8",
-    className: "list-group-item"
-  }, "Mate Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Mate Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton8",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart9",
-    className: "list-group-item"
-  }, "Herbal Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Herbal Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-info col-12"
+  }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton9",
+    className: "col-12",
     onClick: handleClick
-  }, "Add to Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "badge bg-info"
-  }, "50% OFF SUMMER SALE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart10",
-    className: "list-group-item"
-  }, "Rooibos Tea:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Rooibos Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton10",
+    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")))));
 
@@ -2926,7 +2967,7 @@ function Shop() {
     let position = 0;
     do {
       let columns = "";
-      for (let count = 0; count < 5; count++) {
+      for (let count = 0; count < teaCards.length; count++) {
         const content = teaCards[position];
         const contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_2__.ShopCard(content);
         columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__.Column(contentCard);
@@ -3359,7 +3400,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // CREATE BOOTSTRAP ROW FUNCTION shop.html
 function createRow(columnsString) {
-  const rowString = `<div class="row">${columnsString}</div>`;
+  const rowString = `<div class="row row-cols-2">${columnsString}</div>`;
   return rowString;
 }
 
@@ -3473,7 +3514,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // CREATE BOOTSTRAP CONTAINER FUNCTION shop.html
 class GridSystem {
-  openingTag = "<div class='container'>";
+  openingTag = "<div class='container-fluid'>";
   closingTag = "</div>";
   innerHTML = "";
   addRow(row = new _Row_js__WEBPACK_IMPORTED_MODULE_0__.Row()) {
@@ -3632,7 +3673,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
 
 .contact-main {
   background-color: #b3b3b3;
-}`, "",{"version":3,"sources":["webpack://./src/Views/contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n.contact-main {\r\n  background-color: $body-bg;\r\n}\r\n"],"sourceRoot":""}]);
+}
+.contact-main section form div {
+  margin-bottom: 5px;
+}`, "",{"version":3,"sources":["webpack://./src/Views/contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,kBAAA;AANR","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n.contact-main {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin-bottom: 5px;\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3658,31 +3702,33 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `#shopMain #sectionTea .col {
-  padding: 0;
-  width: 20vw;
-  height: auto;
+___CSS_LOADER_EXPORT___.push([module.id, `#shopMain #sectionTea .row .col {
   font-size: small;
 }
-#shopMain #sectionTea .row {
-  align-items: start;
-}
-#shopMain #sectionTea article {
-  margin: auto;
-  padding: 0px;
-  align-items: center;
-  justify-content: center;
-}
-#shopMain #sectionTea .card-img-top {
-  height: 150px;
-}
-#shopMain #sectionTea .card {
-  height: 350px;
+#shopMain #sectionTea .row .col article {
   margin: 1px;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+}
+#shopMain #sectionTea .row .col article img {
+  max-width: 100%;
+  height: 70%;
+}
+#shopMain #sectionTea .row .col article .card-body {
+  height: 30%;
+}
+#shopMain #sectionCart .row div {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#shopMain #sectionCart .row h4 {
+  text-align: center;
 }
 #shopMain #sectionCart button {
   box-shadow: 2px 2px grey;
-}`, "",{"version":3,"sources":["webpack://./src/Views/shop.scss"],"names":[],"mappings":"AAMI;EACE,UAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;AALN;AAOI;EACE,kBAAA;AALN;AAOI;EACE,YAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AALN;AAOI;EACE,aAAA;AALN;AAQI;EACE,aAAA;EACA,WAAA;AANN;AAWI;EA/BF,wBAAA;AAuBF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .col {\r\n      padding: 0;\r\n      width: 20vw;\r\n      height: auto;\r\n      font-size: small;\r\n    }\r\n    .row {\r\n      align-items: start;\r\n    }\r\n    article {\r\n      margin: auto;\r\n      padding: 0px;\r\n      align-items: center;\r\n      justify-content: center;\r\n    }\r\n    .card-img-top {\r\n      height: 150px;\r\n    }\r\n\r\n    .card {\r\n      height: 350px;\r\n      margin: 1px;\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Views/shop.scss"],"names":[],"mappings":"AAOM;EACE,gBAAA;AANR;AAOQ;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;AALV;AAMU;EACE,eAAA;EACA,WAAA;AAJZ;AAMU;EACE,WAAA;AAJZ;AAaM;EACE,uBAAA;EACA,YAAA;EACA,kBAAA;AAXR;AAaM;EACE,kBAAA;AAXR;AAeI;EArCF,wBAAA;AAyBF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .row {\r\n      .col {\r\n        font-size: small;\r\n        article {\r\n          margin: 1px;\r\n          width: 100%;\r\n          height: 400px;\r\n          align-items: center;\r\n          img {\r\n            max-width: 100%;\r\n            height: 70%;\r\n          }\r\n          .card-body {\r\n            height: 30%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    .row {\r\n      div {\r\n        background-color: white;\r\n        padding: 5px;\r\n        margin-bottom: 5px;\r\n      }\r\n      h4 {\r\n        text-align: center;\r\n      }\r\n    }\r\n\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n\r\n  // #sectionTea {\r\n  //   .col {\r\n  //     padding: 0;\r\n  //     width: 20vw;\r\n  //     height: auto;\r\n  //     font-size: small;\r\n  //   }\r\n  //   .row {\r\n  //     align-items: start;\r\n  //   }\r\n  //   article {\r\n  //     margin: auto;\r\n  //     padding: 0px;\r\n  //     align-items: center;\r\n  //     justify-content: center;\r\n  //   }\r\n  //   .card-img-top {\r\n  //     height: 150px;\r\n  //   }\r\n\r\n  //   .card {\r\n  //     height: 350px;\r\n  //     margin: 1px;\r\n  //   }\r\n  // }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3711,11 +3757,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/edosz.ttf */ "./assets/fonts/edosz.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/images/bgImage.png */ "./assets/images/bgImage.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/images/banner2.png */ "./assets/images/banner2.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
   font-family: "edosz";
@@ -3737,14 +3781,9 @@ body header #regularNavbar a {
 body header #regularNavbar a:hover {
   background-color: gold;
 }
-body header .bannerImage2 {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
-  background-size: 100% 28vw;
-  background-repeat: no-repeat;
-}
 body header #banner-img {
-  height: 28vw;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 body header #collapsibleNavbar {
   font-family: "edosz";
@@ -3824,7 +3863,7 @@ footer {
 
 .border-dotted {
   border-style: dotted !important;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAmBA;EACE,oBAAA;EACA,4CAAA;AAlBF;AAqCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAlCF;AAsCM;EACE,oBApCM;AAAd;AAqCQ;EACE,sBArDH;AAkBP;AAuCI;EACE,yDA/CS;EAgDT,0BAAA;EACA,4BAAA;AArCN;AAuCI;EACE,YAAA;EACA,WAAA;AArCN;AAyCI;EACE,oBAtDQ;AAed;AAwCM;EACE,YAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAzEE;EA0EF,gBAAA;AAtCR;AAwCQ;EACE,cA5EK;EA6EL,gBAAA;AAtCV;AAyCM;EACE,gBAAA;AAvCR;AA0CQ;EACE,cAAA;AAxCV;AA8CE;;;EAGE,oBAjFU;AAqCd;;AAgDA;EACE,yBA9Fa;EA+Fb,yBAhGU;EAiGV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AA7CF;;AAgDA;EACE,qBAAA;AA7CF;;AA+CA;EACE,qBAAA;AA5CF;;AA+CA;EACE,WAAA;AA5CF;;AAkDA;EACE,yBAxHU;EAyHV,kBAAA;EACA,YAAA;AA/CF;AAgDE;EACE,UAAA;EACA,yBA3HS;AA6Eb;AAgDE;EACE,iBAAA;EACA,mBAAA;AA9CJ;;AAiDA;EA9GE,mBAAA;EACA,wBAAA;AAiEF;AA/DE;EACE,qBAAA;EACA,wBAAA;AAiEJ;;AA8CA;EACE,+BAAA;AA3CF;;AA6CA;EACE,+BAAA;AA1CF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n$navText: #00b300;\r\n$navTextHover: #b4f298;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    #regularNavbar {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    .bannerImage2 {\r\n      background-image: $bannerImage2;\r\n      background-size: 100% 28vw;\r\n      background-repeat: no-repeat;\r\n    }\r\n    #banner-img {\r\n      height: 28vw;\r\n      width: 100%;\r\n    }\r\n\r\n    // COLLAPSIBLENAVBAR.JS\r\n    #collapsibleNavbar {\r\n      font-family: $primaryFont;\r\n      a {\r\n        padding: 0px;\r\n        margin-left: 1vw;\r\n        text-decoration: none;\r\n        color: $navText;\r\n        font-size: 2.2vw;\r\n\r\n        &:hover {\r\n          color: $navTextHover;\r\n          font-size: 2.3vw;\r\n        }\r\n      }\r\n      ul {\r\n        margin-left: 1vw;\r\n      }\r\n      #homeNavDiv {\r\n        a {\r\n          font-size: 3vw;\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAmBA;EACE,oBAAA;EACA,4CAAA;AAlBF;AAqCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAlCF;AAsCM;EACE,oBApCM;AAAd;AAqCQ;EACE,sBArDH;AAkBP;AA4CI;EACE,YAAA;EACA,eAAA;AA1CN;AA8CI;EACE,oBAtDQ;AAUd;AA6CM;EACE,YAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAzEE;EA0EF,gBAAA;AA3CR;AA6CQ;EACE,cA5EK;EA6EL,gBAAA;AA3CV;AA8CM;EACE,gBAAA;AA5CR;AA+CQ;EACE,cAAA;AA7CV;AAmDE;;;EAGE,oBAjFU;AAgCd;;AAqDA;EACE,yBA9Fa;EA+Fb,yBAhGU;EAiGV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAlDF;;AAqDA;EACE,qBAAA;AAlDF;;AAoDA;EACE,qBAAA;AAjDF;;AAoDA;EACE,WAAA;AAjDF;;AAuDA;EACE,yBAxHU;EAyHV,kBAAA;EACA,YAAA;AApDF;AAqDE;EACE,UAAA;EACA,yBA3HS;AAwEb;AAqDE;EACE,iBAAA;EACA,mBAAA;AAnDJ;;AAsDA;EA9GE,mBAAA;EACA,wBAAA;AA4DF;AA1DE;EACE,qBAAA;EACA,wBAAA;AA4DJ;;AAmDA;EACE,+BAAA;AAhDF;;AAkDA;EACE,+BAAA;AA/CF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n$navText: #00b300;\r\n$navTextHover: #b4f298;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    #regularNavbar {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    // .bannerImage2 {\r\n    //   background-image: $bannerImage2;\r\n    //   background-size: 100% 28vw;\r\n    //   background-repeat: no-repeat;\r\n    // }\r\n    #banner-img {\r\n      height: auto;\r\n      max-width: 100%;\r\n    }\r\n\r\n    // COLLAPSIBLENAVBAR.JS\r\n    #collapsibleNavbar {\r\n      font-family: $primaryFont;\r\n      a {\r\n        padding: 0px;\r\n        margin-left: 1vw;\r\n        text-decoration: none;\r\n        color: $navText;\r\n        font-size: 2.2vw;\r\n\r\n        &:hover {\r\n          color: $navTextHover;\r\n          font-size: 2.3vw;\r\n        }\r\n      }\r\n      ul {\r\n        margin-left: 1vw;\r\n      }\r\n      #homeNavDiv {\r\n        a {\r\n          font-size: 3vw;\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n\r\n//\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4323,16 +4362,6 @@ module.exports = __webpack_require__.p + "0be6a7a25374d83f251f.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "40476c0db5cccb8bd723.png";
-
-/***/ }),
-
-/***/ "./assets/images/banner2.png":
-/*!***********************************!*\
-  !*** ./assets/images/banner2.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "77d45e387c31044601c5.png";
 
 /***/ }),
 

@@ -2,7 +2,7 @@ import { Row } from "./Row.js";
 
 // CREATE BOOTSTRAP CONTAINER FUNCTION shop.html
 export class GridSystem {
-  openingTag = "<div class='container'>";
+  openingTag = "<div class='container-fluid'>";
   closingTag = "</div>";
   innerHTML = "";
 

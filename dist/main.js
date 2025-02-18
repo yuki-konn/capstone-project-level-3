@@ -2366,7 +2366,7 @@ function Contact() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "contactMain",
-    className: "container-lg contact-main"
+    className: "container-lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "text-center border-bottom border-3 border-dark"
   }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -2827,27 +2827,24 @@ function Shop() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
   }, "Items in Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row"
+    className: "row row-cols-lg-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart1",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Black Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton1",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart2",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Green Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton2",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart3",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "White Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton3",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart4",
@@ -2856,7 +2853,6 @@ function Shop() {
     className: "badge bg-info col-12"
   }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton4",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart5",
@@ -2865,28 +2861,24 @@ function Shop() {
     className: "badge bg-info col-12"
   }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton5",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart6",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Purple Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton6",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart7",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Matcha Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton7",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart8",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Mate Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton8",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart9",
@@ -2895,14 +2887,12 @@ function Shop() {
     className: "badge bg-info col-12"
   }, "50% OFF SUMMER SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton9",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart10",
     className: "col-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Rooibos Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "addCartButton10",
-    className: "col-12",
     onClick: handleClick
   }, "Add to Cart")))));
 
@@ -3403,7 +3393,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // CREATE BOOTSTRAP ROW FUNCTION shop.html
 function createRow(columnsString) {
-  const rowString = `<div class="row row-cols-2 row-cols-md-3">${columnsString}</div>`;
+  const rowString = `<div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">${columnsString}</div>`;
   return rowString;
 }
 
@@ -3543,7 +3533,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Column_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Column.js */ "./src/utils/Column.js");
 
 class Row {
-  openingTag = "<div class='row-cols-2 row-cols-md-3'>";
+  openingTag = "<div class='row-cols-2 row-cols-md-3 row-cols-lg-5'>";
   closingTag = "</div>";
   innerHTML = "";
   addColumn(column = new _Column_js__WEBPACK_IMPORTED_MODULE_0__.Column()) {
@@ -3674,22 +3664,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
   text-shadow: 2px 2px rgb(94, 94, 94);
 }
 
-.contact-main {
+#contactMain {
   background-color: #b3b3b3;
 }
-.contact-main section form div {
+#contactMain section form div {
   margin: 5px;
   justify-content: space-between;
 }
-.contact-main section form div label {
+#contactMain section form div label {
   text-align: left;
 }
-.contact-main section form div input {
+#contactMain section form div input {
   width: 70%;
 }
-.contact-main section form div .ratingInput {
+#contactMain section form div .ratingInput {
   width: auto;
-}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,WAAA;EAEA,8BAAA;AAPR;AAQQ;EACE,gBAAA;AANV;AAQQ;EACE,UAAA;AANV;AAQQ;EACE,WAAA;AANV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n.contact-main {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        //margin-bottom: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n        input {\r\n          width: 70%;\r\n        }\r\n        .ratingInput {\r\n          width: auto;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,WAAA;EACA,8BAAA;AANR;AAOQ;EACE,gBAAA;AALV;AAOQ;EACE,UAAA;AALV;AAOQ;EACE,WAAA;AALV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n#contactMain {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n        input {\r\n          width: 70%;\r\n        }\r\n        .ratingInput {\r\n          width: auto;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

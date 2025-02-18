@@ -8,13 +8,12 @@ $body-bg: #b3b3b3;
   @include textShadow;
 }
 
-.contact-main {
+#contactMain {
   background-color: $body-bg;
   section {
     form {
       div {
         margin: 5px;
-        //margin-bottom: 5px;
         justify-content: space-between;
         label {
           text-align: left;

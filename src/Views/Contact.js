@@ -10,7 +10,7 @@ export function Contact() {
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
-    <main id="contactMain" className="container-lg contact-main">
+    <main id="contactMain" className="container-lg">
       <h1 className="text-center border-bottom border-3 border-dark">
         Contact Us
       </h1>

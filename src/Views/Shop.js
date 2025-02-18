@@ -24,59 +24,39 @@ export function Shop() {
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Items in Cart
         </h2>
-        <div className="row">
+        <div className="row row-cols-lg-5">
           <div id="cart1" className="col-12 col-md-6">
             <h4>Black Tea</h4>
             <br />
-            <button
-              id="addCartButton1"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton1" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart2" className="col-12 col-md-6">
             <h4>Green Tea</h4>
             <br />
-            <button
-              id="addCartButton2"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton2" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart3" className="col-12 col-md-6">
             <h4>White Tea</h4>
             <br />
-            <button
-              id="addCartButton3"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton3" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart4" className="col-12 col-md-6">
             <h4>Oolong Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button
-              id="addCartButton4"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton4" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart5" className="col-12 col-md-6">
             <h4>Pu-erh Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button
-              id="addCartButton5"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton5" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
@@ -84,55 +64,35 @@ export function Shop() {
           <div id="cart6" className="col-12 col-md-6">
             <h4>Purple Tea</h4>
             <br />
-            <button
-              id="addCartButton6"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton6" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart7" className="col-12 col-md-6">
             <h4>Matcha Tea</h4>
             <br />
-            <button
-              id="addCartButton7"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton7" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart8" className="col-12 col-md-6">
             <h4>Mate Tea</h4>
             <br />
-            <button
-              id="addCartButton8"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton8" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart9" className="col-12 col-md-6">
             <h4>Herbal Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button
-              id="addCartButton9"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton9" onClick={handleClick}>
               Add to Cart
             </button>
           </div>
           <div id="cart10" className="col-12 col-md-6">
             <h4>Rooibos Tea</h4>
             <br />
-            <button
-              id="addCartButton10"
-              className="col-12"
-              onClick={handleClick}
-            >
+            <button id="addCartButton10" onClick={handleClick}>
               Add to Cart
             </button>
           </div>

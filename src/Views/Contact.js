@@ -18,7 +18,7 @@ export function Contact() {
         <h2 className="textShadow">Contact Form</h2>
         <form onSubmit={handleSubmitContact}>
           <div className="row">
-            <label className="col-2" htmlFor="contact-name">
+            <label className="col-2" htmlFor="contact-name" title="Required">
               Name *
             </label>
             <input
@@ -31,7 +31,7 @@ export function Contact() {
             />
           </div>
           <div className="row">
-            <label className="col-2" htmlFor="contact-email">
+            <label className="col-2" htmlFor="contact-email" title="Required">
               Email *
             </label>
             <input
@@ -110,7 +110,7 @@ export function Contact() {
         <h2 className="textShadow">Schedule a Phone Appointment</h2>
         <form onSubmit={handleSubmitPhone}>
           <div className="row">
-            <label className="col-2" htmlFor="phone-name">
+            <label className="col-2" htmlFor="phone-name" title="Required">
               Name *
             </label>
             <input
@@ -123,7 +123,7 @@ export function Contact() {
             />
           </div>
           <div className="row">
-            <label className="col-2" htmlFor="phone-number">
+            <label className="col-2" htmlFor="phone-number" title="Required">
               Phone Number *
             </label>
             <input
@@ -137,14 +137,14 @@ export function Contact() {
             />
           </div>
           <div className="row">
-            <label className="col-2" htmlFor="phone-date-time">
+            <label className="col-2" htmlFor="phone-date-time" title="Required">
               Appointment Time *
             </label>
             <input
+              required
               id="phone-date-time"
               className="col-10"
               type="datetime-local"
-              required
             />
           </div>
           <input className="w100" type="submit" />
@@ -163,7 +163,7 @@ export function Contact() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | CONTACT";
     setDidMount(true);
-    console.log("The Contact component has updated.");
+    console.log("The Contact component has mounted.");
   }
 
   // UPDATE PHASE

@@ -104,7 +104,7 @@ export function About() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | ABOUT";
     setDidMount(true);
-    console.log("The About component has updated.");
+    console.log("The About component has mounted.");
   }
 
   // UPDATE PHASE

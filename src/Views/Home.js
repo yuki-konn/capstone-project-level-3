@@ -106,7 +106,7 @@ export function Home() {
   // UPDATE PHASE
   function componentDidUpdate() {
     if (didMount) {
-      console.log("The Home component updated.");
+      console.log("The Home component has updated.");
     }
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import oolongtea from "../../assets/images/oolongtea.png";
 import puerhtea from "../../assets/images/puerhtea.png";
 import herbaltea from "../../assets/images/herbaltea.png";
@@ -16,6 +16,8 @@ export function HomeCarousel() {
   //   const opacity = {
   //     opacity: "0.7",
   //   };
+  // useEffect(componentDidMount, []);
+
   return (
     <div className="row">
       <div className="col ">
@@ -77,6 +79,9 @@ export function HomeCarousel() {
             type="button"
             data-bs-target="#homeCarousel"
             data-bs-slide="prev"
+            // data-bs-title="Previous"
+            title="Previous"
+            data-bs-toggle="tooltip"
           >
             <span
               className="carousel-control-prev-icon"
@@ -89,6 +94,9 @@ export function HomeCarousel() {
             type="button"
             data-bs-target="#homeCarousel"
             data-bs-slide="next"
+            // data-bs-title="Next"
+            title="Next"
+            data-bs-toggle="tooltip"
           >
             <span
               className="carousel-control-next-icon"
@@ -100,4 +108,12 @@ export function HomeCarousel() {
       </div>
     </div>
   );
+
+  function componentDidMount() {
+    console.log("HomeCarousel component has mounted.");
+    // const prev = document.getElementById("Previous");
+    // const next = document.getElementById("Next");
+    // new bootstrap.Tooltip(prev);
+    // new bootstrap.Tooltip(next);
+  }
 }

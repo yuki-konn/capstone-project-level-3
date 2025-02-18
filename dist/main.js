@@ -2257,7 +2257,7 @@ function About() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | ABOUT";
     setDidMount(true);
-    console.log("The About component has updated.");
+    console.log("The About component has mounted.");
   }
 
   // UPDATE PHASE
@@ -2379,7 +2379,8 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "col-2",
-    htmlFor: "contact-name"
+    htmlFor: "contact-name",
+    title: "Required"
   }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "contact-name",
@@ -2391,7 +2392,8 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "col-2",
-    htmlFor: "contact-email"
+    htmlFor: "contact-email",
+    title: "Required"
   }, "Email *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "contact-email",
@@ -2466,7 +2468,8 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "col-2",
-    htmlFor: "phone-name"
+    htmlFor: "phone-name",
+    title: "Required"
   }, "Name *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "phone-name",
@@ -2478,7 +2481,8 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "col-2",
-    htmlFor: "phone-number"
+    htmlFor: "phone-number",
+    title: "Required"
   }, "Phone Number *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     required: true,
     id: "phone-number",
@@ -2491,12 +2495,13 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "col-2",
-    htmlFor: "phone-date-time"
+    htmlFor: "phone-date-time",
+    title: "Required"
   }, "Appointment Time *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    required: true,
     id: "phone-date-time",
     className: "col-10",
-    type: "datetime-local",
-    required: true
+    type: "datetime-local"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "w100",
     type: "submit"
@@ -2509,7 +2514,7 @@ function Contact() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | CONTACT";
     setDidMount(true);
-    console.log("The Contact component has updated.");
+    console.log("The Contact component has mounted.");
   }
 
   // UPDATE PHASE
@@ -2731,7 +2736,7 @@ function Home() {
   // UPDATE PHASE
   function componentDidUpdate() {
     if (didMount) {
-      console.log("The Home component updated.");
+      console.log("The Home component has updated.");
     }
   }
 }
@@ -2779,6 +2784,8 @@ function HomeCarousel() {
   //   const opacity = {
   //     opacity: "0.7",
   //   };
+  // useEffect(componentDidMount, []);
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2835,6 +2842,10 @@ function HomeCarousel() {
     type: "button",
     "data-bs-target": "#homeCarousel",
     "data-bs-slide": "prev"
+    // data-bs-title="Previous"
+    ,
+    title: "Previous",
+    "data-bs-toggle": "tooltip"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-prev-icon",
     "aria-hidden": "true"
@@ -2845,12 +2856,23 @@ function HomeCarousel() {
     type: "button",
     "data-bs-target": "#homeCarousel",
     "data-bs-slide": "next"
+    // data-bs-title="Next"
+    ,
+    title: "Next",
+    "data-bs-toggle": "tooltip"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-next-icon",
     "aria-hidden": "true"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "visually-hidden"
   }, "Next")))));
+  function componentDidMount() {
+    console.log("HomeCarousel component has mounted.");
+    // const prev = document.getElementById("Previous");
+    // const next = document.getElementById("Next");
+    // new bootstrap.Tooltip(prev);
+    // new bootstrap.Tooltip(next);
+  }
 }
 
 /***/ }),
@@ -3869,12 +3891,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#shopMain #sectionTea .row .col {
   padding: 5px;
   margin-bottom: 5px;
 }
+#shopMain #sectionCart .row div button {
+  width: 100%;
+}
 #shopMain #sectionCart .row h4 {
   text-align: center;
 }
 #shopMain #sectionCart button {
   box-shadow: 2px 2px grey;
-}`, "",{"version":3,"sources":["webpack://./src/Views/Shop.scss"],"names":[],"mappings":"AAOM;EACE,gBAAA;AANR;AAOQ;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;AALV;AAMU;EACE,eAAA;EACA,WAAA;AAJZ;AAMU;EACE,WAAA;AAJZ;AAaM;EACE,uBAAA;EACA,YAAA;EACA,kBAAA;AAXR;AAaM;EACE,kBAAA;AAXR;AAeI;EArCF,wBAAA;AAyBF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .row {\r\n      .col {\r\n        font-size: small;\r\n        article {\r\n          margin: 1px;\r\n          width: 100%;\r\n          height: 400px;\r\n          align-items: center;\r\n          img {\r\n            max-width: 100%;\r\n            height: 70%;\r\n          }\r\n          .card-body {\r\n            height: 30%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    .row {\r\n      div {\r\n        background-color: white;\r\n        padding: 5px;\r\n        margin-bottom: 5px;\r\n      }\r\n      h4 {\r\n        text-align: center;\r\n      }\r\n    }\r\n\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n\r\n  // #sectionTea {\r\n  //   .col {\r\n  //     padding: 0;\r\n  //     width: 20vw;\r\n  //     height: auto;\r\n  //     font-size: small;\r\n  //   }\r\n  //   .row {\r\n  //     align-items: start;\r\n  //   }\r\n  //   article {\r\n  //     margin: auto;\r\n  //     padding: 0px;\r\n  //     align-items: center;\r\n  //     justify-content: center;\r\n  //   }\r\n  //   .card-img-top {\r\n  //     height: 150px;\r\n  //   }\r\n\r\n  //   .card {\r\n  //     height: 350px;\r\n  //     margin: 1px;\r\n  //   }\r\n  // }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Views/Shop.scss"],"names":[],"mappings":"AAOM;EACE,gBAAA;AANR;AAOQ;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;AALV;AAMU;EACE,eAAA;EACA,WAAA;AAJZ;AAMU;EACE,WAAA;AAJZ;AAaM;EACE,uBAAA;EACA,YAAA;EACA,kBAAA;AAXR;AAYQ;EACE,WAAA;AAVV;AAaM;EACE,kBAAA;AAXR;AAeI;EAxCF,wBAAA;AA4BF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .row {\r\n      .col {\r\n        font-size: small;\r\n        article {\r\n          margin: 1px;\r\n          width: 100%;\r\n          height: 400px;\r\n          align-items: center;\r\n          img {\r\n            max-width: 100%;\r\n            height: 70%;\r\n          }\r\n          .card-body {\r\n            height: 30%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    .row {\r\n      div {\r\n        background-color: white;\r\n        padding: 5px;\r\n        margin-bottom: 5px;\r\n        button {\r\n          width: 100%;\r\n        }\r\n      }\r\n      h4 {\r\n        text-align: center;\r\n      }\r\n    }\r\n\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n\r\n  // #sectionTea {\r\n  //   .col {\r\n  //     padding: 0;\r\n  //     width: 20vw;\r\n  //     height: auto;\r\n  //     font-size: small;\r\n  //   }\r\n  //   .row {\r\n  //     align-items: start;\r\n  //   }\r\n  //   article {\r\n  //     margin: auto;\r\n  //     padding: 0px;\r\n  //     align-items: center;\r\n  //     justify-content: center;\r\n  //   }\r\n  //   .card-img-top {\r\n  //     height: 150px;\r\n  //   }\r\n\r\n  //   .card {\r\n  //     height: 350px;\r\n  //     margin: 1px;\r\n  //   }\r\n  // }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

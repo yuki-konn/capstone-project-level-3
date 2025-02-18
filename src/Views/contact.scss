@@ -13,7 +13,18 @@ $body-bg: #b3b3b3;
   section {
     form {
       div {
-        margin-bottom: 5px;
+        margin: 5px;
+        //margin-bottom: 5px;
+        justify-content: space-between;
+        label {
+          text-align: left;
+        }
+        input {
+          width: 70%;
+        }
+        .ratingInput {
+          width: auto;
+        }
       }
     }
   }

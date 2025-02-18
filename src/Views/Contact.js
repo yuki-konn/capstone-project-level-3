@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { handleSubmitPhone } from "../controllers/handleSubmitPhone";
 import { handleSubmitContact } from "../controllers/handleSubmitContact";
-import "./contact.scss";
+import "./Contact.scss";
 
 export function Contact() {
   const [didMount, setDidMount] = useState(false);
@@ -18,26 +18,26 @@ export function Contact() {
         <h2 className="textShadow">Contact Form</h2>
         <form onSubmit={handleSubmitContact}>
           <div className="row">
-            <label className="col-1" htmlFor="contact-name">
+            <label className="col-2" htmlFor="contact-name">
               Name *
             </label>
             <input
               required
               id="contact-name"
-              className="col-11"
+              className="col-10"
               type="text"
               name="contact-name"
               placeholder="John Smith"
             />
           </div>
           <div className="row">
-            <label className="col-1" htmlFor="contact-email">
+            <label className="col-2" htmlFor="contact-email">
               Email *
             </label>
             <input
               required
               id="contact-email"
-              className="col-11"
+              className="col-10"
               type="email"
               name="contact-email"
               placeholder="email@email.com"
@@ -53,6 +53,7 @@ export function Contact() {
               <label htmlFor="rating-five">5&#9733;</label>
               <input
                 id="rating-five"
+                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="5 Star rating"
@@ -61,6 +62,7 @@ export function Contact() {
               <label htmlFor="rating-four">4&#9733;</label>
               <input
                 id="rating-four"
+                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="4 Star rating"
@@ -69,6 +71,7 @@ export function Contact() {
               <label htmlFor="rating-three">3&#9733;</label>
               <input
                 id="rating-three"
+                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="3 Star rating"
@@ -77,6 +80,7 @@ export function Contact() {
               <label htmlFor="rating-two">2&#9733;</label>
               <input
                 id="rating-two"
+                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="2 Star rating"
@@ -85,6 +89,7 @@ export function Contact() {
               <label htmlFor="rating-one">1&#9733;</label>
               <input
                 id="rating-one"
+                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="1 Star rating"
@@ -105,13 +110,13 @@ export function Contact() {
         <h2 className="textShadow">Schedule a Phone Appointment</h2>
         <form onSubmit={handleSubmitPhone}>
           <div className="row">
-            <label className="col-1" htmlFor="phone-name">
+            <label className="col-2" htmlFor="phone-name">
               Name *
             </label>
             <input
               required
               id="phone-name"
-              className="col-11"
+              className="col-10"
               type="text"
               name="phone-name"
               placeholder="John Smith"
@@ -132,12 +137,12 @@ export function Contact() {
             />
           </div>
           <div className="row">
-            <label className="col-3" htmlFor="phone-date-time">
+            <label className="col-2" htmlFor="phone-date-time">
               Appointment Time *
             </label>
             <input
               id="phone-date-time"
-              className="col-9"
+              className="col-10"
               type="datetime-local"
               required
             />

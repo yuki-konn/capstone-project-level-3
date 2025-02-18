@@ -3,7 +3,6 @@ import { PhoneObject } from "../modules/PhoneObject.js";
 import { makeRequest } from "../utils/makeRequest.js";
 import { output } from "../utils/output.js";
 
-window.handleSubmitPhone = handleSubmitPhone;
 // PHONE APPOINTMENT FORM SUBMIT HANDLER
 export function handleSubmitPhone(event = new Event()) {
   event.preventDefault();

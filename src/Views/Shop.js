@@ -4,7 +4,7 @@ import { ShopCard } from "../modules/ShopCard.js";
 import { createRows } from "../modules/createRows.js";
 import { Column } from "../utils/Column.js";
 import { GridSystem } from "../utils/GridSystem.js";
-import "./shop.scss";
+import "./Shop.scss";
 
 export function Shop() {
   const [didMount, setDidMount] = useState(false);
@@ -19,13 +19,15 @@ export function Shop() {
           Products
         </h2>
       </section>
+      <br />
       <section id="sectionCart" className="container-fluid">
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Items in Cart
         </h2>
         <div className="row">
-          <div id="cart1" className="col-12">
+          <div id="cart1" className="col-12 col-md-6">
             <h4>Black Tea</h4>
+            <br />
             <button
               id="addCartButton1"
               className="col-12"
@@ -34,8 +36,9 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart2" className="col-12">
+          <div id="cart2" className="col-12 col-md-6">
             <h4>Green Tea</h4>
+            <br />
             <button
               id="addCartButton2"
               className="col-12"
@@ -44,8 +47,9 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart3" className="col-12">
+          <div id="cart3" className="col-12 col-md-6">
             <h4>White Tea</h4>
+            <br />
             <button
               id="addCartButton3"
               className="col-12"
@@ -54,7 +58,7 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart4" className="col-12">
+          <div id="cart4" className="col-12 col-md-6">
             <h4>Oolong Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
             <button
@@ -65,7 +69,7 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart5" className="col-12">
+          <div id="cart5" className="col-12 col-md-6">
             <h4>Pu-erh Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
             <button
@@ -76,11 +80,10 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-        </div>
 
-        <div className="row">
-          <div id="cart6" className="col-12">
+          <div id="cart6" className="col-12 col-md-6">
             <h4>Purple Tea</h4>
+            <br />
             <button
               id="addCartButton6"
               className="col-12"
@@ -89,8 +92,9 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart7" className="col-12">
+          <div id="cart7" className="col-12 col-md-6">
             <h4>Matcha Tea</h4>
+            <br />
             <button
               id="addCartButton7"
               className="col-12"
@@ -99,8 +103,9 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart8" className="col-12">
+          <div id="cart8" className="col-12 col-md-6">
             <h4>Mate Tea</h4>
+            <br />
             <button
               id="addCartButton8"
               className="col-12"
@@ -109,7 +114,7 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart9" className="col-12">
+          <div id="cart9" className="col-12 col-md-6">
             <h4>Herbal Tea</h4>
             <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
             <button
@@ -120,8 +125,9 @@ export function Shop() {
               Add to Cart
             </button>
           </div>
-          <div id="cart10" className="col-12">
+          <div id="cart10" className="col-12 col-md-6">
             <h4>Rooibos Tea</h4>
+            <br />
             <button
               id="addCartButton10"
               className="col-12"
@@ -131,6 +137,7 @@ export function Shop() {
             </button>
           </div>
         </div>
+
         {/* <ul className="list-group list-group-numbered">
           <li id="cart1" className="list-group-item">
             Black Tea:

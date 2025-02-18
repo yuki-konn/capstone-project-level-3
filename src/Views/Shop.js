@@ -5,6 +5,16 @@ import { createRows } from "../modules/createRows.js";
 import { Column } from "../utils/Column.js";
 import { GridSystem } from "../utils/GridSystem.js";
 import "./Shop.scss";
+import blacktea from "../../assets/images/blacktea.png";
+import greentea from "../../assets/images/greentea.jpg";
+import whitetea from "../../assets/images/whitetea.jpg";
+import oolongtea from "../../assets/images/oolongtea.png";
+import puerhtea from "../../assets/images/puerhtea.png";
+import purpletea from "../../assets/images/purpletea.jpg";
+import matchatea from "../../assets/images/matchatea.jpg";
+import matetea from "../../assets/images/matetea.jpg";
+import herbaltea from "../../assets/images/herbaltea.png";
+import rooibostea from "../../assets/images/rooibostea.png";
 
 export function Shop() {
   const [didMount, setDidMount] = useState(false);
@@ -97,72 +107,6 @@ export function Shop() {
             </button>
           </div>
         </div>
-
-        {/* <ul className="list-group list-group-numbered">
-          <li id="cart1" className="list-group-item">
-            Black Tea:
-            <button id="addCartButton1" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart2" className="list-group-item">
-            Green Tea:
-            <button id="addCartButton2" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart3" className="list-group-item">
-            White Tea:
-            <button id="addCartButton3" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart4" className="list-group-item">
-            Oolong Tea:
-            <button id="addCartButton4" onClick={handleClick}>
-              Add to Cart
-            </button>
-            <span className="badge bg-info">50% OFF SUMMER SALE</span>
-          </li>
-          <li id="cart5" className="list-group-item">
-            Pu-erh Tea:
-            <button id="addCartButton5" onClick={handleClick}>
-              Add to Cart
-            </button>
-            <span className="badge bg-info">50% OFF SUMMER SALE</span>
-          </li>
-          <li id="cart6" className="list-group-item">
-            Purple Tea:
-            <button id="addCartButton6" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart7" className="list-group-item">
-            Matcha Tea:
-            <button id="addCartButton7" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart8" className="list-group-item">
-            Mate Tea:
-            <button id="addCartButton8" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-          <li id="cart9" className="list-group-item">
-            Herbal Tea:
-            <button id="addCartButton9" onClick={handleClick}>
-              Add to Cart
-            </button>
-            <span className="badge bg-info">50% OFF SUMMER SALE</span>
-          </li>
-          <li id="cart10" className="list-group-item">
-            Rooibos Tea:
-            <button id="addCartButton10" onClick={handleClick}>
-              Add to Cart
-            </button>
-          </li>
-        </ul> */}
       </section>
     </main>
   );
@@ -173,52 +117,62 @@ export function Shop() {
 
     // card objects
     const teaCard1 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+      src: blacktea,
       title: "Black Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard2 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+      src: greentea,
       title: "Green Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard3 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+      src: whitetea,
       title: "White Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard4 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+      src: oolongtea,
       title: "Oolong Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard5 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+      src: puerhtea,
       title: "Pu-erh Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard6 = {
-      src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+      // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+      src: purpletea,
       title: "Purple Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard7 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+      src: matchatea,
       title: "Matcha Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard8 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+      src: matetea,
       title: "Mate Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard9 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+      src: herbaltea,
       title: "Herbal Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };
     const teaCard10 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+      src: rooibostea,
       title: "Rooibos Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     };

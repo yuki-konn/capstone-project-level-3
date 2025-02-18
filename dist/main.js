@@ -2165,6 +2165,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _About_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.scss */ "./src/Views/About.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+
 
 
 function About() {
@@ -2620,6 +2622,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/TriviaCard */ "./src/modules/TriviaCard.js");
 /* harmony import */ var _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/LinkCard */ "./src/modules/LinkCard.js");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+/* harmony import */ var _HomeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomeCarousel */ "./src/Views/HomeCarousel.js");
+
 
 
 
@@ -2633,7 +2637,7 @@ function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "homeMain",
     className: "container-lg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeCarousel__WEBPACK_IMPORTED_MODULE_4__.HomeCarousel, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionAbout",
     className: "text-center m-2"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -2742,6 +2746,115 @@ function unmountMessage() {
 
 /***/ }),
 
+/***/ "./src/Views/HomeCarousel.js":
+/*!***********************************!*\
+  !*** ./src/Views/HomeCarousel.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HomeCarousel: () => (/* binding */ HomeCarousel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
+/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
+/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+
+
+
+
+
+function HomeCarousel() {
+  const goldcolor = {
+    color: "#FFB302"
+  };
+  const imgStyle = {
+    maxHeight: "30%",
+    margin: "auto",
+    display: "flex"
+  };
+  //   const opacity = {
+  //     opacity: "0.7",
+  //   };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "m-2 text-center bg-warning"
+  }, "Summer Sale 50% off"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "homeCarousel",
+    className: "carousel slide",
+    "data-bs-ride": "carousel"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    style: imgStyle,
+    src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_1__,
+    className: "d-block",
+    alt: "oolong"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-caption d-none d-md-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", {
+    style: goldcolor
+  }, "Oolong Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: goldcolor
+  }, "Benefits: Lowers cholesterol, aiding in weight loss, supports dental health."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    style: imgStyle,
+    src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_2__,
+    className: "d-block",
+    alt: "puerh"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-caption d-none d-md-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", {
+    style: goldcolor
+  }, "Pu-erh Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: goldcolor
+  }, "Benefits: Improves digestion, reduces anxiety, and has many antioxidants."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    style: imgStyle,
+    src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_3__,
+    className: "d-block",
+    alt: "herbal"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-caption d-none d-md-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", {
+    style: goldcolor
+  }, "Herbal Tea"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: goldcolor
+  }, "Benefits: Helps with relaxation, immune system support, and heart health.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-prev",
+    type: "button",
+    "data-bs-target": "#homeCarousel",
+    "data-bs-slide": "prev"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Previous")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-next",
+    type: "button",
+    "data-bs-target": "#homeCarousel",
+    "data-bs-slide": "next"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Next")))));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Navbar.js":
 /*!*****************************!*\
   !*** ./src/Views/Navbar.js ***!
@@ -2800,6 +2913,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/Column.js */ "./src/utils/Column.js");
 /* harmony import */ var _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/GridSystem.js */ "./src/utils/GridSystem.js");
 /* harmony import */ var _Shop_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Shop.scss */ "./src/Views/Shop.scss");
+/* harmony import */ var _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/blacktea.png */ "./assets/images/blacktea.png");
+/* harmony import */ var _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/greentea.jpg */ "./assets/images/greentea.jpg");
+/* harmony import */ var _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/whitetea.jpg */ "./assets/images/whitetea.jpg");
+/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
+/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
+/* harmony import */ var _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/purpletea.jpg */ "./assets/images/purpletea.jpg");
+/* harmony import */ var _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/images/matchatea.jpg */ "./assets/images/matchatea.jpg");
+/* harmony import */ var _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/images/matetea.jpg */ "./assets/images/matetea.jpg");
+/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
+/* harmony import */ var _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../assets/images/rooibostea.png */ "./assets/images/rooibostea.png");
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2902,52 +3035,62 @@ function Shop() {
 
     // card objects
     const teaCard1 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
+      src: _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_7__,
       title: "Black Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard2 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
+      src: _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_8__,
       title: "Green Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard3 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
+      src: _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_9__,
       title: "White Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard4 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
+      src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_10__,
       title: "Oolong Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard5 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
+      src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_11__,
       title: "Pu-erh Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard6 = {
-      src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+      // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
+      src: _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_12__,
       title: "Purple Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard7 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
+      src: _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_13__,
       title: "Matcha Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard8 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
+      src: _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_14__,
       title: "Mate Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard9 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
+      src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_15__,
       title: "Herbal Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
     const teaCard10 = {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
+      src: _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_16__,
       title: "Rooibos Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
     };
@@ -4375,6 +4518,106 @@ module.exports = __webpack_require__.p + "40476c0db5cccb8bd723.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "8ca25ed1494b48e39a11.png";
+
+/***/ }),
+
+/***/ "./assets/images/blacktea.png":
+/*!************************************!*\
+  !*** ./assets/images/blacktea.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "e311e895b1327c5889f4.png";
+
+/***/ }),
+
+/***/ "./assets/images/greentea.jpg":
+/*!************************************!*\
+  !*** ./assets/images/greentea.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "e79dee2894f41dd6bd5b.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/herbaltea.png":
+/*!*************************************!*\
+  !*** ./assets/images/herbaltea.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "644f35f11f48a962db8e.png";
+
+/***/ }),
+
+/***/ "./assets/images/matchatea.jpg":
+/*!*************************************!*\
+  !*** ./assets/images/matchatea.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "5a6cf771ca5e1024db42.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/matetea.jpg":
+/*!***********************************!*\
+  !*** ./assets/images/matetea.jpg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "5e788997b679b06702bd.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/oolongtea.png":
+/*!*************************************!*\
+  !*** ./assets/images/oolongtea.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "53d47a27291a74ee4c8d.png";
+
+/***/ }),
+
+/***/ "./assets/images/puerhtea.png":
+/*!************************************!*\
+  !*** ./assets/images/puerhtea.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "dc69b6fada245196845d.png";
+
+/***/ }),
+
+/***/ "./assets/images/purpletea.jpg":
+/*!*************************************!*\
+  !*** ./assets/images/purpletea.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "c75a6a2d222476b2b0f7.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/rooibostea.png":
+/*!**************************************!*\
+  !*** ./assets/images/rooibostea.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "05b9c6a8984215b77739.png";
+
+/***/ }),
+
+/***/ "./assets/images/whitetea.jpg":
+/*!************************************!*\
+  !*** ./assets/images/whitetea.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "6d68da59d88446d511a2.jpg";
 
 /***/ }),
 

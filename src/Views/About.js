@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./About.scss";
+import "../index.scss";
 
 export function About() {
   const [didMount, setDidMount] = useState(false);

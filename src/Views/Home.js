@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { TriviaCard } from "../modules/TriviaCard";
 import { LinkCard } from "../modules/LinkCard";
 import "../index.scss";
+import { HomeCarousel } from "./HomeCarousel";
 
 export function Home() {
   const [didMount, setDidMount] = useState(false);
@@ -11,6 +12,7 @@ export function Home() {
 
   return (
     <main id="homeMain" className="container-lg">
+      <HomeCarousel />
       <section id="sectionAbout" className="text-center m-2"></section>
       <section id="sectionLocation" className="text-center m-2"></section>
       <section id="sectionHistory" className="text-center m-2"></section>

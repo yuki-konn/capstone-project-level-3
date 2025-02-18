@@ -2299,19 +2299,19 @@ function CollapsibleNavbar() {
   if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     id: "collapsibleNavbar",
-    class: "navbar navbar-expand-lg bg-dark"
+    className: "navbar navbar-expand-lg bg-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    class: "container-fluid"
+    className: "container-fluid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "homeNavDiv",
-    class: "nav-item m-2"
+    className: "nav-item m-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
-    class: "navbar-brand",
+    className: "navbar-brand",
     to: `${rootpath}/`,
     end: true,
     "aria-current": "page"
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    class: "navbar-toggler bg-light",
+    className: "navbar-toggler bg-light",
     type: "button",
     "data-bs-toggle": "collapse",
     "data-bs-target": "#navbarNav",
@@ -2319,20 +2319,20 @@ function CollapsibleNavbar() {
     "aria-expanded": "false",
     "aria-label": "Toggle navigation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    class: "navbar-toggler-icon"
+    className: "navbar-toggler-icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    class: "collapse navbar-collapse",
+    className: "collapse navbar-collapse",
     id: "navbarNav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    class: "navbar-nav"
+    className: "navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
-    class: "nav-item nav-link",
+    className: "nav-item nav-link",
     to: `${rootpath}/shop`
   }, "Shop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
-    class: "nav-item nav-link",
+    className: "nav-item nav-link",
     to: `${rootpath}/about`
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
-    class: "nav-item nav-link",
+    className: "nav-item nav-link",
     to: `${rootpath}/contact`
   }, "Contact")))));
 }

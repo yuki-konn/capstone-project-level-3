@@ -8,11 +8,11 @@ export function CollapsibleNavbar() {
   if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
 
   return (
-    <nav id="collapsibleNavbar" class="navbar navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <div id="homeNavDiv" class="nav-item m-2">
+    <nav id="collapsibleNavbar" className="navbar navbar-expand-lg bg-dark">
+      <div className="container-fluid">
+        <div id="homeNavDiv" className="nav-item m-2">
           <NavLink
-            class="navbar-brand"
+            className="navbar-brand"
             to={`${rootpath}/`}
             end
             aria-current="page"
@@ -22,7 +22,7 @@ export function CollapsibleNavbar() {
         </div>
 
         <button
-          class="navbar-toggler bg-light"
+          className="navbar-toggler bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -30,17 +30,17 @@ export function CollapsibleNavbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <NavLink class="nav-item nav-link" to={`${rootpath}/shop`}>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <NavLink className="nav-item nav-link" to={`${rootpath}/shop`}>
               Shop
             </NavLink>
-            <NavLink class="nav-item nav-link" to={`${rootpath}/about`}>
+            <NavLink className="nav-item nav-link" to={`${rootpath}/about`}>
               About
             </NavLink>
-            <NavLink class="nav-item nav-link" to={`${rootpath}/contact`}>
+            <NavLink className="nav-item nav-link" to={`${rootpath}/contact`}>
               Contact
             </NavLink>
           </ul>

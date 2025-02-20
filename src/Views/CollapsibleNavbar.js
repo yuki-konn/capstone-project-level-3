@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
 import "../index.scss";
+import { SignInModal } from "./SignInModal";
 
 export function CollapsibleNavbar() {
   const domain = window.location.hostname;
@@ -43,6 +44,7 @@ export function CollapsibleNavbar() {
             <NavLink className="nav-item nav-link" to={`${rootpath}/contact`}>
               Contact
             </NavLink>
+            <SignInModal />
           </ul>
         </div>
       </div>

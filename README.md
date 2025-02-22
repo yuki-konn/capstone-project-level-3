@@ -10,6 +10,7 @@ Folders with folders inside.
 - src
   - controllers
   - modules
+    - disabled: Either for reference or thinking of deleting.
   - utils
   - Views
 
@@ -22,3 +23,9 @@ In the index.html there is one internal style.
 In the Home.js there is one inline style.
 
 # TO DO
+
+Top Priority:
+
+Low Priority:
+
+- Make handleSubmitTrivia.js do something. Currently disabled in viewResponse.js

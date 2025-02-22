@@ -2628,16 +2628,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/TriviaCard */ "./src/modules/TriviaCard.js");
-/* harmony import */ var _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/LinkCard */ "./src/modules/LinkCard.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
-/* harmony import */ var _HomeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomeCarousel */ "./src/Views/HomeCarousel.js");
-
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+/* harmony import */ var _HomeCarousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomeCarousel */ "./src/Views/HomeCarousel.js");
+/* harmony import */ var _controllers_handleClickApi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleClickApi */ "./src/controllers/handleClickApi.js");
 
 
 
 
 function Home() {
+  // STATE VARIABLES FOR CARDS
+  const [linkCard1, setLinkCard1] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
+  const [linkCard2, setLinkCard2] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
+  const [linkCard3, setLinkCard3] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
+  const [triviaCard, setTriviaCard] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
   const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
@@ -2646,19 +2649,19 @@ function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "homeMain",
     className: "container-lg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeCarousel__WEBPACK_IMPORTED_MODULE_4__.HomeCarousel, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeCarousel__WEBPACK_IMPORTED_MODULE_2__.HomeCarousel, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionAbout",
     className: "text-center m-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, linkCard1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionLocation",
     className: "text-center m-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, linkCard2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionHistory",
     className: "text-center m-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, linkCard3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionTrivia",
     className: "text-center m-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, triviaCard), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "siteMapGroup",
     className: "m-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2694,7 +2697,9 @@ function Home() {
   // MOUNT PHASE
   function componentDidMount() {
     document.title = "Yuki Tea Shop";
-    const card1 = {
+
+    // SECTION ABOUT
+    const linkCard1 = {
       title: "About",
       desc1: "This is the about card of my imaginary online tea shop website. You can learn more about the different features in the project in the About section. You can get to the about section by clicking on the button below or the About tab at the top of the page.",
       desc2: "",
@@ -2703,7 +2708,20 @@ function Home() {
       // update link
       buttonName: "Learn More"
     };
-    const card2 = {
+    setLinkCard1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "card-title"
+    }, linkCard1.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard1.desc1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard1.desc2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard1.desc3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: linkCard1.link
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "cardButton btn btn-success btn-sm"
+    }, linkCard1.buttonName)))));
+
+    // SECTION LOCATIONS
+    const linkCard2 = {
       title: "Locations",
       desc1: "Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor magnis scelerisque quam turpis sem parturient. Urna elit habitasse accumsan torquent consequat consequat. Dictum ad metus phasellus magna eleifend scelerisque sem. Magna euismod aliquam finibus conubia ad. Erat adipiscing molestie; fringilla dolor nisi suscipit pulvinar pretium? Nulla class justo sapien egestas placerat! Penatibus iaculis aliquet molestie, porta pulvinar tristique. Finibus ut nullam urna quisque mi.",
       desc2: "Duis odio facilisi ullamcorper suspendisse a vitae nibh. Inceptos aenean egestas aenean ultrices senectus massa. Tempor aliquet eleifend non porta habitasse elementum lobortis. Curae vulputate lorem cras parturient facilisi erat proin leo. Vestibulum integer litora amet quis; torquent dolor malesuada. Maximus purus elementum, cras sodales hac semper vivamus. Augue leo ultricies hendrerit; in bibendum iaculis. Porttitor penatibus at sociosqu porta rhoncus.",
@@ -2711,7 +2729,20 @@ function Home() {
       link: "",
       buttonName: "Learn More"
     };
-    const card3 = {
+    setLinkCard2(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "card-title"
+    }, linkCard2.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard2.desc1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard2.desc2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard2.desc3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: linkCard2.link
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "cardButton btn btn-success btn-sm"
+    }, linkCard2.buttonName)))));
+
+    // SECTION HISTORY
+    const linkCard3 = {
       title: "History",
       desc1: "Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae torquent dictum montes enim libero nec parturient, enim neque. Malesuada nullam scelerisque conubia; porttitor semper rhoncus finibus. Dui natoque volutpat sociosqu curabitur ac nulla viverra. Curae felis ultrices aliquet ante pellentesque mollis porta. Interdum nisi consequat, neque tempus orci nostra lacus litora scelerisque. Ornare viverra dolor volutpat; potenti eleifend cubilia nostra potenti.",
       desc2: "Blandit quam fermentum enim justo mi? Per eget sem elit erat convallis in rhoncus. Faucibus duis conubia justo sagittis conubia vulputate! Erat praesent imperdiet praesent tempus gravida, senectus auctor sagittis proin. Consectetur consequat porta fusce amet nisi et commodo. Potenti nibh risus torquent a in torquent. Habitant ultricies curae vehicula ullamcorper curae nostra. Mus nibh risus neque penatibus molestie. Consequat eget magnis vulputate aliquet est arcu.",
@@ -2719,22 +2750,43 @@ function Home() {
       link: "",
       buttonName: "Learn More"
     };
+    setLinkCard3(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "card-title"
+    }, linkCard3.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard3.desc1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard3.desc2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, linkCard3.desc3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: linkCard3.link
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "cardButton btn btn-success btn-sm"
+    }, linkCard3.buttonName)))));
 
-    // Trivia Card
-    const triviaCard = {
+    // SECTION TRIVIA
+    const triviaCardContent = {
       title: "Random Trivia",
       buttonName: "Brew Question"
     };
-    const sectionAbout = document.getElementById("sectionAbout");
-    const sectionLocation = document.getElementById("sectionLocation");
-    const sectionHistory = document.getElementById("sectionHistory");
-    const sectionTrivia = document.getElementById("sectionTrivia");
-    sectionAbout.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card1);
-    sectionLocation.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card2);
-    sectionHistory.innerHTML = new _modules_LinkCard__WEBPACK_IMPORTED_MODULE_2__.LinkCard(card3);
-    sectionTrivia.innerHTML = new _modules_TriviaCard__WEBPACK_IMPORTED_MODULE_1__.TriviaCard(triviaCard);
+    setTriviaCard(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "card-title"
+    }, triviaCardContent.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "outputTag",
+      className: "p-3"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      onClick: handleClickTriviaCard,
+      className: "cardButton btn btn-success btn-sm"
+    }, triviaCardContent.buttonName))));
     setDidMount(true);
     console.log("The Home component has mounted.");
+  }
+
+  // HANDLER FOR TRIVIA CARD BUTTON
+  function handleClickTriviaCard(event) {
+    (0,_controllers_handleClickApi__WEBPACK_IMPORTED_MODULE_3__.handleClickApi)(event);
   }
 
   // UPDATE PHASE
@@ -3480,6 +3532,28 @@ function handleClickAddCart(event = new Event(), buttonId) {
 
 /***/ }),
 
+/***/ "./src/controllers/handleClickApi.js":
+/*!*******************************************!*\
+  !*** ./src/controllers/handleClickApi.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleClickApi: () => (/* binding */ handleClickApi)
+/* harmony export */ });
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+
+
+// API index.html
+function handleClickApi(event = new Event()) {
+  const url = "https://opentdb.com/api.php?amount=1&category=9&difficulty=medium&type=multiple";
+  const promise = fetch(url);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_0__.parseResponse);
+}
+
+/***/ }),
+
 /***/ "./src/controllers/handleSubmitContact.js":
 /*!************************************************!*\
   !*** ./src/controllers/handleSubmitContact.js ***!
@@ -3588,39 +3662,6 @@ function handleSubmitPhone(event = new Event()) {
 
 /***/ }),
 
-/***/ "./src/modules/LinkCard.js":
-/*!*********************************!*\
-  !*** ./src/modules/LinkCard.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   LinkCard: () => (/* binding */ LinkCard)
-/* harmony export */ });
-class LinkCard {
-  openingTag = `<article class="card">
-      <div class="card-body">`;
-  closingTag = `</div></article>`;
-  innerHTML = "";
-  constructor(cardProperty) {
-    this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
-          <p>${cardProperty.desc1}</p>
-          <p>${cardProperty.desc2}</p>
-          <p>${cardProperty.desc3}</p>
-          <a href="${cardProperty.link}">
-            <button class="cardButton btn btn-success btn-sm">
-            ${cardProperty.buttonName}
-            </button>
-          </a>`;
-  }
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-  }
-}
-
-/***/ }),
-
 /***/ "./src/modules/PhoneObject.js":
 /*!************************************!*\
   !*** ./src/modules/PhoneObject.js ***!
@@ -3659,35 +3700,6 @@ class ShopCard {
         <div class="card-body">
         <h3 class="card-title">${cardProperty.title}</h3>
         ${cardProperty.description}`;
-  }
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-  }
-}
-
-/***/ }),
-
-/***/ "./src/modules/TriviaCard.js":
-/*!***********************************!*\
-  !*** ./src/modules/TriviaCard.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   TriviaCard: () => (/* binding */ TriviaCard)
-/* harmony export */ });
-class TriviaCard {
-  openingTag = `<article class="card">
-       <div class="card-body">`;
-  closingTag = `</div></article>`;
-  innerHTML = "";
-  constructor(cardProperty) {
-    this.innerHTML = `<h2 class="card-title">${cardProperty.title}</h2>
-        <div id="outputTag" class="p-3"></div>
-        <button onclick="handleClickApi(event)" class="cardButton btn btn-success btn-sm">
-        ${cardProperty.buttonName}
-        </button>`;
   }
   toString() {
     return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
@@ -3779,6 +3791,65 @@ function parsePhoneResponse(resolveValue) {
   const response = JSON.parse(resolveValue);
   const message = response.message;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "phoneOutputTag");
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse.js":
+/*!**************************************!*\
+  !*** ./src/modules/parseResponse.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse: () => (/* binding */ parseResponse)
+/* harmony export */ });
+/* harmony import */ var _viewResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./viewResponse.js */ "./src/modules/viewResponse.js");
+
+
+// index.html
+function parseResponse(fetchObject) {
+  const promise = fetchObject.text();
+  promise.then(_viewResponse_js__WEBPACK_IMPORTED_MODULE_0__.viewResponse);
+}
+
+/***/ }),
+
+/***/ "./src/modules/viewResponse.js":
+/*!*************************************!*\
+  !*** ./src/modules/viewResponse.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   viewResponse: () => (/* binding */ viewResponse)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+// index.html
+function viewResponse(fetchObject) {
+  const response = JSON.parse(fetchObject);
+  const results = response.results;
+  const item = results[0];
+  const question = item.question;
+  const answer = item.correct_answer;
+  const incorrects = item.incorrect_answers;
+  const trivia = `<form id="outputTag" onsubmit="handleSubmitTrivia(event)">
+            <p>${question}</p>
+            <label for="choice-A">a. ${incorrects[0]}</label>
+            <input type="radio" id="choice-A" name="choices"><br>
+            <label for="choice-B">b. ${incorrects[1]}</label>
+            <input type="radio" id="choice-B" name="choices"><br>
+            <label for="choice-C">c. ${answer}</label>
+            <input type="radio" id="choice-C" name="choices"><br>
+            <label for="choice-D">d. ${incorrects[2]}</label>
+            <input type="radio" id="choice-D" name="choices"><br>
+            <button onclick="handleSubmitTrivia(event)">Submit</button>
+          </form>`;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(trivia);
 }
 
 /***/ }),

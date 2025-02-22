@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { TriviaCard } from "../modules/TriviaCard";
-import { LinkCard } from "../modules/LinkCard";
 import "../index.scss";
 import { HomeCarousel } from "./HomeCarousel";
+import { handleClickApi } from "../controllers/handleClickApi";
 
 export function Home() {
+  // STATE VARIABLES FOR CARDS
+  const [linkCard1, setLinkCard1] = useState(<></>);
+  const [linkCard2, setLinkCard2] = useState(<></>);
+  const [linkCard3, setLinkCard3] = useState(<></>);
+  const [triviaCard, setTriviaCard] = useState(<></>);
+
   const [didMount, setDidMount] = useState(false);
+
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
@@ -13,10 +19,18 @@ export function Home() {
   return (
     <main id="homeMain" className="container-lg">
       <HomeCarousel />
-      <section id="sectionAbout" className="text-center m-2"></section>
-      <section id="sectionLocation" className="text-center m-2"></section>
-      <section id="sectionHistory" className="text-center m-2"></section>
-      <section id="sectionTrivia" className="text-center m-2"></section>
+      <section id="sectionAbout" className="text-center m-2">
+        {linkCard1}
+      </section>
+      <section id="sectionLocation" className="text-center m-2">
+        {linkCard2}
+      </section>
+      <section id="sectionHistory" className="text-center m-2">
+        {linkCard3}
+      </section>
+      <section id="sectionTrivia" className="text-center m-2">
+        {triviaCard}
+      </section>
       <br />
       <div id="siteMapGroup" className="m-1">
         <span className="fw-bold p-0 m-0">
@@ -52,7 +66,8 @@ export function Home() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop";
 
-    const card1 = {
+    // SECTION ABOUT
+    const linkCard1 = {
       title: "About",
       desc1:
         "This is the about card of my imaginary online tea shop website. You can learn more about the different features in the project in the About section. You can get to the about section by clicking on the button below or the About tab at the top of the page.",
@@ -61,7 +76,25 @@ export function Home() {
       link: "https://yuki-konn.github.io/capstone-project-level-3/about", // update link
       buttonName: "Learn More",
     };
-    const card2 = {
+
+    setLinkCard1(
+      <article className="card">
+        <div className="card-body">
+          <h2 className="card-title">{linkCard1.title}</h2>
+          <p>{linkCard1.desc1}</p>
+          <p>{linkCard1.desc2}</p>
+          <p>{linkCard1.desc3}</p>
+          <a href={linkCard1.link}>
+            <button className="cardButton btn btn-success btn-sm">
+              {linkCard1.buttonName}
+            </button>
+          </a>
+        </div>
+      </article>
+    );
+
+    // SECTION LOCATIONS
+    const linkCard2 = {
       title: "Locations",
       desc1:
         "Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor magnis scelerisque quam turpis sem parturient. Urna elit habitasse accumsan torquent consequat consequat. Dictum ad metus phasellus magna eleifend scelerisque sem. Magna euismod aliquam finibus conubia ad. Erat adipiscing molestie; fringilla dolor nisi suscipit pulvinar pretium? Nulla class justo sapien egestas placerat! Penatibus iaculis aliquet molestie, porta pulvinar tristique. Finibus ut nullam urna quisque mi.",
@@ -71,7 +104,25 @@ export function Home() {
       link: "",
       buttonName: "Learn More",
     };
-    const card3 = {
+
+    setLinkCard2(
+      <article className="card">
+        <div className="card-body">
+          <h2 className="card-title">{linkCard2.title}</h2>
+          <p>{linkCard2.desc1}</p>
+          <p>{linkCard2.desc2}</p>
+          <p>{linkCard2.desc3}</p>
+          <a href={linkCard2.link}>
+            <button className="cardButton btn btn-success btn-sm">
+              {linkCard2.buttonName}
+            </button>
+          </a>
+        </div>
+      </article>
+    );
+
+    // SECTION HISTORY
+    const linkCard3 = {
       title: "History",
       desc1:
         "Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae torquent dictum montes enim libero nec parturient, enim neque. Malesuada nullam scelerisque conubia; porttitor semper rhoncus finibus. Dui natoque volutpat sociosqu curabitur ac nulla viverra. Curae felis ultrices aliquet ante pellentesque mollis porta. Interdum nisi consequat, neque tempus orci nostra lacus litora scelerisque. Ornare viverra dolor volutpat; potenti eleifend cubilia nostra potenti.",
@@ -83,24 +134,50 @@ export function Home() {
       buttonName: "Learn More",
     };
 
-    // Trivia Card
-    const triviaCard = {
+    setLinkCard3(
+      <article className="card">
+        <div className="card-body">
+          <h2 className="card-title">{linkCard3.title}</h2>
+          <p>{linkCard3.desc1}</p>
+          <p>{linkCard3.desc2}</p>
+          <p>{linkCard3.desc3}</p>
+          <a href={linkCard3.link}>
+            <button className="cardButton btn btn-success btn-sm">
+              {linkCard3.buttonName}
+            </button>
+          </a>
+        </div>
+      </article>
+    );
+
+    // SECTION TRIVIA
+    const triviaCardContent = {
       title: "Random Trivia",
       buttonName: "Brew Question",
     };
 
-    const sectionAbout = document.getElementById("sectionAbout");
-    const sectionLocation = document.getElementById("sectionLocation");
-    const sectionHistory = document.getElementById("sectionHistory");
-    const sectionTrivia = document.getElementById("sectionTrivia");
-
-    sectionAbout.innerHTML = new LinkCard(card1);
-    sectionLocation.innerHTML = new LinkCard(card2);
-    sectionHistory.innerHTML = new LinkCard(card3);
-    sectionTrivia.innerHTML = new TriviaCard(triviaCard);
+    setTriviaCard(
+      <article className="card">
+        <div className="card-body">
+          <h2 className="card-title">{triviaCardContent.title}</h2>
+          <div id="outputTag" className="p-3"></div>
+          <button
+            onClick={handleClickTriviaCard}
+            className="cardButton btn btn-success btn-sm"
+          >
+            {triviaCardContent.buttonName}
+          </button>
+        </div>
+      </article>
+    );
 
     setDidMount(true);
     console.log("The Home component has mounted.");
+  }
+
+  // HANDLER FOR TRIVIA CARD BUTTON
+  function handleClickTriviaCard(event) {
+    handleClickApi(event);
   }
 
   // UPDATE PHASE

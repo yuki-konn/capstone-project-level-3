@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { SignInContent } from "./SignInContent";
+import { handleSignIn } from "../controllers/handleSignIn";
 
-export function SignInModal() {
+export function SignInModal(props) {
+  const onSignIn = props.onSignIn;
   return (
     <>
       <button
@@ -56,6 +58,7 @@ export function SignInModal() {
   );
 
   function handleSubmit(event) {
-    console.log("Sign in handler");
+    console.log("Handler: handleSignIn");
+    handleSignIn(event, onSignIn);
   }
 }

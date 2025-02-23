@@ -1,6 +1,7 @@
 import React from "react";
 
-export function SignOutModal() {
+export function SignOutModal(props) {
+  const onSignOut = props.onSignOut;
   return (
     <>
       <button
@@ -60,5 +61,8 @@ export function SignOutModal() {
     const closeButton = event.target[1];
     // Runs the red "No" button when "Yes" is clicked to close the modal.
     closeButton.click();
+
+    // Changes button to SignInModal
+    onSignOut();
   }
 }

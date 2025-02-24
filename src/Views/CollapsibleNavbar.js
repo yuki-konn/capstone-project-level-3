@@ -18,7 +18,7 @@ export function CollapsibleNavbar() {
             end
             aria-current="page"
           >
-            Home
+            <i className="bi bi-house"></i> Home
           </NavLink>
         </div>
 
@@ -36,13 +36,13 @@ export function CollapsibleNavbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <NavLink className="nav-item nav-link" to={`${rootpath}/shop`}>
-              Shop
+              <i className="bi bi-shop"></i> Shop
             </NavLink>
             <NavLink className="nav-item nav-link" to={`${rootpath}/about`}>
-              About
+              <i className="bi bi-info-circle"></i> About
             </NavLink>
             <NavLink className="nav-item nav-link" to={`${rootpath}/contact`}>
-              Contact
+              <i className="bi bi-messenger"></i> Contact
             </NavLink>
             <SignInArea />
           </ul>

@@ -26,6 +26,12 @@ In the Home.js there is one inline style.
 
 Top Priority:
 
+- Create testing modules
+
+Medium Priority:
+
+- Put handleClickAddCart in componentDidUpdate in shop.js (Output feedback)
+
 Low Priority:
 
 - Make handleSubmitTrivia.js do something. Currently disabled in viewResponse.js

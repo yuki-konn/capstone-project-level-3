@@ -107,7 +107,10 @@ export function Contact() {
         <br />
       </section>
       <section>
-        <h2 className="textShadow">Schedule a Phone Appointment</h2>
+        <h2 className="textShadow">
+          <i className="bi bi-telephone"></i> Schedule a Phone Appointment
+        </h2>
+
         <form onSubmit={handleSubmitPhone}>
           <div className="row">
             <label className="col-2" htmlFor="phone-name" title="Required">

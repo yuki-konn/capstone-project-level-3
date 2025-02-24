@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { SignInContent } from "./SignInContent";
 import { handleSignIn } from "../controllers/handleSignIn";
 
 export function SignInModal(props) {
-  const onSignIn = props.onSignIn;
+  const onSignIn = props.onSignIn; // Prop from SignInArea.
+
+  // ERROR MESSAGE FOR INCORRECT INPUTS
+  const [errorMessage, setErrorMessage] = useState("");
   return (
     <>
       <button
@@ -36,8 +39,8 @@ export function SignInModal(props) {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
-              <SignInContent />
+            <div id="signInContent" className="modal-body">
+              <SignInContent errorMessage={errorMessage} />
             </div>
             <div className="modal-footer">
               <button
@@ -59,6 +62,6 @@ export function SignInModal(props) {
 
   function handleSubmit(event) {
     console.log("Handler: handleSignIn");
-    handleSignIn(event, onSignIn);
+    handleSignIn(event, onSignIn, setErrorMessage);
   }
 }

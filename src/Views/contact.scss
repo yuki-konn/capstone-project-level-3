@@ -18,11 +18,10 @@ $body-bg: #b3b3b3;
         label {
           text-align: left;
         }
+      }
+      #ratingDiv {
         input {
-          width: 70%;
-        }
-        .ratingInput {
-          width: auto;
+          margin: 0 15px 0 3px;
         }
       }
     }

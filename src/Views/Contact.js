@@ -47,56 +47,46 @@ export function Contact() {
             <label htmlFor="contact-comment">Comment (Optional)</label>
             <textarea id="contact-comment" className="w100"></textarea>
           </div>
-          <div className="row">
-            <label htmlFor="contact-ratings">Rating (Optional)</label>
-            <section id="contact-ratings">
+          <fieldset>
+            <legend>Rating (Optional)</legend>
+            <div id="ratingDiv">
               <label htmlFor="rating-five">5&#9733;</label>
               <input
                 id="rating-five"
-                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="5 Star rating"
               />
-              <br />
               <label htmlFor="rating-four">4&#9733;</label>
               <input
                 id="rating-four"
-                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="4 Star rating"
               />
-              <br />
               <label htmlFor="rating-three">3&#9733;</label>
               <input
                 id="rating-three"
-                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="3 Star rating"
               />
-              <br />
               <label htmlFor="rating-two">2&#9733;</label>
               <input
                 id="rating-two"
-                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="2 Star rating"
               />
-              <br />
               <label htmlFor="rating-one">1&#9733;</label>
               <input
                 id="rating-one"
-                className="ratingInput"
                 name="ratings"
                 type="radio"
                 aria-label="1 Star rating"
               />
-              <br />
-            </section>
-          </div>
+            </div>
+          </fieldset>
           <input className="w100" type="submit" />
         </form>
         <br />

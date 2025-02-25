@@ -5,52 +5,47 @@ import { output } from "../utils/output.js";
 // CONTACT FORM SUBMIT HANDLER
 export function handleSubmitContact(event = new Event()) {
   event.preventDefault();
-  const form = event.target;
-  const nameInput = form[0];
-  const emailInput = form[1];
-  const commentInput = form[2];
 
-  const fiveStar = form[3];
-  const fourStar = form[4];
-  const threeStar = form[5];
-  const twoStar = form[6];
-  const oneStar = form[7];
+  const name = event.target[0].value;
+  const email = event.target[1].value;
+  const comment = event.target[2].value;
+  const fiveStar = event.target[4].ariaLabel;
+  const fourStar = event.target[5].ariaLabel;
+  const threeStar = event.target[6].ariaLabel;
+  const twoStar = event.target[7].ariaLabel;
+  const oneStar = event.target[8].ariaLabel;
 
-  // ARRAY FOR FORM VALUES
-  const value = [
-    nameInput.value,
-    emailInput.value,
-    commentInput.value,
-    fiveStar.ariaLabel,
-    fourStar.ariaLabel,
-    threeStar.ariaLabel,
-    twoStar.ariaLabel,
-    oneStar.ariaLabel,
-  ];
+  const rating = [fiveStar, fourStar, threeStar, twoStar, oneStar];
 
-  // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
-  if (outputTag.innerHTML === "") {
+  const ratingFieldSet = event.target[3].elements;
+
+  // CHECKS TO SEE IF THE outputTag IS EMPTY OR NOT
+  const outputTag = document.getElementById("outputTag");
+  const isEmpty = outputTag.childNodes.length === 0;
+  if (isEmpty) {
     output("<b style='color: gold'>Processing contact form...<b><br>");
     output("<br><u>Form Info<u><br>");
-    output(`Name: ${value[0]}<br>`);
-    output(`Email: ${value[1]}<br>`);
+    output(`Name: ${name}<br>`);
+    output(`Email: ${email}<br>`);
 
     // CHECKS TO SEE IF TEXTAREA IS EMPTY
-    if (value[2] === "") {
+    if (comment === "") {
       output("");
     } else {
-      output(`Comment: ${value[2]}<br>`);
+      output(`Comment: ${comment}<br>`);
     }
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    for (let position = 3; position <= 7; position++) {
-      if (form[position].checked) {
-        output(`Rating: ${value[position]}<br>`);
-        console.log(`${value[position]} rating is selected.`);
+    for (let position = 0; position <= 4; position++) {
+      if (ratingFieldSet[position].checked) {
+        output(`Rating: ${rating[position]}<br>`);
+        console.log(`${rating[position]} rating is selected.`);
       } else;
     }
 
     output("--------------<br><br>");
+
+    // RESPONSE FROM SERVER
     const promise = makeRequest("https://myserver.com");
     promise.then(parseContactResponse);
   } else {

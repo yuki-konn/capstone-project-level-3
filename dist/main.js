@@ -25956,53 +25956,44 @@ function Contact() {
   }, "Comment (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
     id: "contact-comment",
     className: "w100"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
-    htmlFor: "contact-ratings"
-  }, "Rating (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "contact-ratings"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Rating (Optional)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "ratingDiv"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-five"
   }, "5\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "rating-five",
-    className: "ratingInput",
     name: "ratings",
     type: "radio",
     "aria-label": "5 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-four"
   }, "4\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "rating-four",
-    className: "ratingInput",
     name: "ratings",
     type: "radio",
     "aria-label": "4 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-three"
   }, "3\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "rating-three",
-    className: "ratingInput",
     name: "ratings",
     type: "radio",
     "aria-label": "3 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-two"
   }, "2\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "rating-two",
-    className: "ratingInput",
     name: "ratings",
     type: "radio",
     "aria-label": "2 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "rating-one"
   }, "1\u2605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "rating-one",
-    className: "ratingInput",
     name: "ratings",
     type: "radio",
     "aria-label": "1 Star rating"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "w100",
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -27268,41 +27259,43 @@ __webpack_require__.r(__webpack_exports__);
 // CONTACT FORM SUBMIT HANDLER
 function handleSubmitContact(event = new Event()) {
   event.preventDefault();
-  const form = event.target;
-  const nameInput = form[0];
-  const emailInput = form[1];
-  const commentInput = form[2];
-  const fiveStar = form[3];
-  const fourStar = form[4];
-  const threeStar = form[5];
-  const twoStar = form[6];
-  const oneStar = form[7];
+  const name = event.target[0].value;
+  const email = event.target[1].value;
+  const comment = event.target[2].value;
+  const fiveStar = event.target[4].ariaLabel;
+  const fourStar = event.target[5].ariaLabel;
+  const threeStar = event.target[6].ariaLabel;
+  const twoStar = event.target[7].ariaLabel;
+  const oneStar = event.target[8].ariaLabel;
+  const rating = [fiveStar, fourStar, threeStar, twoStar, oneStar];
+  const ratingFieldSet = event.target[3].elements;
 
-  // ARRAY FOR FORM VALUES
-  const value = [nameInput.value, emailInput.value, commentInput.value, fiveStar.ariaLabel, fourStar.ariaLabel, threeStar.ariaLabel, twoStar.ariaLabel, oneStar.ariaLabel];
-
-  // CHECKS TO SEE IF A FORM HAS BEEN SUBMITTED OR NOT.
-  if (outputTag.innerHTML === "") {
+  // CHECKS TO SEE IF THE outputTag IS EMPTY OR NOT
+  const outputTag = document.getElementById("outputTag");
+  const isEmpty = outputTag.childNodes.length === 0;
+  if (isEmpty) {
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<b style='color: gold'>Processing contact form...<b><br>");
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<br><u>Form Info<u><br>");
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Name: ${value[0]}<br>`);
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Email: ${value[1]}<br>`);
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Name: ${name}<br>`);
+    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Email: ${email}<br>`);
 
     // CHECKS TO SEE IF TEXTAREA IS EMPTY
-    if (value[2] === "") {
+    if (comment === "") {
       (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("");
     } else {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Comment: ${value[2]}<br>`);
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Comment: ${comment}<br>`);
     }
 
     // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    for (let position = 3; position <= 7; position++) {
-      if (form[position].checked) {
-        (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${value[position]}<br>`);
-        console.log(`${value[position]} rating is selected.`);
+    for (let position = 0; position <= 4; position++) {
+      if (ratingFieldSet[position].checked) {
+        (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Rating: ${rating[position]}<br>`);
+        console.log(`${rating[position]} rating is selected.`);
       } else ;
     }
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("--------------<br><br>");
+
+    // RESPONSE FROM SERVER
     const promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__.makeRequest)("https://myserver.com");
     promise.then(_modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__.parseContactResponse);
   } else {}
@@ -27823,12 +27816,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
 #contactMain section form div label {
   text-align: left;
 }
-#contactMain section form div input {
-  width: 70%;
-}
-#contactMain section form div .ratingInput {
-  width: auto;
-}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,WAAA;EACA,8BAAA;AANR;AAOQ;EACE,gBAAA;AALV;AAOQ;EACE,UAAA;AALV;AAOQ;EACE,WAAA;AALV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n#contactMain {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n        input {\r\n          width: 70%;\r\n        }\r\n        .ratingInput {\r\n          width: auto;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+#contactMain section form #ratingDiv input {
+  margin: 0 15px 0 3px;
+}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,WAAA;EACA,8BAAA;AANR;AAOQ;EACE,gBAAA;AALV;AASQ;EACE,oBAAA;AAPV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n#contactMain {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n      }\r\n      #ratingDiv {\r\n        input {\r\n          margin: 0 15px 0 3px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

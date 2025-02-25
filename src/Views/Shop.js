@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { handleClickAddCart } from "../controllers/handleClickAddCart";
-import { ShopCard } from "../modules/ShopCard.js";
-import { createRows } from "../modules/createRows.js";
-import { Column } from "../utils/Column.js";
-import { GridSystem } from "../utils/GridSystem.js";
+// import { ShopCard } from "../modules/ShopCard.js";
+// import { createRows } from "../modules/createRows.js";
+// import { Column } from "../utils/Column.js";
+// import { GridSystem } from "../utils/GridSystem.js";
 import "./Shop.scss";
 import blacktea from "../../assets/images/blacktea.png";
 import greentea from "../../assets/images/greentea.jpg";
@@ -18,7 +18,7 @@ import rooibostea from "../../assets/images/rooibostea.png";
 
 export function Shop() {
   const [didMount, setDidMount] = useState(false);
-  // const [shopCard, setShopCard] = useState(false);
+  const [sectionTeaContent, setSectionTeaContent] = useState(<></>);
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
@@ -29,7 +29,7 @@ export function Shop() {
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Products
         </h2>
-        {/* {shopCard} */}
+        {sectionTeaContent}
       </section>
       <br />
       <section id="sectionCart" className="container-fluid">
@@ -200,41 +200,199 @@ export function Shop() {
       tooltipTitle: "Rooibos Tea",
     };
 
-    // card array with objects
-    const teaCards = [
-      teaCard1,
-      teaCard2,
-      teaCard3,
-      teaCard4,
-      teaCard5,
-      teaCard6,
-      teaCard7,
-      teaCard8,
-      teaCard9,
-      teaCard10,
-    ];
+    setSectionTeaContent(
+      <div className="container-fluid">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard1.id}
+                src={teaCard1.src}
+                data-bs-title={teaCard1.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard1.title}</h3>
+                {teaCard1.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard2.id}
+                src={teaCard2.src}
+                data-bs-title={teaCard2.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard2.title}</h3>
+                {teaCard2.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard3.id}
+                src={teaCard3.src}
+                data-bs-title={teaCard3.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard3.title}</h3>
+                {teaCard3.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard4.id}
+                src={teaCard4.src}
+                data-bs-title={teaCard4.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard4.title}</h3>
+                {teaCard4.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard5.id}
+                src={teaCard5.src}
+                data-bs-title={teaCard5.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard5.title}</h3>
+                {teaCard5.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard6.id}
+                src={teaCard6.src}
+                data-bs-title={teaCard6.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard6.title}</h3>
+                {teaCard6.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard7.id}
+                src={teaCard7.src}
+                data-bs-title={teaCard7.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard7.title}</h3>
+                {teaCard7.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard8.id}
+                src={teaCard8.src}
+                data-bs-title={teaCard8.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard8.title}</h3>
+                {teaCard8.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard9.id}
+                src={teaCard9.src}
+                data-bs-title={teaCard9.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard9.title}</h3>
+                {teaCard9.description}
+              </div>
+            </article>
+          </div>
+          <div className="col">
+            <article className="card border border-success border-2">
+              <img
+                className="card-img-top"
+                id={teaCard10.id}
+                src={teaCard10.src}
+                data-bs-title={teaCard10.tooltipTitle}
+                data-bs-toggle="tooltip"
+              />
+              <div className="card-body">
+                <h3 className="card-title">{teaCard10.title}</h3>
+                {teaCard10.description}
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    );
 
-    // converts card array positions to cards then adds them to column groups.
-    const groupColumns = [];
-    let position = 0;
-    do {
-      let columns = "";
-      for (let count = 0; count < teaCards.length; count++) {
-        const content = teaCards[position];
-        const contentCard = new ShopCard(content);
-        columns += new Column(contentCard);
-        position++;
-      }
-      groupColumns.push(columns);
-    } while (position < teaCards.length);
-
-    const rows = createRows(groupColumns);
-    const container = new GridSystem();
-    container.addRow(rows);
-    const sectionTea = document.getElementById("sectionTea");
-    sectionTea.innerHTML += container;
-    // WOULDN'T ALLOW A CLASS AS A STATE VARIABLE. KEPT GETTING UNDEFINED.
-    // setShopCard(container);
+    // WORKS WITH ShopCard.js GridSystem.js createRows.js Column.js
+    // CARD ARRAY WITH OBJECTS
+    // const teaCards = [
+    //   teaCard1,
+    //   teaCard2,
+    //   teaCard3,
+    //   teaCard4,
+    //   teaCard5,
+    //   teaCard6,
+    //   teaCard7,
+    //   teaCard8,
+    //   teaCard9,
+    //   teaCard10,
+    // ];
+    //
+    // CONVERTS CARD ARRAY POSITIONS TO CARDS,
+    //   THEN ADDS THEM TO COLUMN GROUPS.
+    // const groupColumns = [];
+    // let position = 0;
+    // do {
+    //   let columns = "";
+    //   for (let count = 0; count < teaCards.length; count++) {
+    //     const content = teaCards[position];
+    //     const contentCard = new ShopCard(content);
+    //     columns += new Column(contentCard);
+    //     position++;
+    //   }
+    //   groupColumns.push(columns);
+    // } while (position < teaCards.length);
+    //
+    // const rows = createRows(groupColumns);
+    // const container = new GridSystem();
+    // container.addRow(rows);
+    // const sectionTea = document.getElementById("sectionTea");
+    // sectionTea.innerHTML += container;
+    //
 
     // TOOLTIPS MAKES A ERROR
     // const imgTag1 = document.getElementById("img1");

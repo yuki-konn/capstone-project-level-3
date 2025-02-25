@@ -35919,21 +35919,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
-/* harmony import */ var _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/ShopCard.js */ "./src/modules/ShopCard.js");
-/* harmony import */ var _modules_createRows_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/createRows.js */ "./src/modules/createRows.js");
-/* harmony import */ var _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/Column.js */ "./src/utils/Column.js");
-/* harmony import */ var _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/GridSystem.js */ "./src/utils/GridSystem.js");
-/* harmony import */ var _Shop_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Shop.scss */ "./src/Views/Shop.scss");
-/* harmony import */ var _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/blacktea.png */ "./assets/images/blacktea.png");
-/* harmony import */ var _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/greentea.jpg */ "./assets/images/greentea.jpg");
-/* harmony import */ var _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/whitetea.jpg */ "./assets/images/whitetea.jpg");
-/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
-/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
-/* harmony import */ var _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/purpletea.jpg */ "./assets/images/purpletea.jpg");
-/* harmony import */ var _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/images/matchatea.jpg */ "./assets/images/matchatea.jpg");
-/* harmony import */ var _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/images/matetea.jpg */ "./assets/images/matetea.jpg");
-/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
-/* harmony import */ var _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../assets/images/rooibostea.png */ "./assets/images/rooibostea.png");
+/* harmony import */ var _Shop_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Shop.scss */ "./src/Views/Shop.scss");
+/* harmony import */ var _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/blacktea.png */ "./assets/images/blacktea.png");
+/* harmony import */ var _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/greentea.jpg */ "./assets/images/greentea.jpg");
+/* harmony import */ var _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/whitetea.jpg */ "./assets/images/whitetea.jpg");
+/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
+/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
+/* harmony import */ var _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/purpletea.jpg */ "./assets/images/purpletea.jpg");
+/* harmony import */ var _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/matchatea.jpg */ "./assets/images/matchatea.jpg");
+/* harmony import */ var _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/matetea.jpg */ "./assets/images/matetea.jpg");
+/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
+/* harmony import */ var _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/rooibostea.png */ "./assets/images/rooibostea.png");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -35942,10 +35938,10 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
-
-
-
-
+// import { ShopCard } from "../modules/ShopCard.js";
+// import { createRows } from "../modules/createRows.js";
+// import { Column } from "../utils/Column.js";
+// import { GridSystem } from "../utils/GridSystem.js";
 
 
 
@@ -35962,7 +35958,10 @@ function Shop() {
     _useState2 = _slicedToArray(_useState, 2),
     didMount = _useState2[0],
     setDidMount = _useState2[1];
-  // const [shopCard, setShopCard] = useState(false);
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
+    _useState4 = _slicedToArray(_useState3, 2),
+    sectionTeaContent = _useState4[0],
+    setSectionTeaContent = _useState4[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
@@ -35975,7 +35974,7 @@ function Shop() {
     id: "sectionTea"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
-  }, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, "Products"), sectionTeaContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "sectionCart",
     className: "container-fluid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -36077,7 +36076,7 @@ function Shop() {
     // CARD OBJECTS
     var teaCard1 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
-      src: _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_7__,
+      src: _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_3__,
       title: "Black Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img1",
@@ -36085,7 +36084,7 @@ function Shop() {
     };
     var teaCard2 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
-      src: _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_8__,
+      src: _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_4__,
       title: "Green Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img2",
@@ -36093,7 +36092,7 @@ function Shop() {
     };
     var teaCard3 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
-      src: _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_9__,
+      src: _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_5__,
       title: "White Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img3",
@@ -36101,7 +36100,7 @@ function Shop() {
     };
     var teaCard4 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
-      src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_10__,
+      src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_6__,
       title: "Oolong Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img4",
@@ -36109,7 +36108,7 @@ function Shop() {
     };
     var teaCard5 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
-      src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_11__,
+      src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_7__,
       title: "Pu-erh Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img5",
@@ -36117,7 +36116,7 @@ function Shop() {
     };
     var teaCard6 = {
       // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
-      src: _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_12__,
+      src: _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_8__,
       title: "Purple Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img6",
@@ -36125,7 +36124,7 @@ function Shop() {
     };
     var teaCard7 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
-      src: _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_13__,
+      src: _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_9__,
       title: "Matcha Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img7",
@@ -36133,7 +36132,7 @@ function Shop() {
     };
     var teaCard8 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
-      src: _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_14__,
+      src: _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_10__,
       title: "Mate Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img8",
@@ -36141,7 +36140,7 @@ function Shop() {
     };
     var teaCard9 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
-      src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_15__,
+      src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_11__,
       title: "Herbal Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img9",
@@ -36149,36 +36148,194 @@ function Shop() {
     };
     var teaCard10 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
-      src: _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_16__,
+      src: _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_12__,
       title: "Rooibos Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
       id: "img10",
       tooltipTitle: "Rooibos Tea"
     };
+    setSectionTeaContent(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "container-fluid"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "row row-cols-2 row-cols-md-3 row-cols-lg-5"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard1.id,
+      src: teaCard1.src,
+      "data-bs-title": teaCard1.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard1.title), teaCard1.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard2.id,
+      src: teaCard2.src,
+      "data-bs-title": teaCard2.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard2.title), teaCard2.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard3.id,
+      src: teaCard3.src,
+      "data-bs-title": teaCard3.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard3.title), teaCard3.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard4.id,
+      src: teaCard4.src,
+      "data-bs-title": teaCard4.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard4.title), teaCard4.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard5.id,
+      src: teaCard5.src,
+      "data-bs-title": teaCard5.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard5.title), teaCard5.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard6.id,
+      src: teaCard6.src,
+      "data-bs-title": teaCard6.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard6.title), teaCard6.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard7.id,
+      src: teaCard7.src,
+      "data-bs-title": teaCard7.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard7.title), teaCard7.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard8.id,
+      src: teaCard8.src,
+      "data-bs-title": teaCard8.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard8.title), teaCard8.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard9.id,
+      src: teaCard9.src,
+      "data-bs-title": teaCard9.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard9.title), teaCard9.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "col"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "card border border-success border-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "card-img-top",
+      id: teaCard10.id,
+      src: teaCard10.src,
+      "data-bs-title": teaCard10.tooltipTitle,
+      "data-bs-toggle": "tooltip"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+      className: "card-title"
+    }, teaCard10.title), teaCard10.description))))));
 
-    // card array with objects
-    var teaCards = [teaCard1, teaCard2, teaCard3, teaCard4, teaCard5, teaCard6, teaCard7, teaCard8, teaCard9, teaCard10];
-
-    // converts card array positions to cards then adds them to column groups.
-    var groupColumns = [];
-    var position = 0;
-    do {
-      var columns = "";
-      for (var count = 0; count < teaCards.length; count++) {
-        var content = teaCards[position];
-        var contentCard = new _modules_ShopCard_js__WEBPACK_IMPORTED_MODULE_2__.ShopCard(content);
-        columns += new _utils_Column_js__WEBPACK_IMPORTED_MODULE_4__.Column(contentCard);
-        position++;
-      }
-      groupColumns.push(columns);
-    } while (position < teaCards.length);
-    var rows = (0,_modules_createRows_js__WEBPACK_IMPORTED_MODULE_3__.createRows)(groupColumns);
-    var container = new _utils_GridSystem_js__WEBPACK_IMPORTED_MODULE_5__.GridSystem();
-    container.addRow(rows);
-    var sectionTea = document.getElementById("sectionTea");
-    sectionTea.innerHTML += container;
-    // WOULDN'T ALLOW A CLASS AS A STATE VARIABLE. KEPT GETTING UNDEFINED.
-    // setShopCard(container);
+    // WORKS WITH ShopCard.js GridSystem.js createRows.js Column.js
+    // CARD ARRAY WITH OBJECTS
+    // const teaCards = [
+    //   teaCard1,
+    //   teaCard2,
+    //   teaCard3,
+    //   teaCard4,
+    //   teaCard5,
+    //   teaCard6,
+    //   teaCard7,
+    //   teaCard8,
+    //   teaCard9,
+    //   teaCard10,
+    // ];
+    //
+    // CONVERTS CARD ARRAY POSITIONS TO CARDS,
+    //   THEN ADDS THEM TO COLUMN GROUPS.
+    // const groupColumns = [];
+    // let position = 0;
+    // do {
+    //   let columns = "";
+    //   for (let count = 0; count < teaCards.length; count++) {
+    //     const content = teaCards[position];
+    //     const contentCard = new ShopCard(content);
+    //     columns += new Column(contentCard);
+    //     position++;
+    //   }
+    //   groupColumns.push(columns);
+    // } while (position < teaCards.length);
+    //
+    // const rows = createRows(groupColumns);
+    // const container = new GridSystem();
+    // container.addRow(rows);
+    // const sectionTea = document.getElementById("sectionTea");
+    // sectionTea.innerHTML += container;
+    //
 
     // TOOLTIPS MAKES A ERROR
     // const imgTag1 = document.getElementById("img1");
@@ -36843,42 +37000,6 @@ var PhoneObject = /*#__PURE__*/_createClass(function PhoneObject() {
 
 /***/ }),
 
-/***/ "./src/modules/ShopCard.js":
-/*!*********************************!*\
-  !*** ./src/modules/ShopCard.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ShopCard: () => (/* binding */ ShopCard)
-/* harmony export */ });
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-var ShopCard = /*#__PURE__*/function () {
-  function ShopCard(cardProperty) {
-    _classCallCheck(this, ShopCard);
-    _defineProperty(this, "openingTag", "<article class=\"card border border-success border-2\">");
-    _defineProperty(this, "closingTag", "</div></article>");
-    _defineProperty(this, "innerHTML", "");
-    this.innerHTML = "<img class=\"card-img-top\" id=\"".concat(cardProperty.id, "\" src=\"").concat(cardProperty.src, "\" data-bs-title=\"").concat(cardProperty.tooltipTitle, "\" data-bs-toggle=\"tooltip\">\n        <div class=\"card-body\">\n        <h3 class=\"card-title\">").concat(cardProperty.title, "</h3>\n        ").concat(cardProperty.description);
-  }
-  return _createClass(ShopCard, [{
-    key: "toString",
-    value: function toString() {
-      return "".concat(this.openingTag).concat(this.innerHTML).concat(this.closingTag);
-    }
-  }]);
-}();
-
-/***/ }),
-
 /***/ "./src/modules/authenticationAws.js":
 /*!******************************************!*\
   !*** ./src/modules/authenticationAws.js ***!
@@ -36963,51 +37084,6 @@ function _authenticationAws() {
     }, _callee);
   }));
   return _authenticationAws.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./src/modules/createRow.js":
-/*!**********************************!*\
-  !*** ./src/modules/createRow.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createRow: () => (/* binding */ createRow)
-/* harmony export */ });
-// CREATE BOOTSTRAP ROW FUNCTION shop.html
-function createRow(columnsString) {
-  var rowString = "<div class=\"row row-cols-2 row-cols-md-3 row-cols-lg-5\">".concat(columnsString, "</div>");
-  return rowString;
-}
-
-/***/ }),
-
-/***/ "./src/modules/createRows.js":
-/*!***********************************!*\
-  !*** ./src/modules/createRows.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createRows: () => (/* binding */ createRows)
-/* harmony export */ });
-/* harmony import */ var _createRow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createRow.js */ "./src/modules/createRow.js");
-
-
-// CREATE ROWS FOR AN ARRAY OF COLUMNS shop.html
-function createRows(columnsArray) {
-  var rows = "";
-  for (var position = 0; position < columnsArray.length; position++) {
-    var columns = columnsArray[position];
-    rows += (0,_createRow_js__WEBPACK_IMPORTED_MODULE_0__.createRow)(columns);
-  }
-  return rows;
 }
 
 /***/ }),
@@ -37105,151 +37181,6 @@ function viewResponse(fetchObject) {
   var trivia = "<form id=\"outputTag\" onsubmit=\"handleSubmitTrivia(event)\">\n            <p>".concat(question, "</p>\n            <label for=\"choice-A\">a. ").concat(incorrects[0], "</label>\n            <input type=\"radio\" id=\"choice-A\" name=\"choices\"><br>\n            <label for=\"choice-B\">b. ").concat(incorrects[1], "</label>\n            <input type=\"radio\" id=\"choice-B\" name=\"choices\"><br>\n            <label for=\"choice-C\">c. ").concat(answer, "</label>\n            <input type=\"radio\" id=\"choice-C\" name=\"choices\"><br>\n            <label for=\"choice-D\">d. ").concat(incorrects[2], "</label>\n            <input type=\"radio\" id=\"choice-D\" name=\"choices\"><br>\n            <button onclick=\"handleSubmitTrivia(event)\">Submit</button>\n          </form>");
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(trivia);
 }
-
-/***/ }),
-
-/***/ "./src/utils/Column.js":
-/*!*****************************!*\
-  !*** ./src/utils/Column.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Column: () => (/* binding */ Column)
-/* harmony export */ });
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-var Column = /*#__PURE__*/function () {
-  function Column() {
-    var content = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-    _classCallCheck(this, Column);
-    _defineProperty(this, "openingTag", "<div class='col'>");
-    _defineProperty(this, "closingTag", "</div>");
-    _defineProperty(this, "innerHTML", "");
-    this.innerHTML = content;
-  }
-  return _createClass(Column, [{
-    key: "toString",
-    value: function toString() {
-      return "".concat(this.openingTag).concat(this.innerHTML).concat(this.closingTag);
-    }
-  }]);
-}();
-
-/***/ }),
-
-/***/ "./src/utils/GridSystem.js":
-/*!*********************************!*\
-  !*** ./src/utils/GridSystem.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   GridSystem: () => (/* binding */ GridSystem)
-/* harmony export */ });
-/* harmony import */ var _Row_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Row.js */ "./src/utils/Row.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-var GridSystem = /*#__PURE__*/function () {
-  function GridSystem() {
-    _classCallCheck(this, GridSystem);
-    _defineProperty(this, "openingTag", "<div class='container-fluid'>");
-    _defineProperty(this, "closingTag", "</div>");
-    _defineProperty(this, "innerHTML", "");
-  }
-  return _createClass(GridSystem, [{
-    key: "addRow",
-    value: function addRow() {
-      var row = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new _Row_js__WEBPACK_IMPORTED_MODULE_0__.Row();
-      this.innerHTML += row;
-    }
-  }, {
-    key: "toString",
-    value: function toString() {
-      return "".concat(this.openingTag).concat(this.innerHTML).concat(this.closingTag);
-    }
-  }]);
-}();
-
-// WAS TRYING TO GET THIS TO WORK WITH useState
-// export class GridSystem {
-//   openingTag = "<div class='container-fluid'>";
-//   closingTag = "</div>";
-//   innerHTML = "";
-
-//   addRow(row = new Row()) {
-//     this.innerHTML += row;
-//   }
-
-//   toString() {
-//     return (
-//       <>
-//         {this.openingTag}
-//         {this.innerHTML}
-//         {this.closingTag}
-//       </>
-//     );
-//     // return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-//   }
-// }
-
-/***/ }),
-
-/***/ "./src/utils/Row.js":
-/*!**************************!*\
-  !*** ./src/utils/Row.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Row: () => (/* binding */ Row)
-/* harmony export */ });
-/* harmony import */ var _Column_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Column.js */ "./src/utils/Column.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-var Row = /*#__PURE__*/function () {
-  function Row() {
-    _classCallCheck(this, Row);
-    _defineProperty(this, "openingTag", "<div class='row-cols-2 row-cols-md-3 row-cols-lg-5'>");
-    _defineProperty(this, "closingTag", "</div>");
-    _defineProperty(this, "innerHTML", "");
-  }
-  return _createClass(Row, [{
-    key: "addColumn",
-    value: function addColumn() {
-      var column = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new _Column_js__WEBPACK_IMPORTED_MODULE_0__.Column();
-      this.innerHTML += column;
-    }
-  }, {
-    key: "toString",
-    value: function toString() {
-      return "".concat(this.openingTag).concat(this.innerHTML).concat(this.closingTag);
-    }
-  }]);
-}();
 
 /***/ }),
 

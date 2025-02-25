@@ -36866,7 +36866,10 @@ function _authenticationAws() {
       request,
       response,
       matchingLogin,
+      matchingPassword,
+      matchingEmail,
       isAuthenticated,
+      _isAuthenticated,
       _args = arguments;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
@@ -36893,12 +36896,20 @@ function _authenticationAws() {
           return niceClient.get(request);
         case 8:
           response = _context.sent;
-          // NOTE: Needs to make a outcome for when matchingLogin is 'undefined'.
-          //       when the email doesn't match and no error message showing.
-          matchingLogin = response.Item; // CHECKS IF INPUTTED PASSWORD MATCHES PASSWORD IN DATABASE.
-          isAuthenticated = password === matchingLogin.password;
+          matchingLogin = response.Item;
+          if (!(matchingLogin !== undefined)) {
+            _context.next = 17;
+            break;
+          }
+          // ONLY AUTHENTICATES IF BOTH EMAIL AND PASSWORD IS CORRECT
+          matchingPassword = password === matchingLogin.password;
+          matchingEmail = email === matchingLogin.email;
+          isAuthenticated = matchingEmail && matchingPassword; //
           return _context.abrupt("return", isAuthenticated);
-        case 12:
+        case 17:
+          _isAuthenticated = false;
+          return _context.abrupt("return", _isAuthenticated);
+        case 19:
         case "end":
           return _context.stop();
       }

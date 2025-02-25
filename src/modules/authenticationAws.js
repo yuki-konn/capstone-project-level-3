@@ -24,11 +24,35 @@ export async function authenticationAws(email = "", password = "") {
 
   // RESPONSE
   const response = await niceClient.get(request);
-  // NOTE: Needs to make a outcome for when matchingLogin is 'undefined'.
-  //       when the email doesn't match and no error message showing.
   const matchingLogin = response.Item;
 
+  if (matchingLogin !== undefined) {
+    // ONLY AUTHENTICATES IF BOTH EMAIL AND PASSWORD IS CORRECT
+    const matchingPassword = password === matchingLogin.password;
+    const matchingEmail = email === matchingLogin.email;
+    const isAuthenticated = matchingEmail && matchingPassword;
+    //
+    return isAuthenticated;
+  }
+  //DOESN'T AUTHENTICATE matchingLogin is UNDEFINED
+  else {
+    const isAuthenticated = false;
+    return isAuthenticated;
+  }
+
+  // if (isAuthenticated === "{}") {
+  //   debugger;
+  //   const isNotAuthenticated = false;
+  //   return isNotAuthenticated;
+  // } else return isAuthenticated;
+
   // CHECKS IF INPUTTED PASSWORD MATCHES PASSWORD IN DATABASE.
-  const isAuthenticated = password === matchingLogin.password;
-  return isAuthenticated;
+
+  // if (matchingEmail && matchingPassword) {
+  //   const isAuthenticated = true;
+  //   return isAuthenticated;
+  // } else {
+  //   const isAuthenticated = false;
+  //   return isAuthenticated;
+  // }
 }

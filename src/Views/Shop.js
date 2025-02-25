@@ -18,6 +18,7 @@ import rooibostea from "../../assets/images/rooibostea.png";
 
 export function Shop() {
   const [didMount, setDidMount] = useState(false);
+  // const [shopCard, setShopCard] = useState(false);
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
@@ -28,6 +29,7 @@ export function Shop() {
         <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
           Products
         </h2>
+        {/* {shopCard} */}
       </section>
       <br />
       <section id="sectionCart" className="container-fluid">
@@ -115,7 +117,7 @@ export function Shop() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | SHOP";
 
-    // card objects
+    // CARD OBJECTS
     const teaCard1 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
       src: blacktea,
@@ -210,6 +212,8 @@ export function Shop() {
     container.addRow(rows);
     const sectionTea = document.getElementById("sectionTea");
     sectionTea.innerHTML += container;
+    // WOULDN'T ALLOW A CLASS AS A STATE VARIABLE. KEPT GETTING UNDEFINED.
+    // setShopCard(container);
 
     setDidMount(true);
     console.log("The Shop component has mounted.");

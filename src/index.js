@@ -8,6 +8,7 @@ import { Contact } from "./Views/Contact";
 import "./index.scss";
 import { Header } from "./Views/Header";
 import { Footer } from "./Views/Footer";
+import { HandleRefresh } from "./Views/HandleRefresh";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -18,8 +19,8 @@ let rootpath = "";
 if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
 
 root.render(
-  <>
-    <BrowserRouter>
+  <BrowserRouter>
+    <HandleRefresh>
       <Header />
       <Routes>
         <Route path={`${rootpath}/`} element={<Home />} />
@@ -28,6 +29,6 @@ root.render(
         <Route path={`${rootpath}/contact`} element={<Contact />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
-  </>
+    </HandleRefresh>
+  </BrowserRouter>
 );

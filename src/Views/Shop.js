@@ -123,60 +123,81 @@ export function Shop() {
       src: blacktea,
       title: "Black Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img1",
+      tooltipTitle: "Black Tea",
     };
+
     const teaCard2 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
       src: greentea,
       title: "Green Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img2",
+      tooltipTitle: "Green Tea",
     };
     const teaCard3 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
       src: whitetea,
       title: "White Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img3",
+      tooltipTitle: "White Tea",
     };
     const teaCard4 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
       src: oolongtea,
       title: "Oolong Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img4",
+      tooltipTitle: "Oolong Tea",
     };
     const teaCard5 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
       src: puerhtea,
       title: "Pu-erh Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img5",
+      tooltipTitle: "Pu-erh Tea",
     };
     const teaCard6 = {
       // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
       src: purpletea,
       title: "Purple Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img6",
+      tooltipTitle: "Purple Tea",
     };
     const teaCard7 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
       src: matchatea,
       title: "Matcha Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img7",
+      tooltipTitle: "Matcha Tea",
     };
     const teaCard8 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
       src: matetea,
       title: "Mate Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img8",
+      tooltipTitle: "Mate Tea",
     };
     const teaCard9 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
       src: herbaltea,
       title: "Herbal Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img9",
+      tooltipTitle: "Herbal Tea",
     };
     const teaCard10 = {
       // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
       src: rooibostea,
       title: "Rooibos Tea",
       description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+      id: "img10",
+      tooltipTitle: "Rooibos Tea",
     };
 
     // card array with objects
@@ -214,6 +235,28 @@ export function Shop() {
     sectionTea.innerHTML += container;
     // WOULDN'T ALLOW A CLASS AS A STATE VARIABLE. KEPT GETTING UNDEFINED.
     // setShopCard(container);
+
+    // TOOLTIPS MAKES A ERROR
+    // const imgTag1 = document.getElementById("img1");
+    // new bootstrap.ToolTip(imgTag1);
+    // const imgTag2 = document.getElementById("img2");
+    // new bootstrap.ToolTip(imgTag2);
+    // const imgTag3 = document.getElementById("img3");
+    // new bootstrap.ToolTip(imgTag3);
+    // const imgTag4 = document.getElementById("img4");
+    // new bootstrap.ToolTip(imgTag4);
+    // const imgTag5 = document.getElementById("img5");
+    // new bootstrap.ToolTip(imgTag5);
+    // const imgTag6 = document.getElementById("img6");
+    // new bootstrap.ToolTip(imgTag6);
+    // const imgTag7 = document.getElementById("img7");
+    // new bootstrap.ToolTip(imgTag7);
+    // const imgTag8 = document.getElementById("img8");
+    // new bootstrap.ToolTip(imgTag8);
+    // const imgTag9 = document.getElementById("img9");
+    // new bootstrap.ToolTip(imgTag9);
+    // const imgTag10 = document.getElementById("img10");
+    // new bootstrap.ToolTip(imgTag10);
 
     setDidMount(true);
     console.log("The Shop component has mounted.");

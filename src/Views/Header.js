@@ -16,6 +16,8 @@ export function Header() {
         src={banner1}
         alt="Yuki's Tea Shop Banner Image"
         useMap="#banner-image-map"
+        // data-bs-title="Yuki's Tea Shop"
+        // data-bs-toggle="tooltip"
       />
       <map name="banner-image-map">
         <area
@@ -40,5 +42,8 @@ export function Header() {
 
   function componentDidMount() {
     imageMapResize();
+
+    // const banner = document.getElementById("banner-img");
+    // new bootstrap.ToolTip(banner);
   }
 }

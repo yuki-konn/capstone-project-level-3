@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { handleClickAddCart } from "../controllers/handleClickAddCart";
-// import { ShopCard } from "../modules/ShopCard.js";
-// import { createRows } from "../modules/createRows.js";
+import { teaCards } from "../modules/Shop/teaCards";
+// import { createRows } from "../modules/Shop/createRows.js";
 // import { Column } from "../utils/Column.js";
 // import { GridSystem } from "../utils/GridSystem.js";
+// import { ShopCard } from "../modules/Shop/ShopCard";
 import "./Shop.scss";
-import blacktea from "../../assets/images/blacktea.png";
-import greentea from "../../assets/images/greentea.jpg";
-import whitetea from "../../assets/images/whitetea.jpg";
-import oolongtea from "../../assets/images/oolongtea.png";
-import puerhtea from "../../assets/images/puerhtea.png";
-import purpletea from "../../assets/images/purpletea.jpg";
-import matchatea from "../../assets/images/matchatea.jpg";
-import matetea from "../../assets/images/matetea.jpg";
-import herbaltea from "../../assets/images/herbaltea.png";
-import rooibostea from "../../assets/images/rooibostea.png";
 
 export function Shop() {
   const [didMount, setDidMount] = useState(false);
   const [sectionTeaContent, setSectionTeaContent] = useState(<></>);
+  // const [card, setCard] = useState(<></>);
   useEffect(componentDidMount, []); // MOUNT HOOK
   useEffect(componentDidUpdate); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
@@ -30,6 +22,7 @@ export function Shop() {
           Products
         </h2>
         {sectionTeaContent}
+        {/* {card} */}
       </section>
       <br />
       <section id="sectionCart" className="container-fluid">
@@ -117,89 +110,6 @@ export function Shop() {
   function componentDidMount() {
     document.title = "Yuki Tea Shop | SHOP";
 
-    // CARD OBJECTS
-    const teaCard1 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
-      src: blacktea,
-      title: "Black Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img1",
-      tooltipTitle: "Black Tea",
-    };
-
-    const teaCard2 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
-      src: greentea,
-      title: "Green Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img2",
-      tooltipTitle: "Green Tea",
-    };
-    const teaCard3 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
-      src: whitetea,
-      title: "White Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img3",
-      tooltipTitle: "White Tea",
-    };
-    const teaCard4 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
-      src: oolongtea,
-      title: "Oolong Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img4",
-      tooltipTitle: "Oolong Tea",
-    };
-    const teaCard5 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
-      src: puerhtea,
-      title: "Pu-erh Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img5",
-      tooltipTitle: "Pu-erh Tea",
-    };
-    const teaCard6 = {
-      // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
-      src: purpletea,
-      title: "Purple Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img6",
-      tooltipTitle: "Purple Tea",
-    };
-    const teaCard7 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
-      src: matchatea,
-      title: "Matcha Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img7",
-      tooltipTitle: "Matcha Tea",
-    };
-    const teaCard8 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
-      src: matetea,
-      title: "Mate Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img8",
-      tooltipTitle: "Mate Tea",
-    };
-    const teaCard9 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
-      src: herbaltea,
-      title: "Herbal Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img9",
-      tooltipTitle: "Herbal Tea",
-    };
-    const teaCard10 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
-      src: rooibostea,
-      title: "Rooibos Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img10",
-      tooltipTitle: "Rooibos Tea",
-    };
-
     setSectionTeaContent(
       <div className="container-fluid">
         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5">
@@ -207,14 +117,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard1.id}
-                src={teaCard1.src}
-                data-bs-title={teaCard1.tooltipTitle}
+                id={teaCards[0].id}
+                src={teaCards[0].src}
+                data-bs-title={teaCards[0].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard1.title}</h3>
-                {teaCard1.description}
+                <h3 className="card-title">{teaCards[0].title}</h3>
+                {teaCards[0].description}
               </div>
             </article>
           </div>
@@ -222,14 +132,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard2.id}
-                src={teaCard2.src}
-                data-bs-title={teaCard2.tooltipTitle}
+                id={teaCards[1].id}
+                src={teaCards[1].src}
+                data-bs-title={teaCards[1].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard2.title}</h3>
-                {teaCard2.description}
+                <h3 className="card-title">{teaCards[1].title}</h3>
+                {teaCards[1].description}
               </div>
             </article>
           </div>
@@ -237,14 +147,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard3.id}
-                src={teaCard3.src}
-                data-bs-title={teaCard3.tooltipTitle}
+                id={teaCards[2].id}
+                src={teaCards[2].src}
+                data-bs-title={teaCards[2].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard3.title}</h3>
-                {teaCard3.description}
+                <h3 className="card-title">{teaCards[2].title}</h3>
+                {teaCards[2].description}
               </div>
             </article>
           </div>
@@ -252,14 +162,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard4.id}
-                src={teaCard4.src}
-                data-bs-title={teaCard4.tooltipTitle}
+                id={teaCards[3].id}
+                src={teaCards[3].src}
+                data-bs-title={teaCards[3].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard4.title}</h3>
-                {teaCard4.description}
+                <h3 className="card-title">{teaCards[3].title}</h3>
+                {teaCards[3].description}
               </div>
             </article>
           </div>
@@ -267,14 +177,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard5.id}
-                src={teaCard5.src}
-                data-bs-title={teaCard5.tooltipTitle}
+                id={teaCards[4].id}
+                src={teaCards[4].src}
+                data-bs-title={teaCards[4].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard5.title}</h3>
-                {teaCard5.description}
+                <h3 className="card-title">{teaCards[4].title}</h3>
+                {teaCards[4].description}
               </div>
             </article>
           </div>
@@ -282,14 +192,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard6.id}
-                src={teaCard6.src}
-                data-bs-title={teaCard6.tooltipTitle}
+                id={teaCards[5].id}
+                src={teaCards[5].src}
+                data-bs-title={teaCards[5].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard6.title}</h3>
-                {teaCard6.description}
+                <h3 className="card-title">{teaCards[5].title}</h3>
+                {teaCards[5].description}
               </div>
             </article>
           </div>
@@ -297,14 +207,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard7.id}
-                src={teaCard7.src}
-                data-bs-title={teaCard7.tooltipTitle}
+                id={teaCards[6].id}
+                src={teaCards[6].src}
+                data-bs-title={teaCards[6].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard7.title}</h3>
-                {teaCard7.description}
+                <h3 className="card-title">{teaCards[6].title}</h3>
+                {teaCards[6].description}
               </div>
             </article>
           </div>
@@ -312,14 +222,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard8.id}
-                src={teaCard8.src}
-                data-bs-title={teaCard8.tooltipTitle}
+                id={teaCards[7].id}
+                src={teaCards[7].src}
+                data-bs-title={teaCards[7].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard8.title}</h3>
-                {teaCard8.description}
+                <h3 className="card-title">{teaCards[7].title}</h3>
+                {teaCards[7].description}
               </div>
             </article>
           </div>
@@ -327,14 +237,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard9.id}
-                src={teaCard9.src}
-                data-bs-title={teaCard9.tooltipTitle}
+                id={teaCards[8].id}
+                src={teaCards[8].src}
+                data-bs-title={teaCards[8].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard9.title}</h3>
-                {teaCard9.description}
+                <h3 className="card-title">{teaCards[8].title}</h3>
+                {teaCards[8].description}
               </div>
             </article>
           </div>
@@ -342,14 +252,14 @@ export function Shop() {
             <article className="card border border-success border-2">
               <img
                 className="card-img-top"
-                id={teaCard10.id}
-                src={teaCard10.src}
-                data-bs-title={teaCard10.tooltipTitle}
+                id={teaCards[9].id}
+                src={teaCards[9].src}
+                data-bs-title={teaCards[9].tooltipTitle}
                 data-bs-toggle="tooltip"
               />
               <div className="card-body">
-                <h3 className="card-title">{teaCard10.title}</h3>
-                {teaCard10.description}
+                <h3 className="card-title">{teaCards[9].title}</h3>
+                {teaCards[9].description}
               </div>
             </article>
           </div>
@@ -357,64 +267,28 @@ export function Shop() {
       </div>
     );
 
-    // WORKS WITH ShopCard.js GridSystem.js createRows.js Column.js
-    // CARD ARRAY WITH OBJECTS
-    // const teaCards = [
-    //   teaCard1,
-    //   teaCard2,
-    //   teaCard3,
-    //   teaCard4,
-    //   teaCard5,
-    //   teaCard6,
-    //   teaCard7,
-    //   teaCard8,
-    //   teaCard9,
-    //   teaCard10,
-    // ];
-    //
-    // CONVERTS CARD ARRAY POSITIONS TO CARDS,
-    //   THEN ADDS THEM TO COLUMN GROUPS.
-    // const groupColumns = [];
+    // CONVERTS CARD ARRAY POSITIONS TO CARDS, THEN ADDS THEM TO COLUMN GROUPS.
+
     // let position = 0;
+    // const groupColumns = [];
     // do {
-    //   let columns = "";
     //   for (let count = 0; count < teaCards.length; count++) {
-    //     const content = teaCards[position];
-    //     const contentCard = new ShopCard(content);
-    //     columns += new Column(contentCard);
+    //     const teaCardProps = teaCards[position];
+    //     debugger;
+    //     const shopCard = new ShopCard(teaCardProps);
+    //     const column = new Column(shopCard);
+    //     groupColumns.push(column);
     //     position++;
     //   }
-    //   groupColumns.push(columns);
+    //   // groupColumns.push(columns);
     // } while (position < teaCards.length);
-    //
-    // const rows = createRows(groupColumns);
-    // const container = new GridSystem();
-    // container.addRow(rows);
-    // const sectionTea = document.getElementById("sectionTea");
-    // sectionTea.innerHTML += container;
-    //
 
-    // TOOLTIPS MAKES A ERROR
-    // const imgTag1 = document.getElementById("img1");
-    // new bootstrap.ToolTip(imgTag1);
-    // const imgTag2 = document.getElementById("img2");
-    // new bootstrap.ToolTip(imgTag2);
-    // const imgTag3 = document.getElementById("img3");
-    // new bootstrap.ToolTip(imgTag3);
-    // const imgTag4 = document.getElementById("img4");
-    // new bootstrap.ToolTip(imgTag4);
-    // const imgTag5 = document.getElementById("img5");
-    // new bootstrap.ToolTip(imgTag5);
-    // const imgTag6 = document.getElementById("img6");
-    // new bootstrap.ToolTip(imgTag6);
-    // const imgTag7 = document.getElementById("img7");
-    // new bootstrap.ToolTip(imgTag7);
-    // const imgTag8 = document.getElementById("img8");
-    // new bootstrap.ToolTip(imgTag8);
-    // const imgTag9 = document.getElementById("img9");
-    // new bootstrap.ToolTip(imgTag9);
-    // const imgTag10 = document.getElementById("img10");
-    // new bootstrap.ToolTip(imgTag10);
+    // const rows = createRows(groupColumns);
+    // const gridContainer = new GridSystem();
+    // gridContainer.addRow(rows);
+    // debugger;
+    // setCard(gridContainer); MR. Rolazar said he will teach later.
+    // debugger;
 
     setDidMount(true);
     console.log("The Shop component has mounted.");
@@ -424,16 +298,36 @@ export function Shop() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Shop component has updated.");
+      // BOOTSTRAP TOOLTIPS
+      const img1 = document.getElementById("img1");
+      new bootstrap.Tooltip(img1);
+      const img2 = document.getElementById("img2");
+      new bootstrap.Tooltip(img2);
+      const img3 = document.getElementById("img3");
+      new bootstrap.Tooltip(img3);
+      const img4 = document.getElementById("img4");
+      new bootstrap.Tooltip(img4);
+      const img5 = document.getElementById("img5");
+      new bootstrap.Tooltip(img5);
+      const img6 = document.getElementById("img6");
+      new bootstrap.Tooltip(img6);
+      const img7 = document.getElementById("img7");
+      new bootstrap.Tooltip(img7);
+      const img8 = document.getElementById("img8");
+      new bootstrap.Tooltip(img8);
+      const img9 = document.getElementById("img9");
+      new bootstrap.Tooltip(img9);
+      const img10 = document.getElementById("img10");
+      new bootstrap.Tooltip(img10);
     }
   }
 }
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Shop component has unmounted.");
+  return function () {
+    console.log("The Shop component has unmounted.");
+  };
 }
 
 // PASSES PARAMETER TO A MORE SPECIFIC HANDLER

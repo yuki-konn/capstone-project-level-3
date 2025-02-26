@@ -1,15 +1,12 @@
 import { Column } from "./Column.js";
+import React from "react";
 
 export class Row {
-  openingTag = "<div class='row-cols-2 row-cols-md-3 row-cols-lg-5'>";
-  closingTag = "</div>";
-  innerHTML = "";
+  rowContent = (<></>);
 
   addColumn(column = new Column()) {
-    this.innerHTML += column;
-  }
-
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+    this.rowContent = (
+      <div className="row-cols-2 row-cols-md-3 row-cols-lg-5">{column}</div>
+    );
   }
 }

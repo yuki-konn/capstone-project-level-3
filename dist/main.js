@@ -35206,10 +35206,9 @@ function About() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The About component has unmounted.");
+  return function () {
+    console.log("The About component has unmounted.");
+  };
 }
 
 /***/ }),
@@ -35487,10 +35486,9 @@ function Contact() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Contact component has unmounted.");
+  return function () {
+    console.log("The Contact component has unmounted.");
+  };
 }
 
 /***/ }),
@@ -35587,20 +35585,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
-/* harmony import */ var _CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CollapsibleNavbar */ "./src/Views/CollapsibleNavbar.js");
-
+/* harmony import */ var _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/banner1.png */ "./assets/images/banner1.png");
+/* harmony import */ var _CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CollapsibleNavbar */ "./src/Views/CollapsibleNavbar.js");
 
 
 
 function Header() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_3__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_2__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     id: "banner-img",
     className: "border-bottom border-top border-black border-5",
     width: "100%",
-    src: _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_2__,
+    src: _assets_images_banner1_png__WEBPACK_IMPORTED_MODULE_1__,
     alt: "Yuki's Tea Shop Banner Image",
     useMap: "#banner-image-map"
     // data-bs-title="Yuki's Tea Shop"
@@ -35837,10 +35833,9 @@ function Home() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Home component has unmounted.");
+  return function () {
+    console.log("The Home component has unmounted.");
+  };
 }
 
 /***/ }),
@@ -35862,6 +35857,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
 /* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.scss */ "./src/index.scss");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -35876,10 +35877,12 @@ function HomeCarousel() {
     margin: "auto",
     display: "flex"
   };
-  //   const opacity = {
-  //     opacity: "0.7",
-  //   };
-  // useEffect(componentDidMount, []);
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    didMount = _useState2[0],
+    setDidMount = _useState2[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT PHASE
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE PHASE
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
@@ -35936,9 +35939,7 @@ function HomeCarousel() {
     className: "carousel-control-prev",
     type: "button",
     "data-bs-target": "#homeCarousel",
-    "data-bs-slide": "prev"
-    // data-bs-title="Previous"
-    ,
+    "data-bs-slide": "prev",
     title: "Previous",
     "data-bs-toggle": "tooltip"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -35950,9 +35951,7 @@ function HomeCarousel() {
     className: "carousel-control-next",
     type: "button",
     "data-bs-target": "#homeCarousel",
-    "data-bs-slide": "next"
-    // data-bs-title="Next"
-    ,
+    "data-bs-slide": "next",
     title: "Next",
     "data-bs-toggle": "tooltip"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -35962,53 +35961,14 @@ function HomeCarousel() {
     className: "visually-hidden"
   }, "Next")))));
   function componentDidMount() {
-    console.log("HomeCarousel component has mounted.");
-    // const prev = document.getElementById("Previous");
-    // const next = document.getElementById("Next");
-    // new bootstrap.Tooltip(prev);
-    // new bootstrap.Tooltip(next);
+    console.log("HomeCarousel: Mount Phase");
+    setDidMount(true);
   }
-}
-
-/***/ }),
-
-/***/ "./src/Views/Navbar.js":
-/*!*****************************!*\
-  !*** ./src/Views/Navbar.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Navbar: () => (/* binding */ Navbar)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
-
-
-function Navbar() {
-  var domain = window.location.hostname;
-  var rootpath = "";
-  if (domain === "yuki-konn.github.io") rootpath = "/capstone-project-level-3";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    id: "regularNavbar",
-    className: "nav nav-tabs nav-fill bg-dark"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "".concat(rootpath, "/"),
-    end: true,
-    className: "nav-link fw-bold text-success"
-  }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "".concat(rootpath, "/shop"),
-    className: "nav-link fw-bold text-success"
-  }, "SHOP"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "".concat(rootpath, "/about"),
-    className: "nav-link fw-bold text-success"
-  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "".concat(rootpath, "/contact"),
-    className: "nav-link fw-bold text-success"
-  }, "CONTACT"));
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("HomeCarousel: Update Phase");
+    }
+  }
 }
 
 /***/ }),
@@ -36027,17 +35987,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _controllers_handleClickAddCart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleClickAddCart */ "./src/controllers/handleClickAddCart.js");
-/* harmony import */ var _Shop_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Shop.scss */ "./src/Views/Shop.scss");
-/* harmony import */ var _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/blacktea.png */ "./assets/images/blacktea.png");
-/* harmony import */ var _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/greentea.jpg */ "./assets/images/greentea.jpg");
-/* harmony import */ var _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/whitetea.jpg */ "./assets/images/whitetea.jpg");
-/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
-/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
-/* harmony import */ var _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/purpletea.jpg */ "./assets/images/purpletea.jpg");
-/* harmony import */ var _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/matchatea.jpg */ "./assets/images/matchatea.jpg");
-/* harmony import */ var _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/matetea.jpg */ "./assets/images/matetea.jpg");
-/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
-/* harmony import */ var _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/rooibostea.png */ "./assets/images/rooibostea.png");
+/* harmony import */ var _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/Shop/teaCards */ "./src/modules/Shop/teaCards.js");
+/* harmony import */ var _Shop_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Shop.scss */ "./src/Views/Shop.scss");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -36046,20 +35997,11 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
-// import { ShopCard } from "../modules/ShopCard.js";
-// import { createRows } from "../modules/createRows.js";
+
+// import { createRows } from "../modules/Shop/createRows.js";
 // import { Column } from "../utils/Column.js";
 // import { GridSystem } from "../utils/GridSystem.js";
-
-
-
-
-
-
-
-
-
-
+// import { ShopCard } from "../modules/Shop/ShopCard";
 
 function Shop() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
@@ -36070,6 +36012,7 @@ function Shop() {
     _useState4 = _slicedToArray(_useState3, 2),
     sectionTeaContent = _useState4[0],
     setSectionTeaContent = _useState4[1];
+  // const [card, setCard] = useState(<></>);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
@@ -36180,88 +36123,6 @@ function Shop() {
   // MOUNT PHASE
   function componentDidMount() {
     document.title = "Yuki Tea Shop | SHOP";
-
-    // CARD OBJECTS
-    var teaCard1 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1024px-Cup_of_black_tea.JPG",
-      src: _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_3__,
-      title: "Black Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img1",
-      tooltipTitle: "Black Tea"
-    };
-    var teaCard2 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/3/36/Green_tea_3_appearances.jpg",
-      src: _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_4__,
-      title: "Green Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img2",
-      tooltipTitle: "Green Tea"
-    };
-    var teaCard3 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG/1024px-Bai_Hao_Yinzhen_or_Silver_needle_White_Tea.JPG",
-      src: _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_5__,
-      title: "White Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img3",
-      tooltipTitle: "White Tea"
-    };
-    var teaCard4 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/1024px-Tieguanyin2.jpg",
-      src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_6__,
-      title: "Oolong Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img4",
-      tooltipTitle: "Oolong Tea"
-    };
-    var teaCard5 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg/1024px-%22Da_Yi_Gong_Tuo%22_Pu-erh_shou_cha%2C_2010.jpg",
-      src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_7__,
-      title: "Pu-erh Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img5",
-      tooltipTitle: "Pu-erh Tea"
-    };
-    var teaCard6 = {
-      // src: "https://cdn.shopify.com/s/files/1/0003/9596/8567/t/33/assets/purplewholeleafpromo5-1682524254793_1000x.jpg?v=1682524259",
-      src: _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_8__,
-      title: "Purple Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img6",
-      tooltipTitle: "Purple Tea"
-    };
-    var teaCard7 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Matcha_%286328677556%29.jpg/220px-Matcha_%286328677556%29.jpg",
-      src: _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_9__,
-      title: "Matcha Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img7",
-      tooltipTitle: "Matcha Tea"
-    };
-    var teaCard8 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
-      src: _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_10__,
-      title: "Mate Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img8",
-      tooltipTitle: "Mate Tea"
-    };
-    var teaCard9 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Butterfly-pea_flower_tea_3.jpg/1024px-Butterfly-pea_flower_tea_3.jpg",
-      src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_11__,
-      title: "Herbal Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img9",
-      tooltipTitle: "Herbal Tea"
-    };
-    var teaCard10 = {
-      // src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frisch_aufgebr%C3%BChter_Rooibos.jpg/1024px-Frisch_aufgebr%C3%BChter_Rooibos.jpg",
-      src: _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_12__,
-      title: "Rooibos Tea",
-      description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
-      id: "img10",
-      tooltipTitle: "Rooibos Tea"
-    };
     setSectionTeaContent(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "container-fluid"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -36272,200 +36133,164 @@ function Shop() {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard1.id,
-      src: teaCard1.src,
-      "data-bs-title": teaCard1.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[0].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[0].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[0].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard1.title), teaCard1.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[0].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[0].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard2.id,
-      src: teaCard2.src,
-      "data-bs-title": teaCard2.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[1].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[1].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[1].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard2.title), teaCard2.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[1].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[1].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard3.id,
-      src: teaCard3.src,
-      "data-bs-title": teaCard3.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[2].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[2].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[2].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard3.title), teaCard3.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[2].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[2].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard4.id,
-      src: teaCard4.src,
-      "data-bs-title": teaCard4.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[3].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[3].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[3].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard4.title), teaCard4.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[3].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[3].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard5.id,
-      src: teaCard5.src,
-      "data-bs-title": teaCard5.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[4].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[4].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[4].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard5.title), teaCard5.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[4].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[4].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard6.id,
-      src: teaCard6.src,
-      "data-bs-title": teaCard6.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[5].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[5].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[5].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard6.title), teaCard6.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[5].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[5].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard7.id,
-      src: teaCard7.src,
-      "data-bs-title": teaCard7.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[6].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[6].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[6].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard7.title), teaCard7.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[6].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[6].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard8.id,
-      src: teaCard8.src,
-      "data-bs-title": teaCard8.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[7].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[7].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[7].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard8.title), teaCard8.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[7].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[7].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard9.id,
-      src: teaCard9.src,
-      "data-bs-title": teaCard9.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[8].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[8].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[8].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard9.title), teaCard9.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[8].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[8].description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "col"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
       className: "card border border-success border-2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "card-img-top",
-      id: teaCard10.id,
-      src: teaCard10.src,
-      "data-bs-title": teaCard10.tooltipTitle,
+      id: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[9].id,
+      src: _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[9].src,
+      "data-bs-title": _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[9].tooltipTitle,
       "data-bs-toggle": "tooltip"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "card-body"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
       className: "card-title"
-    }, teaCard10.title), teaCard10.description))))));
+    }, _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[9].title), _modules_Shop_teaCards__WEBPACK_IMPORTED_MODULE_2__.teaCards[9].description))))));
 
-    // WORKS WITH ShopCard.js GridSystem.js createRows.js Column.js
-    // CARD ARRAY WITH OBJECTS
-    // const teaCards = [
-    //   teaCard1,
-    //   teaCard2,
-    //   teaCard3,
-    //   teaCard4,
-    //   teaCard5,
-    //   teaCard6,
-    //   teaCard7,
-    //   teaCard8,
-    //   teaCard9,
-    //   teaCard10,
-    // ];
-    //
-    // CONVERTS CARD ARRAY POSITIONS TO CARDS,
-    //   THEN ADDS THEM TO COLUMN GROUPS.
-    // const groupColumns = [];
+    // CONVERTS CARD ARRAY POSITIONS TO CARDS, THEN ADDS THEM TO COLUMN GROUPS.
+
     // let position = 0;
+    // const groupColumns = [];
     // do {
-    //   let columns = "";
     //   for (let count = 0; count < teaCards.length; count++) {
-    //     const content = teaCards[position];
-    //     const contentCard = new ShopCard(content);
-    //     columns += new Column(contentCard);
+    //     const teaCardProps = teaCards[position];
+    //     debugger;
+    //     const shopCard = new ShopCard(teaCardProps);
+    //     const column = new Column(shopCard);
+    //     groupColumns.push(column);
     //     position++;
     //   }
-    //   groupColumns.push(columns);
+    //   // groupColumns.push(columns);
     // } while (position < teaCards.length);
-    //
-    // const rows = createRows(groupColumns);
-    // const container = new GridSystem();
-    // container.addRow(rows);
-    // const sectionTea = document.getElementById("sectionTea");
-    // sectionTea.innerHTML += container;
-    //
 
-    // TOOLTIPS MAKES A ERROR
-    // const imgTag1 = document.getElementById("img1");
-    // new bootstrap.ToolTip(imgTag1);
-    // const imgTag2 = document.getElementById("img2");
-    // new bootstrap.ToolTip(imgTag2);
-    // const imgTag3 = document.getElementById("img3");
-    // new bootstrap.ToolTip(imgTag3);
-    // const imgTag4 = document.getElementById("img4");
-    // new bootstrap.ToolTip(imgTag4);
-    // const imgTag5 = document.getElementById("img5");
-    // new bootstrap.ToolTip(imgTag5);
-    // const imgTag6 = document.getElementById("img6");
-    // new bootstrap.ToolTip(imgTag6);
-    // const imgTag7 = document.getElementById("img7");
-    // new bootstrap.ToolTip(imgTag7);
-    // const imgTag8 = document.getElementById("img8");
-    // new bootstrap.ToolTip(imgTag8);
-    // const imgTag9 = document.getElementById("img9");
-    // new bootstrap.ToolTip(imgTag9);
-    // const imgTag10 = document.getElementById("img10");
-    // new bootstrap.ToolTip(imgTag10);
+    // const rows = createRows(groupColumns);
+    // const gridContainer = new GridSystem();
+    // gridContainer.addRow(rows);
+    // debugger;
+    // setCard(gridContainer); MR. Rolazar said he will teach later.
+    // debugger;
 
     setDidMount(true);
     console.log("The Shop component has mounted.");
@@ -36475,16 +36300,36 @@ function Shop() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Shop component has updated.");
+      // BOOTSTRAP TOOLTIPS
+      var img1 = document.getElementById("img1");
+      new bootstrap.Tooltip(img1);
+      var img2 = document.getElementById("img2");
+      new bootstrap.Tooltip(img2);
+      var img3 = document.getElementById("img3");
+      new bootstrap.Tooltip(img3);
+      var img4 = document.getElementById("img4");
+      new bootstrap.Tooltip(img4);
+      var img5 = document.getElementById("img5");
+      new bootstrap.Tooltip(img5);
+      var img6 = document.getElementById("img6");
+      new bootstrap.Tooltip(img6);
+      var img7 = document.getElementById("img7");
+      new bootstrap.Tooltip(img7);
+      var img8 = document.getElementById("img8");
+      new bootstrap.Tooltip(img8);
+      var img9 = document.getElementById("img9");
+      new bootstrap.Tooltip(img9);
+      var img10 = document.getElementById("img10");
+      new bootstrap.Tooltip(img10);
     }
   }
 }
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Shop component has unmounted.");
+  return function () {
+    console.log("The Shop component has unmounted.");
+  };
 }
 
 // PASSES PARAMETER TO A MORE SPECIFIC HANDLER
@@ -37105,6 +36950,101 @@ var PhoneObject = /*#__PURE__*/_createClass(function PhoneObject() {
   _defineProperty(this, "phoneNumber", "");
   _defineProperty(this, "appointment", "");
 });
+
+/***/ }),
+
+/***/ "./src/modules/Shop/teaCards.js":
+/*!**************************************!*\
+  !*** ./src/modules/Shop/teaCards.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   teaCards: () => (/* binding */ teaCards)
+/* harmony export */ });
+/* harmony import */ var _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../assets/images/blacktea.png */ "./assets/images/blacktea.png");
+/* harmony import */ var _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/images/greentea.jpg */ "./assets/images/greentea.jpg");
+/* harmony import */ var _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/images/whitetea.jpg */ "./assets/images/whitetea.jpg");
+/* harmony import */ var _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/images/oolongtea.png */ "./assets/images/oolongtea.png");
+/* harmony import */ var _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../assets/images/puerhtea.png */ "./assets/images/puerhtea.png");
+/* harmony import */ var _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../assets/images/purpletea.jpg */ "./assets/images/purpletea.jpg");
+/* harmony import */ var _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../assets/images/matchatea.jpg */ "./assets/images/matchatea.jpg");
+/* harmony import */ var _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../assets/images/matetea.jpg */ "./assets/images/matetea.jpg");
+/* harmony import */ var _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../assets/images/herbaltea.png */ "./assets/images/herbaltea.png");
+/* harmony import */ var _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../assets/images/rooibostea.png */ "./assets/images/rooibostea.png");
+
+
+
+
+
+
+
+
+
+
+var teaCards = [{
+  src: _assets_images_blacktea_png__WEBPACK_IMPORTED_MODULE_0__,
+  title: "Black Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img1",
+  tooltipTitle: "Black Tea"
+}, {
+  src: _assets_images_greentea_jpg__WEBPACK_IMPORTED_MODULE_1__,
+  title: "Green Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img2",
+  tooltipTitle: "Green Tea"
+}, {
+  src: _assets_images_whitetea_jpg__WEBPACK_IMPORTED_MODULE_2__,
+  title: "White Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img3",
+  tooltipTitle: "White Tea"
+}, {
+  src: _assets_images_oolongtea_png__WEBPACK_IMPORTED_MODULE_3__,
+  title: "Oolong Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img4",
+  tooltipTitle: "Oolong Tea"
+}, {
+  src: _assets_images_puerhtea_png__WEBPACK_IMPORTED_MODULE_4__,
+  title: "Pu-erh Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img5",
+  tooltipTitle: "Pu-erh Tea"
+}, {
+  src: _assets_images_purpletea_jpg__WEBPACK_IMPORTED_MODULE_5__,
+  title: "Purple Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img6",
+  tooltipTitle: "Purple Tea"
+}, {
+  src: _assets_images_matchatea_jpg__WEBPACK_IMPORTED_MODULE_6__,
+  title: "Matcha Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img7",
+  tooltipTitle: "Matcha Tea"
+}, {
+  src: _assets_images_matetea_jpg__WEBPACK_IMPORTED_MODULE_7__,
+  title: "Mate Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img8",
+  tooltipTitle: "Mate Tea"
+}, {
+  src: _assets_images_herbaltea_png__WEBPACK_IMPORTED_MODULE_8__,
+  title: "Herbal Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img9",
+  tooltipTitle: "Herbal Tea"
+}, {
+  src: _assets_images_rooibostea_png__WEBPACK_IMPORTED_MODULE_9__,
+  title: "Rooibos Tea",
+  description: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+  id: "img10",
+  tooltipTitle: "Rooibos Tea"
+}];
 
 /***/ }),
 

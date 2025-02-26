@@ -1,13 +1,8 @@
+import React from "react";
 export class Column {
-  openingTag = "<div class='col'>";
-  closingTag = "</div>";
-  innerHTML = "";
+  columnContent = (<></>);
 
-  constructor(content = "") {
-    this.innerHTML = content;
-  }
-
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  constructor(content = <></>) {
+    this.columnContent = <div className="col">{content}</div>;
   }
 }

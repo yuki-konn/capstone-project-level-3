@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import oolongtea from "../../assets/images/oolongtea.png";
 import puerhtea from "../../assets/images/puerhtea.png";
 import herbaltea from "../../assets/images/herbaltea.png";
@@ -13,10 +13,9 @@ export function HomeCarousel() {
     margin: "auto",
     display: "flex",
   };
-  //   const opacity = {
-  //     opacity: "0.7",
-  //   };
-  // useEffect(componentDidMount, []);
+  const [didMount, setDidMount] = useState(false);
+  useEffect(componentDidMount, []); // MOUNT PHASE
+  useEffect(componentDidUpdate); // UPDATE PHASE
 
   return (
     <div className="row">
@@ -79,7 +78,6 @@ export function HomeCarousel() {
             type="button"
             data-bs-target="#homeCarousel"
             data-bs-slide="prev"
-            // data-bs-title="Previous"
             title="Previous"
             data-bs-toggle="tooltip"
           >
@@ -94,7 +92,6 @@ export function HomeCarousel() {
             type="button"
             data-bs-target="#homeCarousel"
             data-bs-slide="next"
-            // data-bs-title="Next"
             title="Next"
             data-bs-toggle="tooltip"
           >
@@ -110,10 +107,13 @@ export function HomeCarousel() {
   );
 
   function componentDidMount() {
-    console.log("HomeCarousel component has mounted.");
-    // const prev = document.getElementById("Previous");
-    // const next = document.getElementById("Next");
-    // new bootstrap.Tooltip(prev);
-    // new bootstrap.Tooltip(next);
+    console.log("HomeCarousel: Mount Phase");
+    setDidMount(true);
+  }
+
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("HomeCarousel: Update Phase");
+    }
   }
 }

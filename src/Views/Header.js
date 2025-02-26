@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Navbar } from "./Navbar";
 import banner1 from "../../assets/images/banner1.png";
 import { CollapsibleNavbar } from "./CollapsibleNavbar";
 
@@ -8,7 +7,6 @@ export function Header() {
   return (
     <header>
       <CollapsibleNavbar />
-      {/* <Navbar /> */}
       <img
         id="banner-img"
         className="border-bottom border-top border-black border-5"

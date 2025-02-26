@@ -39,7 +39,10 @@ export function handleSubmitPhone(event = new Event()) {
     "<b style='color: gold'>Processing phone appointment form...</b><br>",
     "phoneOutputTag"
   );
+
+  // PROMISE
   const promise = makeRequest("https://myserver.com");
+  // RESPONSE FROM SERVER
   promise.then(parsePhoneResponse);
   output(jsonForm, "phoneOutputTag");
 }

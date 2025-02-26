@@ -14,6 +14,8 @@ export async function handleSignIn(
   const closeButton = event.target[3];
 
   // RESOLVE VALUE BOOLEAN
+  // WAITS UNTIL PROMISE OF authenticationAws IS FULLFILLED.,
+  //   THEN PLACES RESOLVE VAUE INTO isAuthenticated.
   const isAuthenticated = await authenticationAws(email, password);
   if (isAuthenticated) {
     // Closes Modal

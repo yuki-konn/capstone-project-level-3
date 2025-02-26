@@ -5,4 +5,6 @@ export function parseContactResponse(resolveValue) {
   const response = JSON.parse(resolveValue);
   const message = response.message;
   output(message);
+
+  // return <>{message}</>;
 }

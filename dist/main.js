@@ -36869,8 +36869,9 @@ function handleSubmitContact() {
     }
     (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("--------------<br><br>");
 
-    // RESPONSE FROM SERVER
+    // PROMISE
     var promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__.makeRequest)("https://myserver.com");
+    // RESPONSE FROM SERVER
     promise.then(_modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__.parseContactResponse);
   } else {}
 }
@@ -36918,7 +36919,10 @@ function handleSubmitPhone() {
   var jsonP = JSON.parse(jsonString);
   var jsonForm = "<br><u>Form Info</u><br>" + "Name: " + jsonP.name + "<br>" + "Phone Number: " + jsonP.phoneNumber + "<br>" + "Appointment: " + jsonP.appointment + "<br>--------------<br><br>";
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)("<b style='color: gold'>Processing phone appointment form...</b><br>", "phoneOutputTag");
+
+  // PROMISE
   var promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_2__.makeRequest)("https://myserver.com");
+  // RESPONSE FROM SERVER
   promise.then(_modules_parsePhoneResponse_js__WEBPACK_IMPORTED_MODULE_0__.parsePhoneResponse);
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_3__.output)(jsonForm, "phoneOutputTag");
 }
@@ -37155,6 +37159,8 @@ function parseContactResponse(resolveValue) {
   var response = JSON.parse(resolveValue);
   var message = response.message;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
+
+  // return <>{message}</>;
 }
 
 /***/ }),
@@ -37245,13 +37251,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // SERVER RESPONSE contact.html
 function getServerResponse(resolve) {
+  // DOES activateResolve FUNCTION AFTER 5 SECONDS
   setTimeout(activateResolve, 5000);
   function activateResolve() {
     var response = {
       message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>"
     };
     // Server stringifies a object and replies with a string.
+    // STRINGIFIES A THE response OBJECT
     var resolveValue = JSON.stringify(response);
+    // FULLFILLS PROMISE
     resolve(resolveValue);
   }
 }
@@ -37273,7 +37282,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // PROMISE contact.html
-function makeRequest(url, param) {
+function makeRequest() {
+  var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  // CREATES NEW PROMISE
+  // PROMISE IS NOT ASYNCRONOUS
+  debugger;
   return new Promise(_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
 }
 

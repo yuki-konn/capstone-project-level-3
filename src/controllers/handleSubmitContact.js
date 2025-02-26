@@ -45,8 +45,9 @@ export function handleSubmitContact(event = new Event()) {
 
     output("--------------<br><br>");
 
-    // RESPONSE FROM SERVER
+    // PROMISE
     const promise = makeRequest("https://myserver.com");
+    // RESPONSE FROM SERVER
     promise.then(parseContactResponse);
   } else {
   }

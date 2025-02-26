@@ -51,6 +51,7 @@ export function About() {
             <li className="list-group-item">
               Added <b>Global Header</b> and <b>Global Footer</b>.
             </li>
+            <li className="list-group-item">Added tests with jest.</li>
 
             <ul>
               <b>Added Node Packages</b>
@@ -79,9 +80,8 @@ export function About() {
               <li className="list-group-item">
                 <code>jest</code>, <code>@jest/globals</code> for unit testing.
               </li>
-              {/* <li className="list-group-item"></li>
-              <li className="list-group-item"></li> */}
             </ul>
+            {/* <li className="list-group-item">...</li> */}
           </ul>
         </article>
         <article id="article2" className="m-2 p-2 bg-white border-dashed">
@@ -93,6 +93,10 @@ export function About() {
             </li>
             <li className="list-group-item">Added Bootstrap Icons.</li>
             <li className="list-group-item">
+              Changed rating system on <code>Contact.js</code> to Tea cup
+              rating.
+            </li>
+            <li className="list-group-item">
               Added Sign-In Modal connected to a database with authentication to
               the Navbar.
             </li>
@@ -103,8 +107,9 @@ export function About() {
               Added button animation to navigation buttons.
             </li>
             <li className="list-group-item">
-              Added Bootstrap Carousel to Home page.
+              Added <b>Bootstrap Carousel</b> to Home page.
             </li>
+            {/* <li className="list-group-item">...</li> */}
           </ul>
         </article>
       </section>

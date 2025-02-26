@@ -10,11 +10,11 @@ Folders with folders inside.
 - src
   - controllers
   - modules
-    - disabled: Either for reference or thinking of deleting.
+    - Shop: For Shop.js specific modules
   - utils
   - Views
 
-Made with HTML, React JS, Bootstrap, and SASS.<br>
+Made with React JS, Bootstrap, and SASS.<br>
 API used [OpenTDB](https://opentdb.com/api_config.php)
 
 # NOTES
@@ -24,14 +24,19 @@ In the Home.js there is one inline style.
 
 # TO DO
 
-Top Priority:
+## Top Priority:
 
-- Create testing modules
+- Create 6 more tests.
 
-Medium Priority:
+### Medium Priority:
 
 - Put handleClickAddCart in componentDidUpdate in shop.js (Output feedback)
+- Update small files to jsx.
 
-Low Priority:
+### Low Priority:
 
 - Make handleSubmitTrivia.js do something. Currently disabled in viewResponse.js
+
+### Want to do:
+
+- Create catagories for products based on tea type for shop page. Make a Navigation with tea types and add more pictures of each type of tea.

@@ -48,42 +48,52 @@ export function Contact() {
             <textarea id="contact-comment" className="w100"></textarea>
           </div>
           <fieldset>
-            <legend>Rating (Optional)</legend>
+            <legend>Tea Cup Rating (Optional)</legend>
             <div id="ratingDiv">
-              <label htmlFor="rating-five">5&#9733;</label>
+              <label htmlFor="rating-five">
+                5 <i className="bi bi-cup-hot-fill"></i>
+              </label>
               <input
                 id="rating-five"
                 name="ratings"
                 type="radio"
-                aria-label="5 Star rating"
+                aria-label="5 cups of tea!"
               />
-              <label htmlFor="rating-four">4&#9733;</label>
+              <label htmlFor="rating-four">
+                4 <i className="bi bi-cup-hot-fill"></i>
+              </label>
               <input
                 id="rating-four"
                 name="ratings"
                 type="radio"
-                aria-label="4 Star rating"
+                aria-label="4 cups of tea!"
               />
-              <label htmlFor="rating-three">3&#9733;</label>
+              <label htmlFor="rating-three">
+                3 <i className="bi bi-cup-hot-fill"></i>
+              </label>
               <input
                 id="rating-three"
                 name="ratings"
                 type="radio"
-                aria-label="3 Star rating"
+                aria-label="3 cups of tea!"
               />
-              <label htmlFor="rating-two">2&#9733;</label>
+              <label htmlFor="rating-two">
+                2 <i className="bi bi-cup-hot-fill"></i>
+              </label>
               <input
                 id="rating-two"
                 name="ratings"
                 type="radio"
-                aria-label="2 Star rating"
+                aria-label="2 cups of tea!"
               />
-              <label htmlFor="rating-one">1&#9733;</label>
+              <label htmlFor="rating-one">
+                1 <i className="bi bi-cup-hot-fill"></i>
+              </label>
               <input
                 id="rating-one"
                 name="ratings"
                 type="radio"
-                aria-label="1 Star rating"
+                aria-label="1 cup of tea!"
               />
             </div>
           </fieldset>

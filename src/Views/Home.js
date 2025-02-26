@@ -190,8 +190,7 @@ export function Home() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Home component has unmounted.");
+  return function () {
+    console.log("The Home component has unmounted.");
+  };
 }

@@ -179,8 +179,7 @@ export function Contact() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The Contact component has unmounted.");
+  return function () {
+    console.log("The Contact component has unmounted.");
+  };
 }

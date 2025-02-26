@@ -271,8 +271,7 @@ export function About() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
-  return unmountMessage;
-}
-function unmountMessage() {
-  console.log("The About component has unmounted.");
+  return function () {
+    console.log("The About component has unmounted.");
+  };
 }

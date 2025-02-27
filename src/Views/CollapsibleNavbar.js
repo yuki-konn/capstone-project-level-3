@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
-import "../index.scss";
+import "./CollapsibleNavbar.scss";
 import { SignInArea } from "./SignInArea";
 
 export function CollapsibleNavbar() {

@@ -1,16 +1,11 @@
 // CUSTOM COLORS
 $gold: gold;
-$navText: #00b300;
-$navTextHover: #b4f298;
 
 $body-bg: #b3b3b3;
 $body-color: black;
-$footer-bg: #181818;
-$footer-color: rgba(255, 255, 255, 1);
 $sitemap-bg: #404040;
 
 // IMAGES
-$bannerImage2: url("../assets/images/banner2.png");
 $bg-image: url("../assets/images/bgImage.png");
 $main-bg-image: url("../assets/images/bamboo1.jpg");
 
@@ -23,6 +18,7 @@ $secondaryFont: sans-serif;
   src: url("../assets/fonts/edosz.ttf");
 }
 
+// MIXINS
 @mixin background {
   background-image: $bg-image;
   background-size: contain;
@@ -44,8 +40,7 @@ $secondaryFont: sans-serif;
   }
 }
 
-// ALL PAGES START
-
+// STYLES
 body {
   @include background;
   color: $body-color;
@@ -55,71 +50,38 @@ body {
   align-items: center;
   justify-content: center;
 
-  header {
-    #regularNavbar {
-      a {
-        font-family: $primaryFont;
-        &:hover {
-          background-color: $gold;
-        }
-      }
-    }
-    #banner-img {
-      height: auto;
-      max-width: 100%;
-    }
+  main {
+    @include mainBackground;
 
-    // COLLAPSIBLENAVBAR.JS
-    #collapsibleNavbar {
-      font-family: $primaryFont;
-      a {
-        padding: 0px;
-        margin-left: 1vw;
-        text-decoration: none;
-        color: $navText;
-        font-size: 2.2vw;
-
-        &:hover {
-          color: $navTextHover;
-          font-size: 2.3vw;
-        }
-      }
-      ul {
-        margin-left: 1vw;
-      }
-      #homeNavDiv {
-        a {
-          font-size: 3vw;
-        }
-      }
-      #signInContent {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+    .cardButton {
+      @include article-btn-animation;
     }
   }
 
+  // MAYBE PUT IN MAIN
   h1,
   h2,
   h3 {
     font-family: $primaryFont;
   }
+
+  // PUT IN SITEMAP.SCSS AFTER MAKING SITEMAP COMPONENT.
+  #siteMapGroup {
+    background-color: #181818;
+    text-align: center;
+    opacity: 0.9;
+    .list-group-item {
+      width: 30%;
+      background-color: $sitemap-bg;
+    }
+    .list-group {
+      font-weight: bold;
+      align-items: center;
+    }
+  }
 }
 
-main {
-  @include mainBackground;
-}
-
-footer {
-  color: $footer-color;
-  background-color: $footer-bg;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
-}
-
+// CUSTOM STYLES
 .no-bullets {
   list-style-type: none;
 }
@@ -131,34 +93,10 @@ footer {
   width: 100%;
 }
 
-// ALL PAGES END
-
-// INDEX START
-#siteMapGroup {
-  background-color: $footer-bg;
-  text-align: center;
-  opacity: 0.9;
-  .list-group-item {
-    width: 30%;
-    background-color: $sitemap-bg;
-  }
-  .list-group {
-    font-weight: bold;
-    align-items: center;
-  }
-}
-.cardButton {
-  @include article-btn-animation;
-}
-// INDEX END
-
-// CUSTOM BOOTSTRAP CSS START
+// CUSTOM BOOTSTRAP STYLES
 .border-dashed {
   border-style: dashed !important;
 }
 .border-dotted {
   border-style: dotted !important;
 }
-// CUSTOM BOOTSTRAP CSS END
-
-//

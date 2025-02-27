@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import banner1 from "../../assets/images/banner1.png";
 import { CollapsibleNavbar } from "./CollapsibleNavbar";
+import "./Header.scss";
 
 export function Header() {
   useEffect(componentDidMount, []);

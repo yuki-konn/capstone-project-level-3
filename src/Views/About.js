@@ -5,30 +5,26 @@ import "../index.scss";
 export function About() {
   const [didMount, setDidMount] = useState(false);
   useEffect(componentDidMount, []); // MOUNT HOOK
-  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUpdate, [didMount]); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
     <main id="aboutMain" className="container-lg">
-      <div>
-        <h1 className="m-2 text-center border border-3 border-success bg-warning">
-          ABOUT
-        </h1>
-
-        <p className="m-2 text-center border-3 border-success bg-warning">
-          This page is to better explain the features of my project.
-        </p>
+      <div
+        id="aboutTitle"
+        className="m-2 text-center border border-3 border-success bg-warning"
+      >
+        <h1>ABOUT</h1>
+        <p>This page is to better explain the features of my project.</p>
       </div>
 
-      <section>
-        <h2 className="m-2 text-center border border-3 border-info bg-warning">
-          Level 3
-        </h2>
-        <article id="article1" className="m-2 p-2 bg-white border-dashed">
+      <section id="sectionLvl3">
+        <h2 className="m-2 text-center bg-warning">Level 3</h2>
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">
             Coding difference between Level 2 and Level 3
           </h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">
               Converted all pages to <b>React JS</b>.
             </li>
@@ -84,9 +80,9 @@ export function About() {
             {/* <li className="list-group-item">...</li> */}
           </ul>
         </article>
-        <article id="article2" className="m-2 p-2 bg-white border-dashed">
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">New Features</h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">Made website responsive.</li>
             <li className="list-group-item">
               Added Collapisble Navbar using Bootstrap.
@@ -114,15 +110,13 @@ export function About() {
         </article>
       </section>
 
-      <section>
-        <h2 className="m-2 text-center border border-3 border-success bg-warning">
-          Level 2
-        </h2>
-        <article id="article1" className="m-2 p-2 bg-white border-dashed">
+      <section id="sectionLvl2">
+        <h2 className="m-2 text-center bg-warning">Level 2</h2>
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">
             Coding difference between Level 1 and Level 2
           </h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">
               Created image map to <code>index.html</code> banner image.
             </li>
@@ -168,9 +162,9 @@ export function About() {
             </li>
           </ul>
         </article>
-        <article id="article2" className="m-2 p-2 bg-white border-dashed">
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">New Features</h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">
               Image map on banner image with links to my gitHub and Linkedin.
             </li>
@@ -185,15 +179,13 @@ export function About() {
         </article>
       </section>
 
-      <section>
-        <h2 className="m-2 text-center border border-3 border-success bg-warning">
-          Level 1
-        </h2>
-        <article className="m-2 p-2 bg-white border-dashed">
+      <section id="sectionLvl1">
+        <h2 className="m-2 text-center bg-warning">Level 1</h2>
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">
             Coding difference between the original project and Level 1.
           </h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">
               Changes to the theme from pizza to tea.
             </li>
@@ -209,9 +201,9 @@ export function About() {
             </li>
           </ul>
         </article>
-        <article className="m-2 p-2 bg-white border-dashed">
+        <article className="m-2 p-2">
           <h3 className="textShadow text-center">New Features</h3>
-          <ul className="list-group-numbered list-group border border-3 border-info">
+          <ul className="list-group-numbered list-group border border-3 border-dashed border-black">
             <li className="list-group-item">
               Renewed <code>navbar</code> design with <code>hover</code>{" "}
               interaction.

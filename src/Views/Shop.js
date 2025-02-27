@@ -12,7 +12,7 @@ export function Shop() {
   const [sectionTeaContent, setSectionTeaContent] = useState(<></>);
   // const [card, setCard] = useState(<></>);
   useEffect(componentDidMount, []); // MOUNT HOOK
-  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUpdate, [didMount]); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
@@ -25,81 +25,87 @@ export function Shop() {
         {/* {card} */}
       </section>
       <br />
-      <section id="sectionCart" className="container-fluid">
-        <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
-          Items in Cart
-        </h2>
-        <div className="row row-cols-lg-5">
-          <div id="cart1" className="col-12 col-md-6">
-            <h4>Black Tea</h4>
-            <br />
-            <button id="addCartButton1" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
+      <section id="sectionCart">
+        <div className="container-fluid">
+          <div id="sectionCartTitle" className="row">
+            <div className="col-12">
+              <h2 className="text-center m-2 fw-bold border border-3 border-success bg-warning">
+                Items in Cart
+              </h2>
+            </div>
           </div>
-          <div id="cart2" className="col-12 col-md-6">
-            <h4>Green Tea</h4>
-            <br />
-            <button id="addCartButton2" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart3" className="col-12 col-md-6">
-            <h4>White Tea</h4>
-            <br />
-            <button id="addCartButton3" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart4" className="col-12 col-md-6">
-            <h4>Oolong Tea</h4>
-            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button id="addCartButton4" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart5" className="col-12 col-md-6">
-            <h4>Pu-erh Tea</h4>
-            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button id="addCartButton5" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
+          <div id="sectionCartArea" className="row row-cols-lg-5">
+            <div id="cart1" className="col-12 col-md-6">
+              <h4>Black Tea</h4>
+              <br />
+              <button id="addCartButton1" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart2" className="col-12 col-md-6">
+              <h4>Green Tea</h4>
+              <br />
+              <button id="addCartButton2" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart3" className="col-12 col-md-6">
+              <h4>White Tea</h4>
+              <br />
+              <button id="addCartButton3" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart4" className="col-12 col-md-6">
+              <h4>Oolong Tea</h4>
+              <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+              <button id="addCartButton4" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart5" className="col-12 col-md-6">
+              <h4>Pu-erh Tea</h4>
+              <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+              <button id="addCartButton5" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
 
-          <div id="cart6" className="col-12 col-md-6">
-            <h4>Purple Tea</h4>
-            <br />
-            <button id="addCartButton6" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart7" className="col-12 col-md-6">
-            <h4>Matcha Tea</h4>
-            <br />
-            <button id="addCartButton7" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart8" className="col-12 col-md-6">
-            <h4>Mate Tea</h4>
-            <br />
-            <button id="addCartButton8" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart9" className="col-12 col-md-6">
-            <h4>Herbal Tea</h4>
-            <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
-            <button id="addCartButton9" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
-          </div>
-          <div id="cart10" className="col-12 col-md-6">
-            <h4>Rooibos Tea</h4>
-            <br />
-            <button id="addCartButton10" onClick={handleClick}>
-              <i className="bi bi-cart-plus-fill"></i> Add to Cart
-            </button>
+            <div id="cart6" className="col-12 col-md-6">
+              <h4>Purple Tea</h4>
+              <br />
+              <button id="addCartButton6" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart7" className="col-12 col-md-6">
+              <h4>Matcha Tea</h4>
+              <br />
+              <button id="addCartButton7" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart8" className="col-12 col-md-6">
+              <h4>Mate Tea</h4>
+              <br />
+              <button id="addCartButton8" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart9" className="col-12 col-md-6">
+              <h4>Herbal Tea</h4>
+              <span className="badge bg-info col-12">50% OFF SUMMER SALE</span>
+              <button id="addCartButton9" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
+            <div id="cart10" className="col-12 col-md-6">
+              <h4>Rooibos Tea</h4>
+              <br />
+              <button id="addCartButton10" onClick={handleClick}>
+                <i className="bi bi-cart-plus-fill"></i> Add to Cart
+              </button>
+            </div>
           </div>
         </div>
       </section>

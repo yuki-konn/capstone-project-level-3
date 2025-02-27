@@ -13,7 +13,7 @@ export function Home() {
   const [didMount, setDidMount] = useState(false);
 
   useEffect(componentDidMount, []); // MOUNT HOOK
-  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUpdate, [didMount]); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (

@@ -35010,25 +35010,25 @@ function About() {
     didMount = _useState2[0],
     setDidMount = _useState2[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "aboutMain",
     className: "container-lg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "aboutTitle",
     className: "m-2 text-center border border-3 border-success bg-warning"
-  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "m-2 text-center border-3 border-success bg-warning"
-  }, "This page is to better explain the features of my project.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "m-2 text-center border border-3 border-info bg-warning"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "This page is to better explain the features of my project.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionLvl3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "m-2 text-center bg-warning"
   }, "Level 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    id: "article1",
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "Coding difference between Level 2 and Level 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Converted all pages to ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "React JS"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35058,12 +35058,11 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "sass"), ", ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "sass-loader"), ",", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "css-loader"), ", ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "style-loader"), " to import component styles."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "jest"), ", ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "@jest/globals"), " for unit testing.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    id: "article2",
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "New Features"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Made website responsive."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35080,15 +35079,16 @@ function About() {
     className: "list-group-item"
   }, "Added button animation to navigation buttons."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
-  }, "Added ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "Bootstrap Carousel"), " to Home page.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "m-2 text-center border border-3 border-success bg-warning"
+  }, "Added ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "Bootstrap Carousel"), " to Home page.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionLvl2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "m-2 text-center bg-warning"
   }, "Level 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    id: "article1",
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "Coding difference between Level 1 and Level 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Created image map to ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "index.html"), " banner image."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35116,12 +35116,11 @@ function About() {
   }, "Created ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "docs"), " folder for all ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, ".md"), " files except", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "README.md"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Created ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "res"), " folder for all ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "fonts"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "images"), "."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    id: "article2",
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "New Features"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Image map on banner image with links to my gitHub and Linkedin."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35130,14 +35129,16 @@ function About() {
     className: "list-group-item"
   }, "Form submission processes with server simulation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
-  }, "Created random trivia card on Home page.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "m-2 text-center border border-3 border-success bg-warning"
+  }, "Created random trivia card on Home page.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "sectionLvl1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "m-2 text-center bg-warning"
   }, "Level 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "Coding difference between the original project and Level 1."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Changes to the theme from pizza to tea."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35149,11 +35150,11 @@ function About() {
   }, "Added an About Page."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Renamed ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "gallery.html"), " to ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "shop.html"), "."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    className: "m-2 p-2 bg-white border-dashed"
+    className: "m-2 p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "textShadow text-center"
   }, "New Features"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-group-numbered list-group border border-3 border-info"
+    className: "list-group-numbered list-group border border-3 border-dashed border-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Renewed ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "navbar"), " design with ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("code", null, "hover"), " ", "interaction."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -35318,8 +35319,14 @@ function Contact() {
     _useState2 = _slicedToArray(_useState, 2),
     didMount = _useState2[0],
     setDidMount = _useState2[1];
+
+  // OUTPUT FOR CONTACT FORM
+  // const [formOutput1, setFormOutput1] = useState(<></>);
+  // OUTPUT FOR PHONE FORM
+  // const [formOutput2, setFormOutput2] = useState(<></>);
+
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
@@ -35480,6 +35487,10 @@ function Contact() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Contact component has updated.");
+
+      // might have to put in if statement to check which form is clicked.
+      // setFormOutput1();
+      // setFormOutput2();
     }
   }
 }
@@ -35677,7 +35688,7 @@ function Home() {
     didMount = _useState10[0],
     setDidMount = _useState10[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
@@ -36014,7 +36025,7 @@ function Shop() {
     setSectionTeaContent = _useState4[1];
   // const [card, setCard] = useState(<></>);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
@@ -36026,11 +36037,18 @@ function Shop() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
   }, "Products"), sectionTeaContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "sectionCart",
+    id: "sectionCart"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container-fluid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "sectionCartTitle",
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center m-2 fw-bold border border-3 border-success bg-warning"
-  }, "Items in Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Items in Cart"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "sectionCartArea",
     className: "row row-cols-lg-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "cart1",
@@ -36118,7 +36136,7 @@ function Shop() {
     onClick: handleClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-cart-plus-fill"
-  }), " Add to Cart")))));
+  }), " Add to Cart"))))));
 
   // MOUNT PHASE
   function componentDidMount() {
@@ -36786,6 +36804,8 @@ function _handleSignIn() {
           email = event.target[1].value; // value of email input
           password = event.target[2].value; // value of password input
           closeButton = event.target[3]; // RESOLVE VALUE BOOLEAN
+          // WAITS UNTIL PROMISE OF authenticationAws IS FULLFILLED.,
+          //   THEN PLACES RESOLVE VAUE INTO isAuthenticated.
           _context.next = 10;
           return (0,_modules_authenticationAws__WEBPACK_IMPORTED_MODULE_0__.authenticationAws)(email, password);
         case 10:
@@ -37285,7 +37305,7 @@ __webpack_require__.r(__webpack_exports__);
 function makeRequest() {
   var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
   // CREATES NEW PROMISE
-  // PROMISE IS NOT ASYNCRONOUS
+  // PROMISE IS NOT SYNCRONOUS
   debugger;
   return new Promise(_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
 }
@@ -37340,7 +37360,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
 
 li a span:hover {
   color: gold;
-}`, "",{"version":3,"sources":["webpack://./src/Views/About.scss"],"names":[],"mappings":"AAKA;EAHE,uCAAA;AAAF;;AAOA;EACE,WAVK;AAMP","sourcesContent":["$gold: gold;\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgba(145, 145, 145, 1);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\nli a span:hover {\r\n  color: $gold;\r\n}\r\n"],"sourceRoot":""}]);
+}
+
+#aboutMain #sectionLvl1 article,
+#aboutMain #sectionLvl2 article,
+#aboutMain #sectionLvl3 article {
+  background-color: rgba(210, 180, 140, 0.9);
+}`, "",{"version":3,"sources":["webpack://./src/Views/About.scss"],"names":[],"mappings":"AAOA;EAHE,uCAAA;AAFF;;AASA;EACE,WAVK;AAIP;;AAaI;;;EACE,0CAAA;AARN","sourcesContent":["$main-bg-image: url(\"../../assets/images/bamboo1.jpg\");\r\n\r\n$gold: gold;\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgba(145, 145, 145, 1);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\nli a span:hover {\r\n  color: $gold;\r\n}\r\n\r\n#aboutMain {\r\n  #sectionLvl1,\r\n  #sectionLvl2,\r\n  #sectionLvl3 {\r\n    article {\r\n      background-color: rgb(210, 180, 140, 0.9);\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37371,8 +37397,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
   text-shadow: 2px 2px rgb(94, 94, 94);
 }
 
-#contactMain {
+#contactMain h1 {
   background-color: #b3b3b3;
+  opacity: 0.9;
+}
+#contactMain section {
+  background-color: rgba(179, 179, 179, 0.9);
 }
 #contactMain section form div {
   margin: 5px;
@@ -37383,7 +37413,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.textShadow {
 }
 #contactMain section form #ratingDiv input {
   margin: 0 15px 0 3px;
-}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AAQA;EACE,yBAXQ;AAMV;AAQM;EACE,WAAA;EACA,8BAAA;AANR;AAOQ;EACE,gBAAA;AALV;AASQ;EACE,oBAAA;AAPV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n#contactMain {\r\n  background-color: $body-bg;\r\n  section {\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n      }\r\n      #ratingDiv {\r\n        input {\r\n          margin: 0 15px 0 3px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Views/Contact.scss"],"names":[],"mappings":"AAMA;EAHE,oCAAA;AADF;;AASE;EACE,yBAZM;EAaN,YAAA;AANJ;AAQE;EACE,0CAAA;AANJ;AAQM;EACE,WAAA;EACA,8BAAA;AANR;AAOQ;EACE,gBAAA;AALV;AASQ;EACE,oBAAA;AAPV","sourcesContent":["$body-bg: #b3b3b3;\r\n\r\n@mixin textShadow {\r\n  text-shadow: 2px 2px rgb(94, 94, 94);\r\n}\r\n\r\n.textShadow {\r\n  @include textShadow;\r\n}\r\n\r\n#contactMain {\r\n  h1 {\r\n    background-color: $body-bg;\r\n    opacity: 0.9;\r\n  }\r\n  section {\r\n    background-color: rgb(179, 179, 179, 0.9);\r\n    form {\r\n      div {\r\n        margin: 5px;\r\n        justify-content: space-between;\r\n        label {\r\n          text-align: left;\r\n        }\r\n      }\r\n      #ratingDiv {\r\n        input {\r\n          margin: 0 15px 0 3px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37426,20 +37456,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#shopMain #sectionTea .row .col {
 #shopMain #sectionTea .row .col article .card-body {
   height: 30%;
 }
-#shopMain #sectionCart .row div {
-  background-color: white;
+#shopMain #sectionCart #sectionCartArea div {
+  background-color: tan;
   padding: 5px;
   margin-bottom: 5px;
 }
-#shopMain #sectionCart .row div button {
+#shopMain #sectionCart #sectionCartArea div button {
   width: 100%;
 }
-#shopMain #sectionCart .row h4 {
+#shopMain #sectionCart #sectionCartArea h4 {
   text-align: center;
 }
 #shopMain #sectionCart button {
   box-shadow: 2px 2px grey;
-}`, "",{"version":3,"sources":["webpack://./src/Views/Shop.scss"],"names":[],"mappings":"AAOM;EACE,gBAAA;AANR;AAOQ;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;AALV;AAMU;EACE,eAAA;EACA,WAAA;AAJZ;AAMU;EACE,WAAA;AAJZ;AAaM;EACE,uBAAA;EACA,YAAA;EACA,kBAAA;AAXR;AAYQ;EACE,WAAA;AAVV;AAaM;EACE,kBAAA;AAXR;AAeI;EAxCF,wBAAA;AA4BF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .row {\r\n      .col {\r\n        font-size: small;\r\n        article {\r\n          margin: 1px;\r\n          width: 100%;\r\n          height: 400px;\r\n          align-items: center;\r\n          img {\r\n            max-width: 100%;\r\n            height: 70%;\r\n          }\r\n          .card-body {\r\n            height: 30%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    .row {\r\n      div {\r\n        background-color: white;\r\n        padding: 5px;\r\n        margin-bottom: 5px;\r\n        button {\r\n          width: 100%;\r\n        }\r\n      }\r\n      h4 {\r\n        text-align: center;\r\n      }\r\n    }\r\n\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/Views/Shop.scss"],"names":[],"mappings":"AAOM;EACE,gBAAA;AANR;AAOQ;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;AALV;AAMU;EACE,eAAA;EACA,WAAA;AAJZ;AAMU;EACE,WAAA;AAJZ;AAcM;EACE,qBAAA;EACA,YAAA;EACA,kBAAA;AAZR;AAaQ;EACE,WAAA;AAXV;AAcM;EACE,kBAAA;AAZR;AAgBI;EAzCF,wBAAA;AA4BF","sourcesContent":["@mixin boxShadow {\r\n  box-shadow: 2px 2px grey;\r\n}\r\n\r\n#shopMain {\r\n  #sectionTea {\r\n    .row {\r\n      .col {\r\n        font-size: small;\r\n        article {\r\n          margin: 1px;\r\n          width: 100%;\r\n          height: 400px;\r\n          align-items: center;\r\n          img {\r\n            max-width: 100%;\r\n            height: 70%;\r\n          }\r\n          .card-body {\r\n            height: 30%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  #sectionCart {\r\n    // #sectionCartTitle {}\r\n    #sectionCartArea {\r\n      div {\r\n        background-color: tan;\r\n        padding: 5px;\r\n        margin-bottom: 5px;\r\n        button {\r\n          width: 100%;\r\n        }\r\n      }\r\n      h4 {\r\n        text-align: center;\r\n      }\r\n    }\r\n\r\n    button {\r\n      @include boxShadow;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37469,9 +37499,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/edosz.ttf */ "./assets/fonts/edosz.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/images/bgImage.png */ "./assets/images/bgImage.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/images/bamboo1.jpg */ "./assets/images/bamboo1.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
   font-family: "edosz";
@@ -37479,7 +37511,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
 }
 body {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
-  background-size: 70%;
+  background-size: contain;
   color: black;
   font-family: sans-serif;
   margin: 0px;
@@ -37524,6 +37556,12 @@ body h1,
 body h2,
 body h3 {
   font-family: "edosz";
+}
+
+main {
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: contain;
 }
 
 footer {
@@ -37578,7 +37616,7 @@ footer {
 
 .border-dotted {
   border-style: dotted !important;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAmBA;EACE,oBAAA;EACA,4CAAA;AAlBF;AAqCA;EAfE,yDAZS;EAaT,oBAAA;EAgBA,YApCW;EAqCX,uBA1Bc;EA2Bd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AAlCF;AAsCM;EACE,oBApCM;AAAd;AAqCQ;EACE,sBArDH;AAkBP;AAuCI;EACE,YAAA;EACA,eAAA;AArCN;AAyCI;EACE,oBAjDQ;AAUd;AAwCM;EACE,YAAA;EACA,gBAAA;EACA,qBAAA;EACA,cApEE;EAqEF,gBAAA;AAtCR;AAwCQ;EACE,cAvEK;EAwEL,gBAAA;AAtCV;AAyCM;EACE,gBAAA;AAvCR;AA0CQ;EACE,cAAA;AAxCV;AA2CM;EACE,yCAAA;AAzCR;AA8CE;;;EAGE,oBA/EU;AAmCd;;AAgDA;EACE,yBA5Fa;EA6Fb,yBA9FU;EA+FV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AA7CF;;AAgDA;EACE,qBAAA;AA7CF;;AA+CA;EACE,qBAAA;AA5CF;;AA+CA;EACE,WAAA;AA5CF;;AAkDA;EACE,yBAtHU;EAuHV,kBAAA;EACA,YAAA;AA/CF;AAgDE;EACE,UAAA;EACA,yBAzHS;AA2Eb;AAgDE;EACE,iBAAA;EACA,mBAAA;AA9CJ;;AAiDA;EA5GE,mBAAA;EACA,wBAAA;AA+DF;AA7DE;EACE,qBAAA;EACA,wBAAA;AA+DJ;;AA8CA;EACE,+BAAA;AA3CF;;AA6CA;EACE,+BAAA;AA1CF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n$navText: #00b300;\r\n$navTextHover: #b4f298;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: 70%;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    #regularNavbar {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    #banner-img {\r\n      height: auto;\r\n      max-width: 100%;\r\n    }\r\n\r\n    // COLLAPSIBLENAVBAR.JS\r\n    #collapsibleNavbar {\r\n      font-family: $primaryFont;\r\n      a {\r\n        padding: 0px;\r\n        margin-left: 1vw;\r\n        text-decoration: none;\r\n        color: $navText;\r\n        font-size: 2.2vw;\r\n\r\n        &:hover {\r\n          color: $navTextHover;\r\n          font-size: 2.3vw;\r\n        }\r\n      }\r\n      ul {\r\n        margin-left: 1vw;\r\n      }\r\n      #homeNavDiv {\r\n        a {\r\n          font-size: 3vw;\r\n        }\r\n      }\r\n      #signInContent {\r\n        font-family: Arial, Helvetica, sans-serif;\r\n      }\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n\r\n//\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAoBA;EACE,oBAAA;EACA,4CAAA;AAnBF;AA6CA;EAtBE,yDAbS;EAcT,wBAAA;EAuBA,YA5CW;EA6CX,uBAjCc;EAkCd,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;AA1CF;AA8CM;EACE,oBA3CM;AADd;AA6CQ;EACE,sBA7DH;AAkBP;AA+CI;EACE,YAAA;EACA,eAAA;AA7CN;AAiDI;EACE,oBAxDQ;AASd;AAgDM;EACE,YAAA;EACA,gBAAA;EACA,qBAAA;EACA,cA5EE;EA6EF,gBAAA;AA9CR;AAgDQ;EACE,cA/EK;EAgFL,gBAAA;AA9CV;AAiDM;EACE,gBAAA;AA/CR;AAkDQ;EACE,cAAA;AAhDV;AAmDM;EACE,yCAAA;AAjDR;AAsDE;;;EAGE,oBAtFU;AAkCd;;AAwDA;EA7EE,yDAhBc;EAiBd,0CAAA;EACA,wBAAA;AAyBF;;AAsDA;EACE,yBAxGa;EAyGb,yBA1GU;EA2GV,kBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;AAnDF;;AAsDA;EACE,qBAAA;AAnDF;;AAqDA;EACE,qBAAA;AAlDF;;AAqDA;EACE,WAAA;AAlDF;;AAwDA;EACE,yBAlIU;EAmIV,kBAAA;EACA,YAAA;AArDF;AAsDE;EACE,UAAA;EACA,yBArIS;AAiFb;AAsDE;EACE,iBAAA;EACA,mBAAA;AApDJ;;AAuDA;EAhHE,mBAAA;EACA,wBAAA;AA6DF;AA3DE;EACE,qBAAA;EACA,wBAAA;AA6DJ;;AAoDA;EACE,+BAAA;AAjDF;;AAmDA;EACE,+BAAA;AAhDF","sourcesContent":["// CUSTOM COLORS\r\n$gold: gold;\r\n$navText: #00b300;\r\n$navTextHover: #b4f298;\r\n\r\n$body-bg: #b3b3b3;\r\n$body-color: black;\r\n$footer-bg: #181818;\r\n$footer-color: rgba(255, 255, 255, 1);\r\n$sitemap-bg: #404040;\r\n\r\n// IMAGES\r\n$bannerImage2: url(\"../assets/images/banner2.png\");\r\n$bg-image: url(\"../assets/images/bgImage.png\");\r\n$main-bg-image: url(\"../assets/images/bamboo1.jpg\");\r\n\r\n// CUSTOM FONTS\r\n$primaryFont: \"edosz\";\r\n$secondaryFont: sans-serif;\r\n\r\n@font-face {\r\n  font-family: \"edosz\";\r\n  src: url(\"../assets/fonts/edosz.ttf\");\r\n}\r\n\r\n@mixin background {\r\n  background-image: $bg-image;\r\n  background-size: contain;\r\n}\r\n@mixin mainBackground {\r\n  background-image: $main-bg-image;\r\n  background-color: rgba(255, 255, 255, 0.7);\r\n  background-size: contain;\r\n  // background: $main-bg-image, rgba(255, 255, 255, 0.5);\r\n  // background-blend-mode: normal;\r\n}\r\n@mixin article-btn-animation {\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n\r\n  &:hover {\r\n    transform: scale(1.3);\r\n    transition: transform 2s;\r\n  }\r\n}\r\n\r\n// ALL PAGES START\r\n\r\nbody {\r\n  @include background;\r\n  color: $body-color;\r\n  font-family: $secondaryFont;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  header {\r\n    #regularNavbar {\r\n      a {\r\n        font-family: $primaryFont;\r\n        &:hover {\r\n          background-color: $gold;\r\n        }\r\n      }\r\n    }\r\n    #banner-img {\r\n      height: auto;\r\n      max-width: 100%;\r\n    }\r\n\r\n    // COLLAPSIBLENAVBAR.JS\r\n    #collapsibleNavbar {\r\n      font-family: $primaryFont;\r\n      a {\r\n        padding: 0px;\r\n        margin-left: 1vw;\r\n        text-decoration: none;\r\n        color: $navText;\r\n        font-size: 2.2vw;\r\n\r\n        &:hover {\r\n          color: $navTextHover;\r\n          font-size: 2.3vw;\r\n        }\r\n      }\r\n      ul {\r\n        margin-left: 1vw;\r\n      }\r\n      #homeNavDiv {\r\n        a {\r\n          font-size: 3vw;\r\n        }\r\n      }\r\n      #signInContent {\r\n        font-family: Arial, Helvetica, sans-serif;\r\n      }\r\n    }\r\n  }\r\n\r\n  h1,\r\n  h2,\r\n  h3 {\r\n    font-family: $primaryFont;\r\n  }\r\n}\r\n\r\nmain {\r\n  @include mainBackground;\r\n}\r\n\r\nfooter {\r\n  color: $footer-color;\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  opacity: 0.9;\r\n}\r\n\r\n.no-bullets {\r\n  list-style-type: none;\r\n}\r\n.no-decor {\r\n  text-decoration: none;\r\n}\r\n\r\n.w100 {\r\n  width: 100%;\r\n}\r\n\r\n// ALL PAGES END\r\n\r\n// INDEX START\r\n#siteMapGroup {\r\n  background-color: $footer-bg;\r\n  text-align: center;\r\n  opacity: 0.9;\r\n  .list-group-item {\r\n    width: 30%;\r\n    background-color: $sitemap-bg;\r\n  }\r\n  .list-group {\r\n    font-weight: bold;\r\n    align-items: center;\r\n  }\r\n}\r\n.cardButton {\r\n  @include article-btn-animation;\r\n}\r\n// INDEX END\r\n\r\n// CUSTOM BOOTSTRAP CSS START\r\n.border-dashed {\r\n  border-style: dashed !important;\r\n}\r\n.border-dotted {\r\n  border-style: dotted !important;\r\n}\r\n// CUSTOM BOOTSTRAP CSS END\r\n\r\n//\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38078,6 +38116,17 @@ module.exports = styleTagTransform;
 
 "use strict";
 module.exports = __webpack_require__.p + "0be6a7a25374d83f251f.ttf";
+
+/***/ }),
+
+/***/ "./assets/images/bamboo1.jpg":
+/*!***********************************!*\
+  !*** ./assets/images/bamboo1.jpg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "62e37be8c6c75f8b8b21.jpg";
 
 /***/ }),
 

@@ -5,8 +5,14 @@ import "./Contact.scss";
 
 export function Contact() {
   const [didMount, setDidMount] = useState(false);
+
+  // OUTPUT FOR CONTACT FORM
+  // const [formOutput1, setFormOutput1] = useState(<></>);
+  // OUTPUT FOR PHONE FORM
+  // const [formOutput2, setFormOutput2] = useState(<></>);
+
   useEffect(componentDidMount, []); // MOUNT HOOK
-  useEffect(componentDidUpdate); // UPDATE HOOK
+  useEffect(componentDidUpdate, [didMount]); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
@@ -100,10 +106,9 @@ export function Contact() {
           <input className="w100" type="submit" />
         </form>
         <br />
-        <div
-          id="outputTag"
-          className="border border-3 border-dark text-center"
-        ></div>
+        <div id="outputTag" className="border border-3 border-dark text-center">
+          {/* {formOutput1} */}
+        </div>
         <br />
       </section>
       <section>
@@ -156,7 +161,9 @@ export function Contact() {
         <div
           id="phoneOutputTag"
           className="border border-3 border-dark text-center"
-        ></div>
+        >
+          {/* {formOutput2} */}
+        </div>
         <br />
       </section>
     </main>
@@ -173,6 +180,10 @@ export function Contact() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Contact component has updated.");
+
+      // might have to put in if statement to check which form is clicked.
+      // setFormOutput1();
+      // setFormOutput2();
     }
   }
 }

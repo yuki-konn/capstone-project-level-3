@@ -12,6 +12,7 @@ $sitemap-bg: #404040;
 // IMAGES
 $bannerImage2: url("../assets/images/banner2.png");
 $bg-image: url("../assets/images/bgImage.png");
+$main-bg-image: url("../assets/images/bamboo1.jpg");
 
 // CUSTOM FONTS
 $primaryFont: "edosz";
@@ -24,7 +25,14 @@ $secondaryFont: sans-serif;
 
 @mixin background {
   background-image: $bg-image;
-  background-size: 70%;
+  background-size: contain;
+}
+@mixin mainBackground {
+  background-image: $main-bg-image;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: contain;
+  // background: $main-bg-image, rgba(255, 255, 255, 0.5);
+  // background-blend-mode: normal;
 }
 @mixin article-btn-animation {
   transform: scale(1);
@@ -95,6 +103,10 @@ body {
   h3 {
     font-family: $primaryFont;
   }
+}
+
+main {
+  @include mainBackground;
 }
 
 footer {

@@ -9,8 +9,12 @@ $body-bg: #b3b3b3;
 }
 
 #contactMain {
-  background-color: $body-bg;
+  h1 {
+    background-color: $body-bg;
+    opacity: 0.9;
+  }
   section {
+    background-color: rgb(179, 179, 179, 0.9);
     form {
       div {
         margin: 5px;

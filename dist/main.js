@@ -35302,8 +35302,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
-/* harmony import */ var _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmitContact */ "./src/controllers/handleSubmitContact.js");
-/* harmony import */ var _Contact_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Contact.scss */ "./src/Views/Contact.scss");
+/* harmony import */ var _Contact_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Contact.scss */ "./src/Views/Contact.scss");
+/* harmony import */ var _modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/getCheckedRadio */ "./src/modules/getCheckedRadio.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -35314,6 +35314,8 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+// import { handleSubmitContact } from "../controllers/handleSubmitContact";
+
 function Contact() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
@@ -35321,12 +35323,30 @@ function Contact() {
     setDidMount = _useState2[1];
 
   // OUTPUT FOR CONTACT FORM
-  // const [formOutput1, setFormOutput1] = useState(<></>);
-  // OUTPUT FOR PHONE FORM
-  // const [formOutput2, setFormOutput2] = useState(<></>);
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
+    _useState4 = _slicedToArray(_useState3, 2),
+    formData1 = _useState4[0],
+    setFormData1 = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState6 = _slicedToArray(_useState5, 2),
+    name = _useState6[0],
+    setName = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState8 = _slicedToArray(_useState7, 2),
+    email = _useState8[0],
+    setEmail = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
+    _useState10 = _slicedToArray(_useState9, 2),
+    commentArea = _useState10[0],
+    setCommentArea = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
+    _useState12 = _slicedToArray(_useState11, 2),
+    radioButtonArea = _useState12[0],
+    setRadioButtonArea = _useState12[1];
 
+  // LIFECYCLE COMPONENTS
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]); // UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount, name]); // UPDATE HOOK
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); // UNMOUNT HOOK
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
@@ -35337,7 +35357,8 @@ function Contact() {
   }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, "Contact Form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleSubmitContact__WEBPACK_IMPORTED_MODULE_2__.handleSubmitContact
+    id: "form1",
+    onSubmit: handleSubmitContact
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
@@ -35421,10 +35442,7 @@ function Contact() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "w100",
     type: "submit"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "outputTag",
-    className: "border border-3 border-dark text-center"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), formData1, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-telephone"
@@ -35487,10 +35505,62 @@ function Contact() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Contact component has updated.");
+      // RUNS AFTER handleSubmitContact IS CLICKED.
+      if (name) {
+        setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+          id: "outputTag1",
+          className: "border border-3 border-dark text-center"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", {
+          style: {
+            color: "gold"
+          }
+        }, "Processing contact form..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Form Info")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Name: ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Email: ", email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), commentArea, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), radioButtonArea, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "--------------", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)));
+      }
+    }
+  }
+  function handleSubmitContact(event) {
+    event.preventDefault();
+    var name = event.target[0].value;
+    var email = event.target[1].value;
+    var comment = event.target[2].value;
+    setName(name);
+    setEmail(email);
 
-      // might have to put in if statement to check which form is clicked.
-      // setFormOutput1();
-      // setFormOutput2();
+    // const outputTag = document.getElementById("outputTag1");
+
+    // CHECKS TO SEE IF THE outputTag IS EMPTY OR NOT
+    // const isEmpty = outputTag.childNodes.length === 0;
+    // let displayComment = <></>;
+    if (formData1 !== /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)) {
+      // CHECKS TO SEE IF TEXTAREA IS EMPTY
+
+      if (commentArea === /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)) {
+        var _displayComment = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Comment: ", comment);
+        return _displayComment;
+      }
+
+      // TODO: GET DISPLAY AREA TO BE RETURNED HERE.
+      console.log(displayComment);
+
+      // CAPTURES displayComment AND SETS IT.
+      // const commentFeedback = displayComment;
+      // setCommentArea(commentFeedback);
+
+      // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+      // LOOP FOR RADIO BUTTON CHECKED
+      var ratingFeedback = (0,_modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__.getCheckedRadio)(event);
+      setRadioButtonArea(ratingFeedback);
+
+      // PROMISE
+      // const promise = makeRequest("https://myserver.com");
+      // RESPONSE FROM SERVER
+      // promise.then(parseContactResponse);
+
+      // setCommentArea(displayComment);
+      // setRadioButtonArea(displayRadio);
+
+      // ASK HOW TO FIX SETTER OF TUPLE NOT DISPLAYING.
+      // DOESN'T DISPLAY commentArea or radioButtonArea
     }
   }
 }
@@ -35563,19 +35633,32 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
  * In redirect.js, properly set the root path.
  */
 function HandleRefresh(props) {
+  // `props.children` is everything nested in `<HandleRefresh>` in index.js
   var children = props.children;
+  // useNavigate() HOOK - GIVES FUNCTIONS THE ABILITY TO ACCESS BROWSER ROUTER.
+  // useNavigate() returns a function
   var navigateTo = (0,react_router__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
     didMount = _useState2[0],
     setDidMount = _useState2[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+
+  // RENDERS THE `children`
   if (didMount) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, children);else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   function componentDidMount() {
+    // PATH NAME SAVED UNDER "redirect" IN LOCAL STORAGE.
+    // localStorage.getItem - returns the value of a key in browser history.
     var redirectPath = localStorage.getItem("redirect");
+    // CONDITION TO CHECK FOR `redirect` PATH NAME IN LOCAL STORAGE
     if (redirectPath) {
+      // BROWSERROUTER LOADS SPECIFIED PATH
+      // navigateTo - ACCEPTS PATH STRING FROM LOCAL STORAGE
       navigateTo(redirectPath);
+      // NAVIGATES TO SAVED PATH NAME, THEN CLEAR THE VALUE.
+      // localStorage.setItem - stores a key and value into the browser.
       localStorage.setItem("redirect", "");
+      // `setTimeOut` DELAYS THE RENDERING OF `HandleRefresh` CHILDREN IF THERE'S A PATH NAME.
       setTimeout(function () {
         return setDidMount(true);
       }, 1000);
@@ -35671,6 +35754,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 function Home() {
   // STATE VARIABLES FOR CARDS
+  // USESTATE RETURNS A ARRAY WITH 2 ITEMS.
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
     _useState2 = _slicedToArray(_useState, 2),
     linkCard1 = _useState2[0],
@@ -35687,6 +35771,8 @@ function Home() {
     _useState8 = _slicedToArray(_useState7, 2),
     triviaCard = _useState8[0],
     setTriviaCard = _useState8[1];
+
+  // DESTRUCTURING: SYNTAX THAT IMMEDIATELY EXTRACTS THE VALUE AND SETTER OF A TUPLE.
   var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState10 = _slicedToArray(_useState9, 2),
     didMount = _useState10[0],
@@ -35848,6 +35934,8 @@ function Home() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
+  // - TO UNMOUNT REACT REQUIRES YOU TO RETURN A CALLBACK.
+  // - A CONDITION CAN ALSO CAUSE A COMPONENT TO UNMOUNT.
   return function () {
     console.log("The Home component has unmounted.");
   };
@@ -36783,9 +36871,11 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
+
+// WHEN async IS CALLED IT RETURNS A NEW PROMISE, WHICH WILL BE RESOLVED BY THE VALUE RETURNED BY THE ASYNC FUNCTION.
 function handleSignIn() {
   return _handleSignIn.apply(this, arguments);
-}
+} // RESOLVE VALUE IS UNDEFINED BUT THE PROMISE RESOLVES AT THE END.
 function _handleSignIn() {
   _handleSignIn = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
     var event,
@@ -36831,73 +36921,6 @@ function _handleSignIn() {
     }, _callee);
   }));
   return _handleSignIn.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./src/controllers/handleSubmitContact.js":
-/*!************************************************!*\
-  !*** ./src/controllers/handleSubmitContact.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleSubmitContact: () => (/* binding */ handleSubmitContact)
-/* harmony export */ });
-/* harmony import */ var _modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/parseContactResponse.js */ "./src/modules/parseContactResponse.js");
-/* harmony import */ var _utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/makeRequest.js */ "./src/utils/makeRequest.js");
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
-
-
-
-
-// CONTACT FORM SUBMIT HANDLER
-function handleSubmitContact() {
-  var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Event();
-  event.preventDefault();
-  var name = event.target[0].value;
-  var email = event.target[1].value;
-  var comment = event.target[2].value;
-  var fiveStar = event.target[4].ariaLabel;
-  var fourStar = event.target[5].ariaLabel;
-  var threeStar = event.target[6].ariaLabel;
-  var twoStar = event.target[7].ariaLabel;
-  var oneStar = event.target[8].ariaLabel;
-  var rating = [fiveStar, fourStar, threeStar, twoStar, oneStar];
-  var ratingFieldSet = event.target[3].elements;
-
-  // CHECKS TO SEE IF THE outputTag IS EMPTY OR NOT
-  var outputTag = document.getElementById("outputTag");
-  var isEmpty = outputTag.childNodes.length === 0;
-  if (isEmpty) {
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<b style='color: gold'>Processing contact form...<b><br>");
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("<br><u>Form Info<u><br>");
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("Name: ".concat(name, "<br>"));
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("Email: ".concat(email, "<br>"));
-
-    // CHECKS TO SEE IF TEXTAREA IS EMPTY
-    if (comment === "") {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("");
-    } else {
-      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("Comment: ".concat(comment, "<br>"));
-    }
-
-    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    for (var position = 0; position <= 4; position++) {
-      if (ratingFieldSet[position].checked) {
-        (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("Rating: ".concat(rating[position], "<br>"));
-        console.log("".concat(rating[position], " rating is selected."));
-      } else ;
-    }
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)("--------------<br><br>");
-
-    // PROMISE
-    var promise = (0,_utils_makeRequest_js__WEBPACK_IMPORTED_MODULE_1__.makeRequest)("https://myserver.com");
-    // RESPONSE FROM SERVER
-    promise.then(_modules_parseContactResponse_js__WEBPACK_IMPORTED_MODULE_0__.parseContactResponse);
-  } else {}
 }
 
 /***/ }),
@@ -37164,27 +37187,36 @@ function _authenticationAws() {
 
 /***/ }),
 
-/***/ "./src/modules/parseContactResponse.js":
-/*!*********************************************!*\
-  !*** ./src/modules/parseContactResponse.js ***!
-  \*********************************************/
+/***/ "./src/modules/getCheckedRadio.js":
+/*!****************************************!*\
+  !*** ./src/modules/getCheckedRadio.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   parseContactResponse: () => (/* binding */ parseContactResponse)
+/* harmony export */   getCheckedRadio: () => (/* binding */ getCheckedRadio)
 /* harmony export */ });
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
-// PARSE RESPONSE FOR CONTACT FORM contact.html
-function parseContactResponse(resolveValue) {
-  var response = JSON.parse(resolveValue);
-  var message = response.message;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
-
-  // return <>{message}</>;
+function getCheckedRadio() {
+  var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Event();
+  var fiveStar = event.target[4].ariaLabel;
+  var fourStar = event.target[5].ariaLabel;
+  var threeStar = event.target[6].ariaLabel;
+  var twoStar = event.target[7].ariaLabel;
+  var oneStar = event.target[8].ariaLabel;
+  var rating = [fiveStar, fourStar, threeStar, twoStar, oneStar];
+  var ratingFieldSet = event.target[3].elements;
+  for (var position = 0; position <= 4; position++) {
+    if (ratingFieldSet[position].checked) {
+      console.log("".concat(rating[position], " rating is selected."));
+      var displayRadio = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Rating: ", rating[position]);
+      return displayRadio;
+    }
+  }
 }
 
 /***/ }),

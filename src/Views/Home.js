@@ -5,11 +5,13 @@ import { handleClickApi } from "../controllers/handleClickApi";
 
 export function Home() {
   // STATE VARIABLES FOR CARDS
+  // USESTATE RETURNS A ARRAY WITH 2 ITEMS.
   const [linkCard1, setLinkCard1] = useState(<></>);
   const [linkCard2, setLinkCard2] = useState(<></>);
   const [linkCard3, setLinkCard3] = useState(<></>);
   const [triviaCard, setTriviaCard] = useState(<></>);
 
+  // DESTRUCTURING: SYNTAX THAT IMMEDIATELY EXTRACTS THE VALUE AND SETTER OF A TUPLE.
   const [didMount, setDidMount] = useState(false);
 
   useEffect(componentDidMount, []); // MOUNT HOOK
@@ -190,6 +192,8 @@ export function Home() {
 
 // UNMOUNT PHASE
 function componentDidUnmount() {
+  // - TO UNMOUNT REACT REQUIRES YOU TO RETURN A CALLBACK.
+  // - A CONDITION CAN ALSO CAUSE A COMPONENT TO UNMOUNT.
   return function () {
     console.log("The Home component has unmounted.");
   };

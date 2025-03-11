@@ -1,4 +1,5 @@
 {
+  // @babel/preset-react PROVIDES INSTRUCTIONS ON HOW TO CONVERT HTML TO JAVASCRIPT
   // @babel/preset-env IS FOR JEST TO WORK,
   //   AND HAS TO BE IN FRONT OF @babel/preset-react
   "presets": ["@babel/preset-env", "@babel/preset-react"]

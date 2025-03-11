@@ -37,6 +37,8 @@ In the Home.js there is one inline style.
 
 - Make handleSubmitTrivia.js do something. Currently disabled in viewResponse.js
 
-### Want to do:
+### Ideas:
 
 - Create catagories for products based on tea type for shop page. Make a Navigation with tea types and add more pictures of each type of tea.
+
+- Create signed in specific pages. Like a profile page, settings page, forum page, etc.

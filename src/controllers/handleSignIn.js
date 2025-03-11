@@ -1,5 +1,6 @@
 import { authenticationAws } from "../modules/authenticationAws";
 
+// WHEN async IS CALLED IT RETURNS A NEW PROMISE, WHICH WILL BE RESOLVED BY THE VALUE RETURNED BY THE ASYNC FUNCTION.
 export async function handleSignIn(
   event = new Event(),
   onSignIn,
@@ -27,4 +28,4 @@ export async function handleSignIn(
     // Changes button to SignOutModal.
     onSignIn(); // Prop from SignInModal
   } else setErrorMessage("The email or password is incorrect.");
-}
+} // RESOLVE VALUE IS UNDEFINED BUT THE PROMISE RESOLVES AT THE END.

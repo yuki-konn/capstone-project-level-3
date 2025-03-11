@@ -12,7 +12,10 @@ export class Column {
   }
 
   // CLASS METHOD EXAMPLE
-  // log(){
-  //   console.log("Content: " + this.content);
+  // log() {
+  //   console.log("Content: " + this.columnContent);
   // }
 }
+// how to use a method from a class
+// const myColumn = new Column();
+// myColumn.log();

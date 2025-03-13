@@ -26,14 +26,20 @@ In the Home.js there is one inline style.
 
 ## Top Priority:
 
-- Create 6 more tests.
+### Contact.js
 
-### Medium Priority:
-
+- Convert PhoneContact Form output feedback to react.
+- Change ContactForm promises to Async and await.
+- Change PhoneForm promises to Async and await.
 - Put handleClickAddCart in componentDidUpdate in shop.js (Output feedback)
-- Update small files to jsx.
 
-### Low Priority:
+## Medium Priority:
+
+- Update small files to jsx.
+- Create 6 more tests.
+  - tests for contactForm and PhoneForm
+
+## Low Priority:
 
 - Make handleSubmitTrivia.js do something. Currently disabled in viewResponse.js
 

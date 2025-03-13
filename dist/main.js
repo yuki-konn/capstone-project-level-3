@@ -35455,7 +35455,10 @@ function Contact() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "w100",
     type: "submit"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), formData1, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "outputTag1",
+    className: "border border-3 border-dark text-center"
+  }, formData1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "textShadow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-telephone"
@@ -35520,10 +35523,7 @@ function Contact() {
       console.log("The Contact component has updated.");
       // RUNS AFTER handleSubmitContact IS CLICKED.
       if (name) {
-        setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-          id: "outputTag1",
-          className: "border border-3 border-dark text-center"
-        }, serverResponse, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Form Info")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Name: ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Email: ", email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Comment: ", commentArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Rating: ", radioButtonArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "--------------", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))));
+        setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, serverResponse, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Form Info")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Name: ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Email: ", email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Comment: ", commentArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Rating: ", radioButtonArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "--------------", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))));
       }
     }
   }
@@ -35532,23 +35532,24 @@ function Contact() {
     var name = event.target[0].value;
     var email = event.target[1].value;
     var comment = event.target[2].value;
-    setName(name);
-    setEmail(email);
-    setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      id: "outputTag1",
-      className: "border border-3 border-dark text-center"
-    }, serverResponse));
+    var outputTag = document.getElementById("outputTag1");
+    var isEmpty = outputTag.children.length === 0;
+    if (isEmpty) {
+      setName(name);
+      setEmail(email);
 
-    // ADDS INPUTTED COMMENT
-    setCommentArea(comment);
+      // ADDS INPUTTED COMMENT
+      setCommentArea(comment);
 
-    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    var ratingFeedback = (0,_modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__.getCheckedRadio)(event);
-    // ADDS INPUTTED RATING
-    setRadioButtonArea(ratingFeedback);
+      // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+      var ratingFeedback = (0,_modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__.getCheckedRadio)(event);
+      // ADDS INPUTTED RATING
+      setRadioButtonArea(ratingFeedback);
+      setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, serverResponse));
 
-    // SERVER DATA RETRIEVAL
-    getServerFeedback();
+      // SERVER DATA RETRIEVAL
+      getServerFeedback();
+    }
   }
   function getServerFeedback() {
     // PROMISE

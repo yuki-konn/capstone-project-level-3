@@ -117,7 +117,13 @@ export function Contact() {
           <input className="w100" type="submit" />
         </form>
         <br />
-        {formData1}
+        <div
+          id="outputTag1"
+          className="border border-3 border-dark text-center"
+        >
+          {formData1}
+        </div>
+
         <br />
       </section>
       <section>
@@ -192,10 +198,7 @@ export function Contact() {
       // RUNS AFTER handleSubmitContact IS CLICKED.
       if (name) {
         setFormData1(
-          <div
-            id="outputTag1"
-            className="border border-3 border-dark text-center"
-          >
+          <>
             {serverResponse}
             <br />
             <div>
@@ -214,7 +217,7 @@ export function Contact() {
               --------------
               <br />
             </div>
-          </div>
+          </>
         );
       }
     }
@@ -226,25 +229,25 @@ export function Contact() {
     const name = event.target[0].value;
     const email = event.target[1].value;
     const comment = event.target[2].value;
+    const outputTag = document.getElementById("outputTag1");
+    const isEmpty = outputTag.children.length === 0;
+    if (isEmpty) {
+      setName(name);
+      setEmail(email);
 
-    setName(name);
-    setEmail(email);
-    setFormData1(
-      <div id="outputTag1" className="border border-3 border-dark text-center">
-        {serverResponse}
-      </div>
-    );
+      // ADDS INPUTTED COMMENT
+      setCommentArea(comment);
 
-    // ADDS INPUTTED COMMENT
-    setCommentArea(comment);
+      // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+      const ratingFeedback = getCheckedRadio(event);
+      // ADDS INPUTTED RATING
+      setRadioButtonArea(ratingFeedback);
 
-    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-    const ratingFeedback = getCheckedRadio(event);
-    // ADDS INPUTTED RATING
-    setRadioButtonArea(ratingFeedback);
+      setFormData1(<>{serverResponse}</>);
 
-    // SERVER DATA RETRIEVAL
-    getServerFeedback();
+      // SERVER DATA RETRIEVAL
+      getServerFeedback();
+    }
   }
 
   function getServerFeedback() {

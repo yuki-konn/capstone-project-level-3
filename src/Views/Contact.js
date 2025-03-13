@@ -1,18 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { handleSubmitPhone } from "../controllers/handleSubmitPhone";
-import { handleSubmitContact } from "../controllers/handleSubmitContact";
 import "./Contact.scss";
+import { getCheckedRadio } from "../modules/getCheckedRadio";
+import { makeRequest } from "../utils/makeRequest";
+import { parseContactResponse } from "../modules/parseContactResponse";
+// import { handleSubmitContact } from "../controllers/handleSubmitContact";
 
 export function Contact() {
   const [didMount, setDidMount] = useState(false);
 
   // OUTPUT FOR CONTACT FORM
-  // const [formOutput1, setFormOutput1] = useState(<></>);
-  // OUTPUT FOR PHONE FORM
-  // const [formOutput2, setFormOutput2] = useState(<></>);
+  const [formData1, setFormData1] = useState(<></>);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
+  const [commentArea, setCommentArea] = useState(<></>);
+  const [radioButtonArea, setRadioButtonArea] = useState(<></>);
+  // FOR PROCESSING FORM
+  const [serverResponse, setServerResponse] = useState(
+    <b style={{ color: "gold" }}>Processing contact form...</b>
+  );
+
+  // LIFECYCLE COMPONENTS
   useEffect(componentDidMount, []); // MOUNT HOOK
-  useEffect(componentDidUpdate, [didMount]); // UPDATE HOOK
+  useEffect(componentDidUpdate, [didMount, name]); // UPDATE HOOK
   useEffect(componentDidUnmount, []); // UNMOUNT HOOK
 
   return (
@@ -22,7 +33,7 @@ export function Contact() {
       </h1>
       <section>
         <h2 className="textShadow">Contact Form</h2>
-        <form onSubmit={handleSubmitContact}>
+        <form id="form1" onSubmit={handleSubmitContact}>
           <div className="row">
             <label className="col-2" htmlFor="contact-name" title="Required">
               Name *
@@ -106,9 +117,7 @@ export function Contact() {
           <input className="w100" type="submit" />
         </form>
         <br />
-        <div id="outputTag" className="border border-3 border-dark text-center">
-          {/* {formOutput1} */}
-        </div>
+        {formData1}
         <br />
       </section>
       <section>
@@ -180,11 +189,71 @@ export function Contact() {
   function componentDidUpdate() {
     if (didMount) {
       console.log("The Contact component has updated.");
-
-      // might have to put in if statement to check which form is clicked.
-      // setFormOutput1();
-      // setFormOutput2();
+      // RUNS AFTER handleSubmitContact IS CLICKED.
+      if (name) {
+        setFormData1(
+          <div
+            id="outputTag1"
+            className="border border-3 border-dark text-center"
+          >
+            {serverResponse}
+            <br />
+            <div>
+              <span>
+                <u>Form Info</u>
+              </span>
+              <br />
+              <span>Name: {name}</span>
+              <br />
+              <span>Email: {email}</span>
+              <br />
+              <span>Comment: {commentArea}</span>
+              <br />
+              <span>Rating: {radioButtonArea}</span>
+              <br />
+              --------------
+              <br />
+            </div>
+          </div>
+        );
+      }
     }
+  }
+
+  function handleSubmitContact(event) {
+    event.preventDefault();
+
+    const name = event.target[0].value;
+    const email = event.target[1].value;
+    const comment = event.target[2].value;
+
+    setName(name);
+    setEmail(email);
+    setFormData1(
+      <div id="outputTag1" className="border border-3 border-dark text-center">
+        {serverResponse}
+      </div>
+    );
+
+    // ADDS INPUTTED COMMENT
+    setCommentArea(comment);
+
+    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+    const ratingFeedback = getCheckedRadio(event);
+    // ADDS INPUTTED RATING
+    setRadioButtonArea(ratingFeedback);
+
+    // SERVER DATA RETRIEVAL
+    getServerFeedback();
+  }
+
+  function getServerFeedback() {
+    // PROMISE
+    const promise = makeRequest("https://myserver.com");
+    // RESPONSE FROM SERVER
+    let response = promise.then(parseContactResponse);
+    // CHANGES FROM PROCESSING TO SUCCESSFULLY SUBMITTED
+    setServerResponse(<b style={{ color: "green" }}>{response}</b>);
   }
 }
 

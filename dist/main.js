@@ -35304,12 +35304,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _controllers_handleSubmitPhone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleSubmitPhone */ "./src/controllers/handleSubmitPhone.js");
 /* harmony import */ var _Contact_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Contact.scss */ "./src/Views/Contact.scss");
 /* harmony import */ var _modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/getCheckedRadio */ "./src/modules/getCheckedRadio.js");
+/* harmony import */ var _utils_makeRequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/makeRequest */ "./src/utils/makeRequest.js");
+/* harmony import */ var _modules_parseContactResponse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../modules/parseContactResponse */ "./src/modules/parseContactResponse.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
 
 
 
@@ -35343,6 +35347,15 @@ function Contact() {
     _useState12 = _slicedToArray(_useState11, 2),
     radioButtonArea = _useState12[0],
     setRadioButtonArea = _useState12[1];
+  // FOR PROCESSING FORM
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", {
+      style: {
+        color: "gold"
+      }
+    }, "Processing contact form...")),
+    _useState14 = _slicedToArray(_useState13, 2),
+    serverResponse = _useState14[0],
+    setServerResponse = _useState14[1];
 
   // LIFECYCLE COMPONENTS
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); // MOUNT HOOK
@@ -35510,11 +35523,7 @@ function Contact() {
         setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
           id: "outputTag1",
           className: "border border-3 border-dark text-center"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", {
-          style: {
-            color: "gold"
-          }
-        }, "Processing contact form..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Form Info")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Name: ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Email: ", email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), commentArea, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), radioButtonArea, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "--------------", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)));
+        }, serverResponse, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Form Info")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Name: ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Email: ", email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Comment: ", commentArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Rating: ", radioButtonArea), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "--------------", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null))));
       }
     }
   }
@@ -35525,43 +35534,33 @@ function Contact() {
     var comment = event.target[2].value;
     setName(name);
     setEmail(email);
+    setFormData1(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "outputTag1",
+      className: "border border-3 border-dark text-center"
+    }, serverResponse));
 
-    // const outputTag = document.getElementById("outputTag1");
+    // ADDS INPUTTED COMMENT
+    setCommentArea(comment);
 
-    // CHECKS TO SEE IF THE outputTag IS EMPTY OR NOT
-    // const isEmpty = outputTag.childNodes.length === 0;
-    // let displayComment = <></>;
-    if (formData1 !== /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)) {
-      // CHECKS TO SEE IF TEXTAREA IS EMPTY
+    // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
+    var ratingFeedback = (0,_modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__.getCheckedRadio)(event);
+    // ADDS INPUTTED RATING
+    setRadioButtonArea(ratingFeedback);
 
-      if (commentArea === /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)) {
-        var _displayComment = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Comment: ", comment);
-        return _displayComment;
+    // SERVER DATA RETRIEVAL
+    getServerFeedback();
+  }
+  function getServerFeedback() {
+    // PROMISE
+    var promise = (0,_utils_makeRequest__WEBPACK_IMPORTED_MODULE_4__.makeRequest)("https://myserver.com");
+    // RESPONSE FROM SERVER
+    var response = promise.then(_modules_parseContactResponse__WEBPACK_IMPORTED_MODULE_5__.parseContactResponse);
+    // CHANGES FROM PROCESSING TO SUCCESSFULLY SUBMITTED
+    setServerResponse(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", {
+      style: {
+        color: "green"
       }
-
-      // TODO: GET DISPLAY AREA TO BE RETURNED HERE.
-      console.log(displayComment);
-
-      // CAPTURES displayComment AND SETS IT.
-      // const commentFeedback = displayComment;
-      // setCommentArea(commentFeedback);
-
-      // CHECKS TO SEE WHICH RADIO BUTTON IS SELECTED
-      // LOOP FOR RADIO BUTTON CHECKED
-      var ratingFeedback = (0,_modules_getCheckedRadio__WEBPACK_IMPORTED_MODULE_3__.getCheckedRadio)(event);
-      setRadioButtonArea(ratingFeedback);
-
-      // PROMISE
-      // const promise = makeRequest("https://myserver.com");
-      // RESPONSE FROM SERVER
-      // promise.then(parseContactResponse);
-
-      // setCommentArea(displayComment);
-      // setRadioButtonArea(displayRadio);
-
-      // ASK HOW TO FIX SETTER OF TUPLE NOT DISPLAYING.
-      // DOESN'T DISPLAY commentArea or radioButtonArea
-    }
+    }, response));
   }
 }
 
@@ -37213,10 +37212,36 @@ function getCheckedRadio() {
   for (var position = 0; position <= 4; position++) {
     if (ratingFieldSet[position].checked) {
       console.log("".concat(rating[position], " rating is selected."));
-      var displayRadio = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Rating: ", rating[position]);
+      var displayRadio = rating[position];
       return displayRadio;
     }
   }
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseContactResponse.js":
+/*!*********************************************!*\
+  !*** ./src/modules/parseContactResponse.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseContactResponse: () => (/* binding */ parseContactResponse)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+// import { output } from "../utils/output.js";
+
+
+// PARSE RESPONSE FOR CONTACT FORM contact.html
+function parseContactResponse(resolveValue) {
+  var response = JSON.parse(resolveValue);
+  var message = response.message;
+  return message;
+  // output(message);
 }
 
 /***/ }),
@@ -37311,7 +37336,8 @@ function getServerResponse(resolve) {
   setTimeout(activateResolve, 5000);
   function activateResolve() {
     var response = {
-      message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>"
+      message: "SUCCESSFULLY PROCESSED"
+      // message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>",
     };
     // Server stringifies a object and replies with a string.
     // STRINGIFIES A THE response OBJECT
@@ -37342,7 +37368,6 @@ function makeRequest() {
   var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
   // CREATES NEW PROMISE
   // PROMISE IS NOT SYNCRONOUS
-  debugger;
   return new Promise(_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
 }
 

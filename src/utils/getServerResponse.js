@@ -4,7 +4,8 @@ export function getServerResponse(resolve) {
   setTimeout(activateResolve, 5000);
   function activateResolve() {
     const response = {
-      message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>",
+      message: "SUCCESSFULLY PROCESSED",
+      // message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>",
     };
     // Server stringifies a object and replies with a string.
     // STRINGIFIES A THE response OBJECT

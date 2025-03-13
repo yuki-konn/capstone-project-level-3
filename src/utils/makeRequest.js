@@ -4,6 +4,5 @@ import { getServerResponse } from "./getServerResponse.js";
 export function makeRequest(url = "") {
   // CREATES NEW PROMISE
   // PROMISE IS NOT SYNCRONOUS
-  debugger;
   return new Promise(getServerResponse);
 }

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { handleSubmitPhone } from "../controllers/handleSubmitPhone";
 import "./Contact.scss";
-import { getCheckedRadio } from "../modules/getCheckedRadio";
-import { makeRequest } from "../utils/makeRequest";
-import { parseContactResponse } from "../modules/parseContactResponse";
+import { getCheckedRadio } from "../modules/Contact/getCheckedRadio";
+import { getServerFeedback } from "../modules/Contact/getServerFeedback";
 // import { handleSubmitContact } from "../controllers/handleSubmitContact";
 
 export function Contact() {
@@ -246,17 +245,13 @@ export function Contact() {
       setFormData1(<>{serverResponse}</>);
 
       // SERVER DATA RETRIEVAL
-      getServerFeedback();
-    }
-  }
+      const serverFeedback = getServerFeedback(event);
+      // CHANGES FROM PROCESSING TO SUCCESSFULLY SUBMITTED
+      setServerResponse(<b style={{ color: "green" }}>{serverFeedback}</b>);
 
-  function getServerFeedback() {
-    // PROMISE
-    const promise = makeRequest("https://myserver.com");
-    // RESPONSE FROM SERVER
-    let response = promise.then(parseContactResponse);
-    // CHANGES FROM PROCESSING TO SUCCESSFULLY SUBMITTED
-    setServerResponse(<b style={{ color: "green" }}>{response}</b>);
+      // const serverFeedback = await databaseSimulation(event);
+      // setServerResponse(<b style={{ color: "green" }}>{serverFeedback}</b>);
+    }
   }
 }
 

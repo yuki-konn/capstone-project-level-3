@@ -1,5 +1,5 @@
-import { parsePhoneResponse } from "../modules/parsePhoneResponse.js";
-import { PhoneObject } from "../modules/PhoneObject.js";
+import { parsePhoneResponse } from "../modules/Contact/parsePhoneResponse.js";
+import { PhoneObject } from "../modules/Contact/PhoneObject.js";
 import { makeRequest } from "../utils/makeRequest.js";
 import { output } from "../utils/output.js";
 

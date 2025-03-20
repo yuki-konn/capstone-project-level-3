@@ -1,4 +1,4 @@
-import { authenticationAws } from "../modules/authenticationAws";
+import { authenticationAws } from "../modules/Contact/authenticationAws";
 
 // WHEN async IS CALLED IT RETURNS A NEW PROMISE, WHICH WILL BE RESOLVED BY THE VALUE RETURNED BY THE ASYNC FUNCTION.
 export async function handleSignIn(

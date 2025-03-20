@@ -37232,17 +37232,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   parseContactResponse: () => (/* binding */ parseContactResponse)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-// import { output } from "../utils/output.js";
-
-
-// PARSE RESPONSE FOR CONTACT FORM contact.html
+// PARSE RESPONSE FOR contact.js
 function parseContactResponse(resolveValue) {
   var response = JSON.parse(resolveValue);
   var message = response.message;
   return message;
-  // output(message);
 }
 
 /***/ }),

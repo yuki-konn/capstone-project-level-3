@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack",
+    "build": "npx webpack --mode=production",
+    "test": "npx jest ./src/modules/getCheckedRadio.test.js",
+    "deploy": "git push"
   },
   "author": "",
   "license": "ISC",

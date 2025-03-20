@@ -1,4 +1,3 @@
-import React from "react";
 export function getCheckedRadio(event = new Event()) {
   const fiveStar = event.target[4].ariaLabel;
   const fourStar = event.target[5].ariaLabel;

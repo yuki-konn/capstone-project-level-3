@@ -1,5 +1,9 @@
 import { DynamoDB } from "@aws-sdk/client-dynamodb";
-import { accessKeyId, region, secretAccessKey } from "../../.aws/credentials";
+import {
+  accessKeyId,
+  region,
+  secretAccessKey,
+} from "../../../.aws/credentials";
 import { DynamoDBDocument } from "@aws-sdk/lib-dynamodb";
 
 export async function authenticationAws(email = "", password = "") {

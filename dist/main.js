@@ -35317,6 +35317,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 // import { handleSubmitContact } from "../controllers/handleSubmitContact";
+// import { databaseSimulation } from "../modules/Contact/databaseSimulation";
 
 function Contact() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
@@ -35531,6 +35532,8 @@ function Contact() {
     var email = event.target[1].value;
     var comment = event.target[2].value;
     var outputTag = document.getElementById("outputTag1");
+
+    // MAKES SUBMISSION NOT DISPLAY MORE THAN ONCE
     var isEmpty = outputTag.children.length === 0;
     if (isEmpty) {
       setName(name);
@@ -35554,7 +35557,7 @@ function Contact() {
         }
       }, serverFeedback));
 
-      // const serverFeedback = await databaseSimulation(event);
+      // const serverFeedback = databaseSimulation(event);
       // setServerResponse(<b style={{ color: "green" }}>{serverFeedback}</b>);
     }
   }
@@ -37161,7 +37164,6 @@ function getServerResponse(resolve) {
   function activateResolve() {
     var response = {
       message: "SUCCESSFULLY PROCESSED"
-      // message: "<b style='color: green'>SUCCESSFULLY PROCESSED</b>",
     };
     // Server stringifies a object and replies with a string.
     // STRINGIFIES A THE response OBJECT

@@ -4,6 +4,7 @@ import "./Contact.scss";
 import { getCheckedRadio } from "../modules/Contact/getCheckedRadio";
 import { getServerFeedback } from "../modules/Contact/getServerFeedback";
 // import { handleSubmitContact } from "../controllers/handleSubmitContact";
+// import { databaseSimulation } from "../modules/Contact/databaseSimulation";
 
 export function Contact() {
   const [didMount, setDidMount] = useState(false);
@@ -229,6 +230,8 @@ export function Contact() {
     const email = event.target[1].value;
     const comment = event.target[2].value;
     const outputTag = document.getElementById("outputTag1");
+
+    // MAKES SUBMISSION NOT DISPLAY MORE THAN ONCE
     const isEmpty = outputTag.children.length === 0;
     if (isEmpty) {
       setName(name);
@@ -249,7 +252,7 @@ export function Contact() {
       // CHANGES FROM PROCESSING TO SUCCESSFULLY SUBMITTED
       setServerResponse(<b style={{ color: "green" }}>{serverFeedback}</b>);
 
-      // const serverFeedback = await databaseSimulation(event);
+      // const serverFeedback = databaseSimulation(event);
       // setServerResponse(<b style={{ color: "green" }}>{serverFeedback}</b>);
     }
   }
